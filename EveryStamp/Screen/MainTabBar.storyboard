@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8wl-CX-I3J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="l0B-4a-5Fn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8wl-CX-I3J" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xuG-Lv-BnM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ve8-4A-rvz" kind="relationship" relationship="viewControllers" id="hWR-Qj-7wc"/>
+                        <segue destination="weN-5R-zFu" kind="relationship" relationship="viewControllers" id="paT-gF-SEg"/>
+                        <segue destination="UVm-tP-Jgf" kind="relationship" relationship="viewControllers" id="j5u-hr-Wvb"/>
+                        <segue destination="fGG-O0-3jW" kind="relationship" relationship="viewControllers" id="vR3-lN-VuR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WML-fi-eiH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="401" y="-75"/>
+        </scene>
+        <!--StoreViewController-->
+        <scene sceneID="kBb-UI-Ip9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StoreViewController" id="Ve8-4A-rvz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="店铺" image="tab_shop_off" selectedImage="tab_shop_on" id="fnY-IL-Ob5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5Y-eO-7l7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="-390"/>
+        </scene>
+        <!--SetChapterViewController-->
+        <scene sceneID="b8w-I3-vcI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SetChapterViewController" id="weN-5R-zFu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="集章" image="tab_getpoint_off" selectedImage="tab_getpoint_on" id="eAN-Tb-wSy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QLc-gr-kp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="-228"/>
+        </scene>
+        <!--SetCardViewController-->
+        <scene sceneID="AgY-ER-Jn0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SetCardViewController" id="UVm-tP-Jgf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="集章卡" image="tab_point_card_off" selectedImage="tab_point_card_on" id="5h2-hJ-T8G"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryx-UO-qbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="-20"/>
+        </scene>
+        <!--MineViewController-->
+        <scene sceneID="GOl-32-u5J">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MineViewController" id="fGG-O0-3jW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="tab_mine_off" selectedImage="tab_mine_on" id="dTg-9L-0VK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPp-0Q-hLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_getpoint_off" width="19" height="21"/>
+        <image name="tab_getpoint_on" width="19" height="21"/>
+        <image name="tab_mine_off" width="19" height="21"/>
+        <image name="tab_mine_on" width="19" height="20"/>
+        <image name="tab_point_card_off" width="17" height="20"/>
+        <image name="tab_point_card_on" width="17" height="20"/>
+        <image name="tab_shop_off" width="26" height="22"/>
+        <image name="tab_shop_on" width="25" height="21"/>
+    </resources>
+</document>

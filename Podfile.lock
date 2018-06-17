@@ -1,0 +1,107 @@
+PODS:
+  - Alamofire (4.7.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Swift (3.4.2):
+    - CocoaLumberjack/Default
+  - Differentiator (3.0.2)
+  - Gloss (2.0.1)
+  - Kingfisher (4.8.0)
+  - PKHUD (5.0.0)
+  - Reusable (4.0.2):
+    - Reusable/Storyboard (= 4.0.2)
+    - Reusable/View (= 4.0.2)
+  - Reusable/Storyboard (4.0.2)
+  - Reusable/View (4.0.2)
+  - RxAlamofire (4.2.0):
+    - RxAlamofire/Core (= 4.2.0)
+  - RxAlamofire/Core (4.2.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxKeyboard (0.8.3):
+    - RxCocoa (>= 4.1.0)
+    - RxSwift (>= 4.1.0)
+  - RxSwift (4.2.0)
+  - RxWebKit (0.3.7):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - SnapKit (4.0.0)
+  - SwiftDate (4.5.1)
+  - SwiftLint (0.25.1)
+  - SwiftyJSON (4.1.0)
+  - SwiftyUserDefaults (3.0.1)
+  - Swinject (2.4.1)
+  - SwinjectStoryboard (2.0.1):
+    - Swinject (~> 2.4)
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - Gloss
+  - Kingfisher
+  - PKHUD
+  - Reusable
+  - RxAlamofire
+  - RxDataSources
+  - RxKeyboard
+  - RxWebKit
+  - SnapKit
+  - SwiftDate
+  - SwiftLint
+  - SwiftyJSON
+  - SwiftyUserDefaults
+  - Swinject
+  - SwinjectStoryboard
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CocoaLumberjack
+    - Differentiator
+    - Gloss
+    - Kingfisher
+    - PKHUD
+    - Reusable
+    - RxAlamofire
+    - RxCocoa
+    - RxDataSources
+    - RxKeyboard
+    - RxSwift
+    - RxWebKit
+    - SnapKit
+    - SwiftDate
+    - SwiftLint
+    - SwiftyJSON
+    - SwiftyUserDefaults
+    - Swinject
+    - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Gloss: 1e8743f8de1fbe14a97f220ff901cba91ae5f8f8
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+  Reusable: 584a5629747c52e0f6a77841b400dc2643f6fa0f
+  RxAlamofire: 87a9c588541210cc3e4a1f843ccc3ecf3eb98b31
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxKeyboard: e5efbaa109c35be909dd888e53de0f0efdf5169e
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  RxWebKit: e39e220919e5e24546c837f5f60689036a1e5920
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
+  Swinject: f7f15a9672e99328c1f07f277091087917215700
+  SwinjectStoryboard: ad2529218a1504cc888040ee56c13d7cb1cc7998
+
+PODFILE CHECKSUM: b1e4f04c7d9a22ebda3ea905e2afc2ebda198c05
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module Pods_EveryStamp {
+  umbrella header "Pods-EveryStamp-umbrella.h"
+
+  export *
+  module * { export * }
+}

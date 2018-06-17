@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="OrF-C5-s1D">
+            <objects>
+                <viewController id="KHy-ez-ZUg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bka-1x-Tpg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组 17" translatesAutoresizingMaskIntoConstraints="NO" id="QTf-of-GNR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="e3O-vF-vFB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OmM-Fk-VkQ">
+                                <rect key="frame" x="140" y="49" width="95" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="4m4-8g-nw6"/>
+                                    <constraint firstAttribute="height" constant="95" id="Wb5-IA-q9W"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="林皓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5w5-Eo-wR7">
+                                <rect key="frame" x="170" y="160" width="34" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="eNM-M8-G4Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17F-8v-JOM">
+                                <rect key="frame" x="153.5" y="339" width="68" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="jrY-A4-8PX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                <state key="normal" title="我的消息">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqS-wF-bRt">
+                                <rect key="frame" x="153.5" y="411" width="68" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="frO-pW-zIo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                <state key="normal" title="个人资料">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVV-6Z-nKi">
+                                <rect key="frame" x="170.5" y="483" width="34" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="afa-E9-QSF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                <state key="normal" title="设置">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qa-68-Zh8">
+                                <rect key="frame" x="153" y="267" width="68" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="ZAF-g4-4YH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                <state key="normal" title="我的收藏">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OmM-Fk-VkQ" firstAttribute="centerX" secondItem="Bka-1x-Tpg" secondAttribute="centerX" id="1Kf-qg-FBO"/>
+                            <constraint firstItem="5w5-Eo-wR7" firstAttribute="top" secondItem="OmM-Fk-VkQ" secondAttribute="bottom" constant="16" id="9zj-EG-rYO"/>
+                            <constraint firstItem="gVV-6Z-nKi" firstAttribute="top" secondItem="RqS-wF-bRt" secondAttribute="bottom" constant="56" id="BPP-bp-IA3"/>
+                            <constraint firstItem="qag-08-QiW" firstAttribute="trailing" secondItem="QTf-of-GNR" secondAttribute="trailing" id="DWw-sB-DWO"/>
+                            <constraint firstItem="QTf-of-GNR" firstAttribute="top" secondItem="qag-08-QiW" secondAttribute="top" id="Dcy-AW-7e2"/>
+                            <constraint firstItem="RqS-wF-bRt" firstAttribute="top" secondItem="17F-8v-JOM" secondAttribute="bottom" constant="56" id="Hvt-zj-KBl"/>
+                            <constraint firstItem="17F-8v-JOM" firstAttribute="top" secondItem="QTf-of-GNR" secondAttribute="bottom" constant="19" id="MjN-hr-7mI"/>
+                            <constraint firstItem="QTf-of-GNR" firstAttribute="leading" secondItem="qag-08-QiW" secondAttribute="leading" id="Wdx-Gr-agz"/>
+                            <constraint firstItem="RqS-wF-bRt" firstAttribute="centerX" secondItem="Bka-1x-Tpg" secondAttribute="centerX" id="kg1-zO-6we"/>
+                            <constraint firstItem="gVV-6Z-nKi" firstAttribute="centerX" secondItem="Bka-1x-Tpg" secondAttribute="centerX" id="lIH-T6-a3l"/>
+                            <constraint firstItem="2qa-68-Zh8" firstAttribute="centerX" secondItem="Bka-1x-Tpg" secondAttribute="centerX" id="nAO-oF-DeG"/>
+                            <constraint firstItem="5w5-Eo-wR7" firstAttribute="centerX" secondItem="Bka-1x-Tpg" secondAttribute="centerX" id="r6b-Uw-TLr"/>
+                            <constraint firstItem="17F-8v-JOM" firstAttribute="centerX" secondItem="Bka-1x-Tpg" secondAttribute="centerX" id="vGH-Uj-0yF"/>
+                            <constraint firstItem="17F-8v-JOM" firstAttribute="top" secondItem="2qa-68-Zh8" secondAttribute="bottom" constant="56" id="wWl-IH-S2q"/>
+                            <constraint firstItem="OmM-Fk-VkQ" firstAttribute="top" secondItem="qag-08-QiW" secondAttribute="top" constant="29" id="zcj-Fq-P9O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qag-08-QiW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Go4-Dy-llb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="163"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="组 17" width="400" height="300"/>
+    </resources>
+</document>

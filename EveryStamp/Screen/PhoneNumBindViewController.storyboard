@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rNN-uh-Hnj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Phone Num Bind View Controller-->
+        <scene sceneID="Lno-My-U6e">
+            <objects>
+                <viewController id="rNN-uh-Hnj" customClass="PhoneNumBindViewController" customModule="EveryStamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tWd-kP-0vb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ide-0R-bCu">
+                                <rect key="frame" x="20" y="54" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vkc-TH-AjR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="短信验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wi8-uz-D8a">
+                                <rect key="frame" x="20" y="119" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jcx-Rp-fdo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNe-uZ-vzh">
+                                <rect key="frame" x="83" y="222" width="209" height="47"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.48627450980392156" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="iF1-0T-fPa"/>
+                                    <constraint firstAttribute="width" constant="209" id="z5i-Ib-jaQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="18"/>
+                                <state key="normal" title="绑定">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dz9-Dg-cxe" firstAttribute="trailing" secondItem="wi8-uz-D8a" secondAttribute="trailing" constant="20" id="9xr-zH-nzB"/>
+                            <constraint firstItem="Dz9-Dg-cxe" firstAttribute="trailing" secondItem="Ide-0R-bCu" secondAttribute="trailing" constant="20" id="FoP-O3-2TN"/>
+                            <constraint firstItem="wi8-uz-D8a" firstAttribute="top" secondItem="Ide-0R-bCu" secondAttribute="bottom" constant="15" id="Oaz-gn-oEt"/>
+                            <constraint firstItem="wi8-uz-D8a" firstAttribute="leading" secondItem="Dz9-Dg-cxe" secondAttribute="leading" constant="20" id="Q9W-rW-XZh"/>
+                            <constraint firstItem="Ide-0R-bCu" firstAttribute="leading" secondItem="Dz9-Dg-cxe" secondAttribute="leading" constant="20" id="QTL-LE-1xd"/>
+                            <constraint firstItem="cNe-uZ-vzh" firstAttribute="top" secondItem="wi8-uz-D8a" secondAttribute="bottom" constant="53" id="Vji-3w-TpX"/>
+                            <constraint firstItem="cNe-uZ-vzh" firstAttribute="centerX" secondItem="tWd-kP-0vb" secondAttribute="centerX" id="f6i-Fk-5kh"/>
+                            <constraint firstItem="Ide-0R-bCu" firstAttribute="top" secondItem="Dz9-Dg-cxe" secondAttribute="top" constant="34" id="lIF-XB-gcL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dz9-Dg-cxe"/>
+                    </view>
+                    <connections>
+                        <outlet property="bindBtn" destination="cNe-uZ-vzh" id="hUU-8E-a5Z"/>
+                        <outlet property="messageTextField" destination="wi8-uz-D8a" id="4UY-gk-L7A"/>
+                        <outlet property="phoneTextField" destination="Ide-0R-bCu" id="Wa2-he-Iw8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ai8-Sn-s5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="259"/>
+        </scene>
+    </scenes>
+</document>

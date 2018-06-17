@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dgt-Vw-1HH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cKt-aZ-Dip">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Dgt-Vw-1HH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XfM-A7-Mgz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="双十二优惠大促" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rq6-mF-LZo">
+                                <rect key="frame" x="30" y="55" width="147" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="nXA-im-a5z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱客章" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MX-zZ-T2b">
+                                <rect key="frame" x="30" y="93" width="58" height="26"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.48627450980392156" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="Ph1-jJ-HfS"/>
+                                    <constraint firstAttribute="height" constant="26" id="g3t-1a-rpZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2分钟前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRK-SQ-lha">
+                                <rect key="frame" x="110" y="101" width="50.5" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="yUe-Jh-IXM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrT-jA-uoB">
+                                <rect key="frame" x="0.0" y="134" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="uEB-ef-FvU"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_login" translatesAutoresizingMaskIntoConstraints="NO" id="9Ab-hI-3Dg">
+                                <rect key="frame" x="10" y="145" width="355" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="206" id="OZh-kP-RtH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="猫舍咖啡的由来是一个非常有意思的故事,最近的金州勇士 队一直受困于伤病的困扰。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBu-h6-dBZ">
+                                <rect key="frame" x="22" y="371" width="325" height="36.5"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                                <color key="textColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6MX-zZ-T2b" firstAttribute="leading" secondItem="EtC-VW-rJy" secondAttribute="leading" constant="30" id="2et-xi-E08"/>
+                            <constraint firstItem="rRK-SQ-lha" firstAttribute="top" secondItem="rq6-mF-LZo" secondAttribute="bottom" constant="26" id="4Vy-4r-koe"/>
+                            <constraint firstItem="zrT-jA-uoB" firstAttribute="top" secondItem="6MX-zZ-T2b" secondAttribute="bottom" constant="15" id="8ru-9o-N7S"/>
+                            <constraint firstItem="rq6-mF-LZo" firstAttribute="leading" secondItem="EtC-VW-rJy" secondAttribute="leading" constant="30" id="FUp-8X-19l"/>
+                            <constraint firstItem="9Ab-hI-3Dg" firstAttribute="leading" secondItem="EtC-VW-rJy" secondAttribute="leading" constant="10" id="Giz-TQ-heK"/>
+                            <constraint firstItem="6MX-zZ-T2b" firstAttribute="top" secondItem="rq6-mF-LZo" secondAttribute="bottom" constant="18" id="Hls-gd-bCX"/>
+                            <constraint firstItem="EtC-VW-rJy" firstAttribute="trailing" secondItem="9Ab-hI-3Dg" secondAttribute="trailing" constant="10" id="I9X-aw-S1t"/>
+                            <constraint firstItem="iBu-h6-dBZ" firstAttribute="leading" secondItem="EtC-VW-rJy" secondAttribute="leading" constant="22" id="J4n-uy-g91"/>
+                            <constraint firstItem="rq6-mF-LZo" firstAttribute="top" secondItem="EtC-VW-rJy" secondAttribute="top" constant="35" id="MyL-Na-ePT"/>
+                            <constraint firstItem="9Ab-hI-3Dg" firstAttribute="top" secondItem="zrT-jA-uoB" secondAttribute="bottom" constant="10" id="VGZ-T3-ITs"/>
+                            <constraint firstItem="iBu-h6-dBZ" firstAttribute="top" secondItem="9Ab-hI-3Dg" secondAttribute="bottom" constant="20" id="dEh-NA-eXS"/>
+                            <constraint firstItem="EtC-VW-rJy" firstAttribute="trailing" secondItem="iBu-h6-dBZ" secondAttribute="trailing" constant="28" id="ekU-O3-wW9"/>
+                            <constraint firstItem="EtC-VW-rJy" firstAttribute="trailing" secondItem="zrT-jA-uoB" secondAttribute="trailing" id="hOW-dW-RFr"/>
+                            <constraint firstItem="zrT-jA-uoB" firstAttribute="leading" secondItem="EtC-VW-rJy" secondAttribute="leading" id="kPp-xg-Pbd"/>
+                            <constraint firstItem="rRK-SQ-lha" firstAttribute="leading" secondItem="6MX-zZ-T2b" secondAttribute="trailing" constant="22" id="w53-5F-Fyf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EtC-VW-rJy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udX-62-uLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_login" width="750" height="1334"/>
+    </resources>
+</document>
