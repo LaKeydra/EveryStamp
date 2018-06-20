@@ -62,6 +62,57 @@
 		D69E989620C311A90004B6DC /* BeginningChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E989520C311A90004B6DC /* BeginningChapterViewController.swift */; };
 		D6A9724620BED84700F8AE39 /* PhoneNumBindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A9724520BED84700F8AE39 /* PhoneNumBindViewController.swift */; };
 		D6AF9EFF20CACC5000E643FE /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AF9EFE20CACC5000E643FE /* RegisterViewController.storyboard */; };
+		D6C5A0D020DAB23400F32292 /* CheckOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0C620DAB23400F32292 /* CheckOrderRequest.swift */; };
+		D6C5A0D120DAB23400F32292 /* CreateShopRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0C720DAB23400F32292 /* CreateShopRequest.swift */; };
+		D6C5A0D220DAB23400F32292 /* FindPwdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0C820DAB23400F32292 /* FindPwdRequest.swift */; };
+		D6C5A0D320DAB23400F32292 /* RefreshAccessCredentialsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0C920DAB23400F32292 /* RefreshAccessCredentialsRequest.swift */; };
+		D6C5A0D420DAB23400F32292 /* LoginAndAuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0CA20DAB23400F32292 /* LoginAndAuthenticationRequest.swift */; };
+		D6C5A0D520DAB23400F32292 /* VerificationCodeAcquisitionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0CB20DAB23400F32292 /* VerificationCodeAcquisitionRequest.swift */; };
+		D6C5A0D620DAB23400F32292 /* ChangePwdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0CC20DAB23400F32292 /* ChangePwdRequest.swift */; };
+		D6C5A0D720DAB23400F32292 /* DeleteShopRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0CD20DAB23400F32292 /* DeleteShopRequest.swift */; };
+		D6C5A0D820DAB23400F32292 /* SyncMSGRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0CE20DAB23400F32292 /* SyncMSGRequest.swift */; };
+		D6C5A0D920DAB23400F32292 /* UpdateShopRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0CF20DAB23400F32292 /* UpdateShopRequest.swift */; };
+		D6C5A0E920DAB3E800F32292 /* PencilBindRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0DA20DAB3E700F32292 /* PencilBindRequest.swift */; };
+		D6C5A0EA20DAB3E800F32292 /* GetCouponUsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0DB20DAB3E700F32292 /* GetCouponUsersRequest.swift */; };
+		D6C5A0EB20DAB3E800F32292 /* GetMsgSCByDisRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0DC20DAB3E700F32292 /* GetMsgSCByDisRequest.swift */; };
+		D6C5A0EC20DAB3E800F32292 /* ShopGetPensRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0DD20DAB3E700F32292 /* ShopGetPensRequest.swift */; };
+		D6C5A0ED20DAB3E800F32292 /* GetHourStampsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0DE20DAB3E700F32292 /* GetHourStampsRequest.swift */; };
+		D6C5A0EE20DAB3E800F32292 /* GetMsgSCByBirRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0DF20DAB3E700F32292 /* GetMsgSCByBirRequest.swift */; };
+		D6C5A0EF20DAB3E800F32292 /* ShoperGetShopsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0E020DAB3E700F32292 /* ShoperGetShopsRequest.swift */; };
+		D6C5A0F020DAB3E800F32292 /* SendMsgByBirRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0E120DAB3E700F32292 /* SendMsgByBirRequest.swift */; };
+		D6C5A0F120DAB3E800F32292 /* PencilUnbindRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0E220DAB3E700F32292 /* PencilUnbindRequest.swift */; };
+		D6C5A0F220DAB3E800F32292 /* GetSendMsgsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0E320DAB3E700F32292 /* GetSendMsgsRequest.swift */; };
+		D6C5A0F320DAB3E800F32292 /* OrderCheckRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0E420DAB3E700F32292 /* OrderCheckRequest.swift */; };
+		D6C5A0F420DAB3E800F32292 /* SendMsgByDisRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0E520DAB3E700F32292 /* SendMsgByDisRequest.swift */; };
+		D6C5A0F520DAB3E800F32292 /* ShoperGetPensRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0E620DAB3E800F32292 /* ShoperGetPensRequest.swift */; };
+		D6C5A0F620DAB3E800F32292 /* GetStampsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0E720DAB3E800F32292 /* GetStampsRequest.swift */; };
+		D6C5A0F720DAB3E800F32292 /* PencilRegisterRequset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0E820DAB3E800F32292 /* PencilRegisterRequset.swift */; };
+		D6C5A11320DAB6FA00F32292 /* ShoperGetShopsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0F920DAB6F900F32292 /* ShoperGetShopsResponse.swift */; };
+		D6C5A11420DAB6FA00F32292 /* OrderCheckResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0FA20DAB6F900F32292 /* OrderCheckResponse.swift */; };
+		D6C5A11520DAB6FA00F32292 /* UpdateShopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0FB20DAB6F900F32292 /* UpdateShopResponse.swift */; };
+		D6C5A11620DAB6FA00F32292 /* VerificationCodeAcquisitionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0FC20DAB6F900F32292 /* VerificationCodeAcquisitionResponse.swift */; };
+		D6C5A11720DAB6FA00F32292 /* GetStampsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0FD20DAB6F900F32292 /* GetStampsResponse.swift */; };
+		D6C5A11820DAB6FA00F32292 /* GetCouponUsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0FE20DAB6F900F32292 /* GetCouponUsersResponse.swift */; };
+		D6C5A11920DAB6FA00F32292 /* CreateShopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A0FF20DAB6F900F32292 /* CreateShopResponse.swift */; };
+		D6C5A11A20DAB6FA00F32292 /* RefreshAccessCredentialsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10020DAB6F900F32292 /* RefreshAccessCredentialsResponse.swift */; };
+		D6C5A11B20DAB6FA00F32292 /* PencilRegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10120DAB6F900F32292 /* PencilRegisterResponse.swift */; };
+		D6C5A11C20DAB6FA00F32292 /* SyncMSGResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10220DAB6F900F32292 /* SyncMSGResponse.swift */; };
+		D6C5A11D20DAB6FA00F32292 /* PencilBindResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10320DAB6F900F32292 /* PencilBindResponse.swift */; };
+		D6C5A11E20DAB6FA00F32292 /* ShopGetPensResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10420DAB6FA00F32292 /* ShopGetPensResponse.swift */; };
+		D6C5A11F20DAB6FA00F32292 /* ShoperGetPensResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10520DAB6FA00F32292 /* ShoperGetPensResponse.swift */; };
+		D6C5A12020DAB6FA00F32292 /* GetTotalStampsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10620DAB6FA00F32292 /* GetTotalStampsResponse.swift */; };
+		D6C5A12120DAB6FA00F32292 /* FindPwdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10720DAB6FA00F32292 /* FindPwdResponse.swift */; };
+		D6C5A12220DAB6FA00F32292 /* CheckOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10820DAB6FA00F32292 /* CheckOrderResponse.swift */; };
+		D6C5A12320DAB6FA00F32292 /* SendMsgByDisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10920DAB6FA00F32292 /* SendMsgByDisResponse.swift */; };
+		D6C5A12420DAB6FA00F32292 /* PencilUnbindResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10A20DAB6FA00F32292 /* PencilUnbindResponse.swift */; };
+		D6C5A12520DAB6FA00F32292 /* DeleteShopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10B20DAB6FA00F32292 /* DeleteShopResponse.swift */; };
+		D6C5A12620DAB6FA00F32292 /* LoginAndAuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10C20DAB6FA00F32292 /* LoginAndAuthenticationResponse.swift */; };
+		D6C5A12720DAB6FA00F32292 /* GetHourStampsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10D20DAB6FA00F32292 /* GetHourStampsResponse.swift */; };
+		D6C5A12820DAB6FA00F32292 /* SendMsgByBirResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10E20DAB6FA00F32292 /* SendMsgByBirResponse.swift */; };
+		D6C5A12920DAB6FA00F32292 /* GetMsgSCByBirResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A10F20DAB6FA00F32292 /* GetMsgSCByBirResponse.swift */; };
+		D6C5A12A20DAB6FA00F32292 /* GetMsgSCByDisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A11020DAB6FA00F32292 /* GetMsgSCByDisResponse.swift */; };
+		D6C5A12B20DAB6FA00F32292 /* GetSendMsgsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A11120DAB6FA00F32292 /* GetSendMsgsResponse.swift */; };
+		D6C5A12C20DAB6FA00F32292 /* ChangePwdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A11220DAB6FA00F32292 /* ChangePwdResponse.swift */; };
 		D6E4874A20D6394D002C3D63 /* GuidePageOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E4874920D6394D002C3D63 /* GuidePageOne.storyboard */; };
 		D6E4874C20D6395D002C3D63 /* GuidePageTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E4874B20D6395D002C3D63 /* GuidePageTwo.storyboard */; };
 		D6E4874E20D6396E002C3D63 /* GuidePageThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E4874D20D6396E002C3D63 /* GuidePageThree.storyboard */; };
@@ -111,26 +162,6 @@
 		D6F6C6ED20CD3C5F00D9ADC1 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C6EC20CD3C5F00D9ADC1 /* BaseRequest.swift */; };
 		D6F6C6EF20CD3CB300D9ADC1 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C6EE20CD3CB300D9ADC1 /* Authentication.swift */; };
 		D6F6C6F120CD3CD500D9ADC1 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C6F020CD3CD500D9ADC1 /* ResponseError.swift */; };
-		D6F6C6F520CD3E9400D9ADC1 /* VerificationCodeAcquisitionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C6F420CD3E9400D9ADC1 /* VerificationCodeAcquisitionRequest.swift */; };
-		D6F6C6F720CD3EA300D9ADC1 /* VerificationCodeAcquisitionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C6F620CD3EA300D9ADC1 /* VerificationCodeAcquisitionResponse.swift */; };
-		D6F6C6F920CD430400D9ADC1 /* LoginAndAuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C6F820CD430400D9ADC1 /* LoginAndAuthenticationRequest.swift */; };
-		D6F6C6FB20CD434100D9ADC1 /* LoginAndAuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C6FA20CD434100D9ADC1 /* LoginAndAuthenticationResponse.swift */; };
-		D6F6C6FD20CD472D00D9ADC1 /* RefreshAccessCredentialsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C6FC20CD472D00D9ADC1 /* RefreshAccessCredentialsRequest.swift */; };
-		D6F6C6FF20CD474100D9ADC1 /* RefreshAccessCredentialsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C6FE20CD474100D9ADC1 /* RefreshAccessCredentialsResponse.swift */; };
-		D6F6C70120CD489100D9ADC1 /* ChangePwdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C70020CD489100D9ADC1 /* ChangePwdRequest.swift */; };
-		D6F6C70320CD489E00D9ADC1 /* ChangePwdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C70220CD489E00D9ADC1 /* ChangePwdResponse.swift */; };
-		D6F6C70520CD4A1B00D9ADC1 /* FindPwdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C70420CD4A1B00D9ADC1 /* FindPwdRequest.swift */; };
-		D6F6C70720CD4A2D00D9ADC1 /* FindPwdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C70620CD4A2D00D9ADC1 /* FindPwdResponse.swift */; };
-		D6F6C70920CD4B8D00D9ADC1 /* SyncMSGRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C70820CD4B8D00D9ADC1 /* SyncMSGRequest.swift */; };
-		D6F6C70B20CD4B9C00D9ADC1 /* SyncMSGResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C70A20CD4B9C00D9ADC1 /* SyncMSGResponse.swift */; };
-		D6F6C70D20CD4D1200D9ADC1 /* CheckOrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C70C20CD4D1200D9ADC1 /* CheckOrderRequest.swift */; };
-		D6F6C70F20CD4D2800D9ADC1 /* CheckOrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C70E20CD4D2800D9ADC1 /* CheckOrderResponse.swift */; };
-		D6F6C71120CD51D400D9ADC1 /* CreateShopRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C71020CD51D400D9ADC1 /* CreateShopRequest.swift */; };
-		D6F6C71320CD51E700D9ADC1 /* CreateShopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C71220CD51E700D9ADC1 /* CreateShopResponse.swift */; };
-		D6F6C71520CD539600D9ADC1 /* DeleteShopRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C71420CD539600D9ADC1 /* DeleteShopRequest.swift */; };
-		D6F6C71720CD53A600D9ADC1 /* DeleteShopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C71620CD53A600D9ADC1 /* DeleteShopResponse.swift */; };
-		D6F6C71920CD562800D9ADC1 /* UpdateShopRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C71820CD562800D9ADC1 /* UpdateShopRequest.swift */; };
-		D6F6C71B20CD56A100D9ADC1 /* UpdateShopResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F6C71A20CD56A100D9ADC1 /* UpdateShopResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +223,57 @@
 		D69E989520C311A90004B6DC /* BeginningChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginningChapterViewController.swift; sourceTree = "<group>"; };
 		D6A9724520BED84700F8AE39 /* PhoneNumBindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumBindViewController.swift; sourceTree = "<group>"; };
 		D6AF9EFE20CACC5000E643FE /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		D6C5A0C620DAB23400F32292 /* CheckOrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOrderRequest.swift; sourceTree = "<group>"; };
+		D6C5A0C720DAB23400F32292 /* CreateShopRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateShopRequest.swift; sourceTree = "<group>"; };
+		D6C5A0C820DAB23400F32292 /* FindPwdRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPwdRequest.swift; sourceTree = "<group>"; };
+		D6C5A0C920DAB23400F32292 /* RefreshAccessCredentialsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshAccessCredentialsRequest.swift; sourceTree = "<group>"; };
+		D6C5A0CA20DAB23400F32292 /* LoginAndAuthenticationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAndAuthenticationRequest.swift; sourceTree = "<group>"; };
+		D6C5A0CB20DAB23400F32292 /* VerificationCodeAcquisitionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCodeAcquisitionRequest.swift; sourceTree = "<group>"; };
+		D6C5A0CC20DAB23400F32292 /* ChangePwdRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePwdRequest.swift; sourceTree = "<group>"; };
+		D6C5A0CD20DAB23400F32292 /* DeleteShopRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteShopRequest.swift; sourceTree = "<group>"; };
+		D6C5A0CE20DAB23400F32292 /* SyncMSGRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncMSGRequest.swift; sourceTree = "<group>"; };
+		D6C5A0CF20DAB23400F32292 /* UpdateShopRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateShopRequest.swift; sourceTree = "<group>"; };
+		D6C5A0DA20DAB3E700F32292 /* PencilBindRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilBindRequest.swift; sourceTree = "<group>"; };
+		D6C5A0DB20DAB3E700F32292 /* GetCouponUsersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCouponUsersRequest.swift; sourceTree = "<group>"; };
+		D6C5A0DC20DAB3E700F32292 /* GetMsgSCByDisRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMsgSCByDisRequest.swift; sourceTree = "<group>"; };
+		D6C5A0DD20DAB3E700F32292 /* ShopGetPensRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopGetPensRequest.swift; sourceTree = "<group>"; };
+		D6C5A0DE20DAB3E700F32292 /* GetHourStampsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHourStampsRequest.swift; sourceTree = "<group>"; };
+		D6C5A0DF20DAB3E700F32292 /* GetMsgSCByBirRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMsgSCByBirRequest.swift; sourceTree = "<group>"; };
+		D6C5A0E020DAB3E700F32292 /* ShoperGetShopsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoperGetShopsRequest.swift; sourceTree = "<group>"; };
+		D6C5A0E120DAB3E700F32292 /* SendMsgByBirRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMsgByBirRequest.swift; sourceTree = "<group>"; };
+		D6C5A0E220DAB3E700F32292 /* PencilUnbindRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilUnbindRequest.swift; sourceTree = "<group>"; };
+		D6C5A0E320DAB3E700F32292 /* GetSendMsgsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSendMsgsRequest.swift; sourceTree = "<group>"; };
+		D6C5A0E420DAB3E700F32292 /* OrderCheckRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCheckRequest.swift; sourceTree = "<group>"; };
+		D6C5A0E520DAB3E700F32292 /* SendMsgByDisRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMsgByDisRequest.swift; sourceTree = "<group>"; };
+		D6C5A0E620DAB3E800F32292 /* ShoperGetPensRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoperGetPensRequest.swift; sourceTree = "<group>"; };
+		D6C5A0E720DAB3E800F32292 /* GetStampsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStampsRequest.swift; sourceTree = "<group>"; };
+		D6C5A0E820DAB3E800F32292 /* PencilRegisterRequset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilRegisterRequset.swift; sourceTree = "<group>"; };
+		D6C5A0F920DAB6F900F32292 /* ShoperGetShopsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoperGetShopsResponse.swift; sourceTree = "<group>"; };
+		D6C5A0FA20DAB6F900F32292 /* OrderCheckResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCheckResponse.swift; sourceTree = "<group>"; };
+		D6C5A0FB20DAB6F900F32292 /* UpdateShopResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateShopResponse.swift; sourceTree = "<group>"; };
+		D6C5A0FC20DAB6F900F32292 /* VerificationCodeAcquisitionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCodeAcquisitionResponse.swift; sourceTree = "<group>"; };
+		D6C5A0FD20DAB6F900F32292 /* GetStampsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStampsResponse.swift; sourceTree = "<group>"; };
+		D6C5A0FE20DAB6F900F32292 /* GetCouponUsersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCouponUsersResponse.swift; sourceTree = "<group>"; };
+		D6C5A0FF20DAB6F900F32292 /* CreateShopResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateShopResponse.swift; sourceTree = "<group>"; };
+		D6C5A10020DAB6F900F32292 /* RefreshAccessCredentialsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshAccessCredentialsResponse.swift; sourceTree = "<group>"; };
+		D6C5A10120DAB6F900F32292 /* PencilRegisterResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilRegisterResponse.swift; sourceTree = "<group>"; };
+		D6C5A10220DAB6F900F32292 /* SyncMSGResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncMSGResponse.swift; sourceTree = "<group>"; };
+		D6C5A10320DAB6F900F32292 /* PencilBindResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilBindResponse.swift; sourceTree = "<group>"; };
+		D6C5A10420DAB6FA00F32292 /* ShopGetPensResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopGetPensResponse.swift; sourceTree = "<group>"; };
+		D6C5A10520DAB6FA00F32292 /* ShoperGetPensResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoperGetPensResponse.swift; sourceTree = "<group>"; };
+		D6C5A10620DAB6FA00F32292 /* GetTotalStampsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTotalStampsResponse.swift; sourceTree = "<group>"; };
+		D6C5A10720DAB6FA00F32292 /* FindPwdResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPwdResponse.swift; sourceTree = "<group>"; };
+		D6C5A10820DAB6FA00F32292 /* CheckOrderResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOrderResponse.swift; sourceTree = "<group>"; };
+		D6C5A10920DAB6FA00F32292 /* SendMsgByDisResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMsgByDisResponse.swift; sourceTree = "<group>"; };
+		D6C5A10A20DAB6FA00F32292 /* PencilUnbindResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilUnbindResponse.swift; sourceTree = "<group>"; };
+		D6C5A10B20DAB6FA00F32292 /* DeleteShopResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteShopResponse.swift; sourceTree = "<group>"; };
+		D6C5A10C20DAB6FA00F32292 /* LoginAndAuthenticationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAndAuthenticationResponse.swift; sourceTree = "<group>"; };
+		D6C5A10D20DAB6FA00F32292 /* GetHourStampsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHourStampsResponse.swift; sourceTree = "<group>"; };
+		D6C5A10E20DAB6FA00F32292 /* SendMsgByBirResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMsgByBirResponse.swift; sourceTree = "<group>"; };
+		D6C5A10F20DAB6FA00F32292 /* GetMsgSCByBirResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMsgSCByBirResponse.swift; sourceTree = "<group>"; };
+		D6C5A11020DAB6FA00F32292 /* GetMsgSCByDisResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMsgSCByDisResponse.swift; sourceTree = "<group>"; };
+		D6C5A11120DAB6FA00F32292 /* GetSendMsgsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSendMsgsResponse.swift; sourceTree = "<group>"; };
+		D6C5A11220DAB6FA00F32292 /* ChangePwdResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePwdResponse.swift; sourceTree = "<group>"; };
 		D6E4874920D6394D002C3D63 /* GuidePageOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuidePageOne.storyboard; sourceTree = "<group>"; };
 		D6E4874B20D6395D002C3D63 /* GuidePageTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuidePageTwo.storyboard; sourceTree = "<group>"; };
 		D6E4874D20D6396E002C3D63 /* GuidePageThree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuidePageThree.storyboard; sourceTree = "<group>"; };
@@ -242,26 +324,6 @@
 		D6F6C6EC20CD3C5F00D9ADC1 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		D6F6C6EE20CD3CB300D9ADC1 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		D6F6C6F020CD3CD500D9ADC1 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
-		D6F6C6F420CD3E9400D9ADC1 /* VerificationCodeAcquisitionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCodeAcquisitionRequest.swift; sourceTree = "<group>"; };
-		D6F6C6F620CD3EA300D9ADC1 /* VerificationCodeAcquisitionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerificationCodeAcquisitionResponse.swift; sourceTree = "<group>"; };
-		D6F6C6F820CD430400D9ADC1 /* LoginAndAuthenticationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndAuthenticationRequest.swift; sourceTree = "<group>"; };
-		D6F6C6FA20CD434100D9ADC1 /* LoginAndAuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndAuthenticationResponse.swift; sourceTree = "<group>"; };
-		D6F6C6FC20CD472D00D9ADC1 /* RefreshAccessCredentialsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshAccessCredentialsRequest.swift; sourceTree = "<group>"; };
-		D6F6C6FE20CD474100D9ADC1 /* RefreshAccessCredentialsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshAccessCredentialsResponse.swift; sourceTree = "<group>"; };
-		D6F6C70020CD489100D9ADC1 /* ChangePwdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePwdRequest.swift; sourceTree = "<group>"; };
-		D6F6C70220CD489E00D9ADC1 /* ChangePwdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePwdResponse.swift; sourceTree = "<group>"; };
-		D6F6C70420CD4A1B00D9ADC1 /* FindPwdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwdRequest.swift; sourceTree = "<group>"; };
-		D6F6C70620CD4A2D00D9ADC1 /* FindPwdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwdResponse.swift; sourceTree = "<group>"; };
-		D6F6C70820CD4B8D00D9ADC1 /* SyncMSGRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncMSGRequest.swift; sourceTree = "<group>"; };
-		D6F6C70A20CD4B9C00D9ADC1 /* SyncMSGResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncMSGResponse.swift; sourceTree = "<group>"; };
-		D6F6C70C20CD4D1200D9ADC1 /* CheckOrderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOrderRequest.swift; sourceTree = "<group>"; };
-		D6F6C70E20CD4D2800D9ADC1 /* CheckOrderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOrderResponse.swift; sourceTree = "<group>"; };
-		D6F6C71020CD51D400D9ADC1 /* CreateShopRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShopRequest.swift; sourceTree = "<group>"; };
-		D6F6C71220CD51E700D9ADC1 /* CreateShopResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShopResponse.swift; sourceTree = "<group>"; };
-		D6F6C71420CD539600D9ADC1 /* DeleteShopRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteShopRequest.swift; sourceTree = "<group>"; };
-		D6F6C71620CD53A600D9ADC1 /* DeleteShopResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteShopResponse.swift; sourceTree = "<group>"; };
-		D6F6C71820CD562800D9ADC1 /* UpdateShopRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateShopRequest.swift; sourceTree = "<group>"; };
-		D6F6C71A20CD56A100D9ADC1 /* UpdateShopResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateShopResponse.swift; sourceTree = "<group>"; };
 		FEAD7D3BC13A08E5C9E215FB /* Pods-EveryStamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EveryStamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EveryStamp/Pods-EveryStamp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -560,6 +622,71 @@
 			path = BeginningChapter;
 			sourceTree = "<group>";
 		};
+		D6C5A0C520DAB1DC00F32292 /* ShopRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5A0CC20DAB23400F32292 /* ChangePwdRequest.swift */,
+				D6C5A0C620DAB23400F32292 /* CheckOrderRequest.swift */,
+				D6C5A0C720DAB23400F32292 /* CreateShopRequest.swift */,
+				D6C5A0CD20DAB23400F32292 /* DeleteShopRequest.swift */,
+				D6C5A0C820DAB23400F32292 /* FindPwdRequest.swift */,
+				D6C5A0CA20DAB23400F32292 /* LoginAndAuthenticationRequest.swift */,
+				D6C5A0C920DAB23400F32292 /* RefreshAccessCredentialsRequest.swift */,
+				D6C5A0CE20DAB23400F32292 /* SyncMSGRequest.swift */,
+				D6C5A0CF20DAB23400F32292 /* UpdateShopRequest.swift */,
+				D6C5A0CB20DAB23400F32292 /* VerificationCodeAcquisitionRequest.swift */,
+				D6C5A0DB20DAB3E700F32292 /* GetCouponUsersRequest.swift */,
+				D6C5A0DE20DAB3E700F32292 /* GetHourStampsRequest.swift */,
+				D6C5A0DF20DAB3E700F32292 /* GetMsgSCByBirRequest.swift */,
+				D6C5A0DC20DAB3E700F32292 /* GetMsgSCByDisRequest.swift */,
+				D6C5A0E320DAB3E700F32292 /* GetSendMsgsRequest.swift */,
+				D6C5A0E720DAB3E800F32292 /* GetStampsRequest.swift */,
+				D6C5A0E420DAB3E700F32292 /* OrderCheckRequest.swift */,
+				D6C5A0DA20DAB3E700F32292 /* PencilBindRequest.swift */,
+				D6C5A0E820DAB3E800F32292 /* PencilRegisterRequset.swift */,
+				D6C5A0E220DAB3E700F32292 /* PencilUnbindRequest.swift */,
+				D6C5A0E120DAB3E700F32292 /* SendMsgByBirRequest.swift */,
+				D6C5A0E520DAB3E700F32292 /* SendMsgByDisRequest.swift */,
+				D6C5A0E620DAB3E800F32292 /* ShoperGetPensRequest.swift */,
+				D6C5A0E020DAB3E700F32292 /* ShoperGetShopsRequest.swift */,
+				D6C5A0DD20DAB3E700F32292 /* ShopGetPensRequest.swift */,
+			);
+			path = ShopRequest;
+			sourceTree = "<group>";
+		};
+		D6C5A0F820DAB40700F32292 /* ShopResponse */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5A11220DAB6FA00F32292 /* ChangePwdResponse.swift */,
+				D6C5A10820DAB6FA00F32292 /* CheckOrderResponse.swift */,
+				D6C5A0FF20DAB6F900F32292 /* CreateShopResponse.swift */,
+				D6C5A10B20DAB6FA00F32292 /* DeleteShopResponse.swift */,
+				D6C5A10720DAB6FA00F32292 /* FindPwdResponse.swift */,
+				D6C5A0FE20DAB6F900F32292 /* GetCouponUsersResponse.swift */,
+				D6C5A10D20DAB6FA00F32292 /* GetHourStampsResponse.swift */,
+				D6C5A10F20DAB6FA00F32292 /* GetMsgSCByBirResponse.swift */,
+				D6C5A11020DAB6FA00F32292 /* GetMsgSCByDisResponse.swift */,
+				D6C5A11120DAB6FA00F32292 /* GetSendMsgsResponse.swift */,
+				D6C5A0FD20DAB6F900F32292 /* GetStampsResponse.swift */,
+				D6C5A10620DAB6FA00F32292 /* GetTotalStampsResponse.swift */,
+				D6C5A10C20DAB6FA00F32292 /* LoginAndAuthenticationResponse.swift */,
+				D6C5A0FA20DAB6F900F32292 /* OrderCheckResponse.swift */,
+				D6C5A10320DAB6F900F32292 /* PencilBindResponse.swift */,
+				D6C5A10120DAB6F900F32292 /* PencilRegisterResponse.swift */,
+				D6C5A10A20DAB6FA00F32292 /* PencilUnbindResponse.swift */,
+				D6C5A10020DAB6F900F32292 /* RefreshAccessCredentialsResponse.swift */,
+				D6C5A10E20DAB6FA00F32292 /* SendMsgByBirResponse.swift */,
+				D6C5A10920DAB6FA00F32292 /* SendMsgByDisResponse.swift */,
+				D6C5A10520DAB6FA00F32292 /* ShoperGetPensResponse.swift */,
+				D6C5A0F920DAB6F900F32292 /* ShoperGetShopsResponse.swift */,
+				D6C5A10420DAB6FA00F32292 /* ShopGetPensResponse.swift */,
+				D6C5A10220DAB6F900F32292 /* SyncMSGResponse.swift */,
+				D6C5A0FB20DAB6F900F32292 /* UpdateShopResponse.swift */,
+				D6C5A0FC20DAB6F900F32292 /* VerificationCodeAcquisitionResponse.swift */,
+			);
+			path = ShopResponse;
+			sourceTree = "<group>";
+		};
 		D6E4874820D6392C002C3D63 /* GuidePages */ = {
 			isa = PBXGroup;
 			children = (
@@ -587,17 +714,8 @@
 		D6F6C6F220CD3E1300D9ADC1 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				D6C5A0C520DAB1DC00F32292 /* ShopRequest */,
 				D68BF25B20D14F98009008C0 /* UserRequest */,
-				D6F6C6F420CD3E9400D9ADC1 /* VerificationCodeAcquisitionRequest.swift */,
-				D6F6C6F820CD430400D9ADC1 /* LoginAndAuthenticationRequest.swift */,
-				D6F6C6FC20CD472D00D9ADC1 /* RefreshAccessCredentialsRequest.swift */,
-				D6F6C70020CD489100D9ADC1 /* ChangePwdRequest.swift */,
-				D6F6C70420CD4A1B00D9ADC1 /* FindPwdRequest.swift */,
-				D6F6C70820CD4B8D00D9ADC1 /* SyncMSGRequest.swift */,
-				D6F6C70C20CD4D1200D9ADC1 /* CheckOrderRequest.swift */,
-				D6F6C71020CD51D400D9ADC1 /* CreateShopRequest.swift */,
-				D6F6C71420CD539600D9ADC1 /* DeleteShopRequest.swift */,
-				D6F6C71820CD562800D9ADC1 /* UpdateShopRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -605,17 +723,8 @@
 		D6F6C6F320CD3E3700D9ADC1 /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				D6C5A0F820DAB40700F32292 /* ShopResponse */,
 				D68BF25E20D15318009008C0 /* UserResponse */,
-				D6F6C6F620CD3EA300D9ADC1 /* VerificationCodeAcquisitionResponse.swift */,
-				D6F6C6FA20CD434100D9ADC1 /* LoginAndAuthenticationResponse.swift */,
-				D6F6C6FE20CD474100D9ADC1 /* RefreshAccessCredentialsResponse.swift */,
-				D6F6C70220CD489E00D9ADC1 /* ChangePwdResponse.swift */,
-				D6F6C70620CD4A2D00D9ADC1 /* FindPwdResponse.swift */,
-				D6F6C70A20CD4B9C00D9ADC1 /* SyncMSGResponse.swift */,
-				D6F6C70E20CD4D2800D9ADC1 /* CheckOrderResponse.swift */,
-				D6F6C71220CD51E700D9ADC1 /* CreateShopResponse.swift */,
-				D6F6C71620CD53A600D9ADC1 /* DeleteShopResponse.swift */,
-				D6F6C71A20CD56A100D9ADC1 /* UpdateShopResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -805,46 +914,63 @@
 				D6F494DC20D96AE0003A09E1 /* UserGetMsgRequest.swift in Sources */,
 				1D4C0BB520BA9D6C00583735 /* SearchSpeciesCell.swift in Sources */,
 				D6F494BA20D95828003A09E1 /* UserShopUnCollectRequest.swift in Sources */,
-				D6F6C70F20CD4D2800D9ADC1 /* CheckOrderResponse.swift in Sources */,
 				1DEDA2E020B44C26001A5AA1 /* StoreViewModel.swift in Sources */,
-				D6F6C71720CD53A600D9ADC1 /* DeleteShopResponse.swift in Sources */,
+				D6C5A12B20DAB6FA00F32292 /* GetSendMsgsResponse.swift in Sources */,
+				D6C5A0EC20DAB3E800F32292 /* ShopGetPensRequest.swift in Sources */,
 				D6F494C020D95CC8003A09E1 /* UserShopGetResponse.swift in Sources */,
+				D6C5A11E20DAB6FA00F32292 /* ShopGetPensResponse.swift in Sources */,
+				D6C5A0EF20DAB3E800F32292 /* ShoperGetShopsRequest.swift in Sources */,
 				D68BF26720D15CA6009008C0 /* IntExtension.swift in Sources */,
 				D6F494B220D955DC003A09E1 /* UserGetCollectShopsRequest.swift in Sources */,
-				D6F6C71B20CD56A100D9ADC1 /* UpdateShopResponse.swift in Sources */,
 				D6E4876C20D6953F002C3D63 /* UserUpdateLatlngRequest.swift in Sources */,
-				D6F6C70720CD4A2D00D9ADC1 /* FindPwdResponse.swift in Sources */,
 				D6F6C6E920CD3BEE00D9ADC1 /* RequestSender.swift in Sources */,
 				D6E4875020D65D22002C3D63 /* UserGetCodeRequest.swift in Sources */,
 				D6E4876E20D69645002C3D63 /* UserGetResponse.swift in Sources */,
-				D6F6C70520CD4A1B00D9ADC1 /* FindPwdRequest.swift in Sources */,
-				D6F6C6FD20CD472D00D9ADC1 /* RefreshAccessCredentialsRequest.swift in Sources */,
 				D6E4876620D6695D002C3D63 /* UserUpdateUserRequest.swift in Sources */,
+				D6C5A12820DAB6FA00F32292 /* SendMsgByBirResponse.swift in Sources */,
+				D6C5A12220DAB6FA00F32292 /* CheckOrderResponse.swift in Sources */,
 				D6F494CE20D96634003A09E1 /* UserGetShopMsgsResponse.swift in Sources */,
-				D6F6C71520CD539600D9ADC1 /* DeleteShopRequest.swift in Sources */,
+				D6C5A0D020DAB23400F32292 /* CheckOrderRequest.swift in Sources */,
 				D69E989620C311A90004B6DC /* BeginningChapterViewController.swift in Sources */,
+				D6C5A12020DAB6FA00F32292 /* GetTotalStampsResponse.swift in Sources */,
 				D692615020C388B900194C0B /* UserMessageViewController.swift in Sources */,
 				D6F494BE20D95BC4003A09E1 /* UserGetShopStateRequest.swift in Sources */,
+				D6C5A0F620DAB3E800F32292 /* GetStampsRequest.swift in Sources */,
+				D6C5A0D220DAB23400F32292 /* FindPwdRequest.swift in Sources */,
 				D6E4875820D66139002C3D63 /* UserUpdatetokenResponse.swift in Sources */,
-				D6F6C70120CD489100D9ADC1 /* ChangePwdRequest.swift in Sources */,
 				1D132CAA20B18CBB000CEE6D /* ViewController.swift in Sources */,
+				D6C5A12920DAB6FA00F32292 /* GetMsgSCByBirResponse.swift in Sources */,
 				D6F494C820D96385003A09E1 /* UserGetShopsByAddressRequest.swift in Sources */,
+				D6C5A11520DAB6FA00F32292 /* UpdateShopResponse.swift in Sources */,
+				D6C5A0F220DAB3E800F32292 /* GetSendMsgsRequest.swift in Sources */,
 				D6F494D820D96951003A09E1 /* UserDeleteMsgRequest.swift in Sources */,
+				D6C5A11920DAB6FA00F32292 /* CreateShopResponse.swift in Sources */,
+				D6C5A0D420DAB23400F32292 /* LoginAndAuthenticationRequest.swift in Sources */,
 				D692615920C3936900194C0B /* FeedbackQuestionViewController.swift in Sources */,
 				D68BF26020D15338009008C0 /* UserLoginResponse.swift in Sources */,
+				D6C5A11A20DAB6FA00F32292 /* RefreshAccessCredentialsResponse.swift in Sources */,
+				D6C5A0F420DAB3E800F32292 /* SendMsgByDisRequest.swift in Sources */,
+				D6C5A11B20DAB6FA00F32292 /* PencilRegisterResponse.swift in Sources */,
+				D6C5A0F520DAB3E800F32292 /* ShoperGetPensRequest.swift in Sources */,
 				D6A9724620BED84700F8AE39 /* PhoneNumBindViewController.swift in Sources */,
-				D6F6C70D20CD4D1200D9ADC1 /* CheckOrderRequest.swift in Sources */,
 				D6F494B420D956D8003A09E1 /* UserShopCollectResponse.swift in Sources */,
 				1DEDA2F020B44CC9001A5AA1 /* MineViewController.swift in Sources */,
-				D6F6C6FF20CD474100D9ADC1 /* RefreshAccessCredentialsResponse.swift in Sources */,
 				D6F6C6EB20CD3C3900D9ADC1 /* RxSessionRequestSender.swift in Sources */,
 				D6F494D220D967A7003A09E1 /* UserGetShopMsgResponse.swift in Sources */,
-				D6F6C71320CD51E700D9ADC1 /* CreateShopResponse.swift in Sources */,
+				D6C5A0EA20DAB3E800F32292 /* GetCouponUsersRequest.swift in Sources */,
+				D6C5A11720DAB6FA00F32292 /* GetStampsResponse.swift in Sources */,
+				D6C5A11C20DAB6FA00F32292 /* SyncMSGResponse.swift in Sources */,
 				D6F494CA20D96442003A09E1 /* UserGetCouponsResponse.swift in Sources */,
+				D6C5A0ED20DAB3E800F32292 /* GetHourStampsRequest.swift in Sources */,
+				D6C5A12420DAB6FA00F32292 /* PencilUnbindResponse.swift in Sources */,
+				D6C5A0D520DAB23400F32292 /* VerificationCodeAcquisitionRequest.swift in Sources */,
+				D6C5A0D120DAB23400F32292 /* CreateShopRequest.swift in Sources */,
 				D68BF25D20D14FE4009008C0 /* UserLoginRequest.swift in Sources */,
 				D6F494B620D95721003A09E1 /* UserShopCollectRequest.swift in Sources */,
-				D6F6C6F920CD430400D9ADC1 /* LoginAndAuthenticationRequest.swift in Sources */,
 				D6E4877020D69933002C3D63 /* UserOauthLoginResponse.swift in Sources */,
+				D6C5A12520DAB6FA00F32292 /* DeleteShopResponse.swift in Sources */,
+				D6C5A0D920DAB23400F32292 /* UpdateShopRequest.swift in Sources */,
+				D6C5A11820DAB6FA00F32292 /* GetCouponUsersResponse.swift in Sources */,
 				D6F494B820D95800003A09E1 /* UserShopUnCollectResponse.swift in Sources */,
 				1DEDA2F220B44CD7001A5AA1 /* MineViewModel.swift in Sources */,
 				D692615520C38CCE00194C0B /* AboutUsViewController.swift in Sources */,
@@ -853,40 +979,54 @@
 				1D4C0BB120BA9ACA00583735 /* SearchShopViewController.swift in Sources */,
 				D6E4877420D69B9F002C3D63 /* UserGetCollectShopsResponse.swift in Sources */,
 				D6E4875420D65F76002C3D63 /* UserRegisterResponse.swift in Sources */,
+				D6C5A12120DAB6FA00F32292 /* FindPwdResponse.swift in Sources */,
+				D6C5A11320DAB6FA00F32292 /* ShoperGetShopsResponse.swift in Sources */,
+				D6C5A12320DAB6FA00F32292 /* SendMsgByDisResponse.swift in Sources */,
 				1DEDA2EC20B44CA0001A5AA1 /* SetCardViewModel.swift in Sources */,
 				D6E4876420D66724002C3D63 /* UserUpdateUserResponse.swift in Sources */,
 				D6F494C220D96079003A09E1 /* UserShopGetRequest.swift in Sources */,
 				1DEDA2DE20B44C0E001A5AA1 /* StoreViewController.swift in Sources */,
 				D6E4875220D65E65002C3D63 /* UserGetCodeResponse.swift in Sources */,
 				D6F494CC20D9656E003A09E1 /* UserGetCouponsRequest.swift in Sources */,
-				D6F6C71920CD562800D9ADC1 /* UpdateShopRequest.swift in Sources */,
+				D6C5A0F720DAB3E800F32292 /* PencilRegisterRequset.swift in Sources */,
 				D6F494C620D96253003A09E1 /* UserGetShopsByLatlngRequest.swift in Sources */,
 				D6E4875C20D665AD002C3D63 /* UserChangePwdResponse.swift in Sources */,
 				D6F494BC20D95894003A09E1 /* UserGetShopStateResponse.swift in Sources */,
+				D6C5A0D820DAB23400F32292 /* SyncMSGRequest.swift in Sources */,
+				D6C5A11420DAB6FA00F32292 /* OrderCheckResponse.swift in Sources */,
+				D6C5A0E920DAB3E800F32292 /* PencilBindRequest.swift in Sources */,
 				D6E4876A20D6951B002C3D63 /* UserUpdateLatlngResponse.swift in Sources */,
 				1DEDA2E420B44C5A001A5AA1 /* SetChapterViewController.swift in Sources */,
+				D6C5A0F320DAB3E800F32292 /* OrderCheckRequest.swift in Sources */,
+				D6C5A12720DAB6FA00F32292 /* GetHourStampsResponse.swift in Sources */,
+				D6C5A11D20DAB6FA00F32292 /* PencilBindResponse.swift in Sources */,
+				D6C5A12620DAB6FA00F32292 /* LoginAndAuthenticationResponse.swift in Sources */,
 				D6F6C6E720CD3BA300D9ADC1 /* Request.swift in Sources */,
-				D6F6C70B20CD4B9C00D9ADC1 /* SyncMSGResponse.swift in Sources */,
+				D6C5A0EB20DAB3E800F32292 /* GetMsgSCByDisRequest.swift in Sources */,
+				D6C5A12C20DAB6FA00F32292 /* ChangePwdResponse.swift in Sources */,
+				D6C5A0EE20DAB3E800F32292 /* GetMsgSCByBirRequest.swift in Sources */,
 				D6E4875A20D6641C002C3D63 /* UserUpdatetokenRequest.swift in Sources */,
 				D6E4876220D666A9002C3D63 /* UserFindPwdRequest.swift in Sources */,
-				D6F6C6FB20CD434100D9ADC1 /* LoginAndAuthenticationResponse.swift in Sources */,
 				D6E4877220D699C2002C3D63 /* UserOauthLoginRequest.swift in Sources */,
 				D68BF26520D15A34009008C0 /* DataExtension.swift in Sources */,
-				D6F6C6F720CD3EA300D9ADC1 /* VerificationCodeAcquisitionResponse.swift in Sources */,
-				D6F6C6F520CD3E9400D9ADC1 /* VerificationCodeAcquisitionRequest.swift in Sources */,
-				D6F6C71120CD51D400D9ADC1 /* CreateShopRequest.swift in Sources */,
+				D6C5A0F120DAB3E800F32292 /* PencilUnbindRequest.swift in Sources */,
+				D6C5A0D620DAB23400F32292 /* ChangePwdRequest.swift in Sources */,
+				D6C5A12A20DAB6FA00F32292 /* GetMsgSCByDisResponse.swift in Sources */,
 				D6F494DA20D969D8003A09E1 /* UserGetMsgResponse.swift in Sources */,
-				D6F6C70920CD4B8D00D9ADC1 /* SyncMSGRequest.swift in Sources */,
 				1DEDA2E620B44C67001A5AA1 /* SetChapterViewModel.swift in Sources */,
 				D6F494C420D96160003A09E1 /* UserGetShopsResponse.swift in Sources */,
 				D6E4876020D6667C002C3D63 /* UserFindPwdResponse.swift in Sources */,
 				D6F6C6F120CD3CD500D9ADC1 /* ResponseError.swift in Sources */,
-				D6F6C70320CD489E00D9ADC1 /* ChangePwdResponse.swift in Sources */,
+				D6C5A11F20DAB6FA00F32292 /* ShoperGetPensResponse.swift in Sources */,
+				D6C5A0D320DAB23400F32292 /* RefreshAccessCredentialsRequest.swift in Sources */,
 				D6F494D620D9691A003A09E1 /* UserDeleteMsgResponse.swift in Sources */,
+				D6C5A0F020DAB3E800F32292 /* SendMsgByBirRequest.swift in Sources */,
 				1DEDA2EA20B44C85001A5AA1 /* SetCardViewController.swift in Sources */,
 				D68BF26320D159EF009008C0 /* StringExtension.swift in Sources */,
 				D6F494D020D96708003A09E1 /* UserGetShopMsgsRequest.swift in Sources */,
 				D6E4875E20D665EC002C3D63 /* UserChangePwdRequest.swift in Sources */,
+				D6C5A0D720DAB23400F32292 /* DeleteShopRequest.swift in Sources */,
+				D6C5A11620DAB6FA00F32292 /* VerificationCodeAcquisitionResponse.swift in Sources */,
 				D6F6C6EF20CD3CB300D9ADC1 /* Authentication.swift in Sources */,
 				D6F494D420D9685E003A09E1 /* UserGetShopMsgRequest.swift in Sources */,
 			);
