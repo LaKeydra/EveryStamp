@@ -113,6 +113,7 @@
 		D6C5A12A20DAB6FA00F32292 /* GetMsgSCByDisResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A11020DAB6FA00F32292 /* GetMsgSCByDisResponse.swift */; };
 		D6C5A12B20DAB6FA00F32292 /* GetSendMsgsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A11120DAB6FA00F32292 /* GetSendMsgsResponse.swift */; };
 		D6C5A12C20DAB6FA00F32292 /* ChangePwdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A11220DAB6FA00F32292 /* ChangePwdResponse.swift */; };
+		D6C5A12E20DAB94200F32292 /* GetTotalStampsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C5A12D20DAB94200F32292 /* GetTotalStampsRequest.swift */; };
 		D6E4874A20D6394D002C3D63 /* GuidePageOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E4874920D6394D002C3D63 /* GuidePageOne.storyboard */; };
 		D6E4874C20D6395D002C3D63 /* GuidePageTwo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E4874B20D6395D002C3D63 /* GuidePageTwo.storyboard */; };
 		D6E4874E20D6396E002C3D63 /* GuidePageThree.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E4874D20D6396E002C3D63 /* GuidePageThree.storyboard */; };
@@ -274,6 +275,7 @@
 		D6C5A11020DAB6FA00F32292 /* GetMsgSCByDisResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMsgSCByDisResponse.swift; sourceTree = "<group>"; };
 		D6C5A11120DAB6FA00F32292 /* GetSendMsgsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSendMsgsResponse.swift; sourceTree = "<group>"; };
 		D6C5A11220DAB6FA00F32292 /* ChangePwdResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePwdResponse.swift; sourceTree = "<group>"; };
+		D6C5A12D20DAB94200F32292 /* GetTotalStampsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTotalStampsRequest.swift; sourceTree = "<group>"; };
 		D6E4874920D6394D002C3D63 /* GuidePageOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuidePageOne.storyboard; sourceTree = "<group>"; };
 		D6E4874B20D6395D002C3D63 /* GuidePageTwo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuidePageTwo.storyboard; sourceTree = "<group>"; };
 		D6E4874D20D6396E002C3D63 /* GuidePageThree.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuidePageThree.storyboard; sourceTree = "<group>"; };
@@ -650,6 +652,7 @@
 				D6C5A0E620DAB3E800F32292 /* ShoperGetPensRequest.swift */,
 				D6C5A0E020DAB3E700F32292 /* ShoperGetShopsRequest.swift */,
 				D6C5A0DD20DAB3E700F32292 /* ShopGetPensRequest.swift */,
+				D6C5A12D20DAB94200F32292 /* GetTotalStampsRequest.swift */,
 			);
 			path = ShopRequest;
 			sourceTree = "<group>";
@@ -1001,6 +1004,7 @@
 				D6C5A12720DAB6FA00F32292 /* GetHourStampsResponse.swift in Sources */,
 				D6C5A11D20DAB6FA00F32292 /* PencilBindResponse.swift in Sources */,
 				D6C5A12620DAB6FA00F32292 /* LoginAndAuthenticationResponse.swift in Sources */,
+				D6C5A12E20DAB94200F32292 /* GetTotalStampsRequest.swift in Sources */,
 				D6F6C6E720CD3BA300D9ADC1 /* Request.swift in Sources */,
 				D6C5A0EB20DAB3E800F32292 /* GetMsgSCByDisRequest.swift in Sources */,
 				D6C5A12C20DAB6FA00F32292 /* ChangePwdResponse.swift in Sources */,
