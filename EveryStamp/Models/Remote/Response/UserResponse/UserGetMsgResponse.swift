@@ -11,7 +11,7 @@ import Gloss
 struct UserGetMsgResponse: Decodable {
     var code: Int?
     var msg: String?
-    var data: UserGetMsgData?
+    var data: Any?
     
     init(json: Gloss.JSON) {
         self.code = "code" <~~ json
