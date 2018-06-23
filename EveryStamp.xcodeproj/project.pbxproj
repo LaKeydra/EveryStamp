@@ -37,6 +37,11 @@
 		D675413C20CC1A9000D07E9C /* RecoverPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D675413B20CC1A9000D07E9C /* RecoverPasswordViewController.storyboard */; };
 		D675413E20CC1C3D00D07E9C /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D675413D20CC1C3D00D07E9C /* LogInViewController.storyboard */; };
 		D6789B4820DE6621009071BF /* RequestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6789B4720DE6621009071BF /* RequestAPIManager.swift */; };
+		D6789B4D20DE944E009071BF /* ShopDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6789B4C20DE944E009071BF /* ShopDetailsViewController.swift */; };
+		D6789B4F20DE9485009071BF /* ShopDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6789B4E20DE9485009071BF /* ShopDetailsViewController.storyboard */; };
+		D6789B5120DE9514009071BF /* ShopDetailsTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6789B5020DE9514009071BF /* ShopDetailsTC.swift */; };
+		D6789B5320DE966D009071BF /* ShopDetailsTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6789B5220DE966D009071BF /* ShopDetailsTC.xib */; };
+		D6789B5520DE9755009071BF /* ShopDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6789B5420DE9755009071BF /* ShopDetailsViewModel.swift */; };
 		D68BF25D20D14FE4009008C0 /* UserLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF25C20D14FE4009008C0 /* UserLoginRequest.swift */; };
 		D68BF26020D15338009008C0 /* UserLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF25F20D15338009008C0 /* UserLoginResponse.swift */; };
 		D68BF26320D159EF009008C0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF26220D159EF009008C0 /* StringExtension.swift */; };
@@ -53,7 +58,6 @@
 		D692616320C3CB2F00194C0B /* StoreDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616220C3CB2F00194C0B /* StoreDetailsViewController.storyboard */; };
 		D692616520C3D00600194C0B /* SetCardDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */; };
 		D692616720C40BBC00194C0B /* TransferChapterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */; };
-		D692616B20C4135100194C0B /* ShopDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616A20C4135100194C0B /* ShopDetailsViewController.storyboard */; };
 		D692616D20C4140200194C0B /* ImgTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D692616C20C4140200194C0B /* ImgTitleCell.xib */; };
 		D69E988A20C28C8F0004B6DC /* SetChapterCardSearchShopTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E988920C28C8F0004B6DC /* SetChapterCardSearchShopTC.xib */; };
 		D69E988D20C2923B0004B6DC /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E988C20C2923B0004B6DC /* NoDataView.xib */; };
@@ -184,6 +188,11 @@
 		D675413B20CC1A9000D07E9C /* RecoverPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecoverPasswordViewController.storyboard; sourceTree = "<group>"; };
 		D675413D20CC1C3D00D07E9C /* LogInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
 		D6789B4720DE6621009071BF /* RequestAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIManager.swift; sourceTree = "<group>"; };
+		D6789B4C20DE944E009071BF /* ShopDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsViewController.swift; sourceTree = "<group>"; };
+		D6789B4E20DE9485009071BF /* ShopDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShopDetailsViewController.storyboard; sourceTree = "<group>"; };
+		D6789B5020DE9514009071BF /* ShopDetailsTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsTC.swift; sourceTree = "<group>"; };
+		D6789B5220DE966D009071BF /* ShopDetailsTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopDetailsTC.xib; sourceTree = "<group>"; };
+		D6789B5420DE9755009071BF /* ShopDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsViewModel.swift; sourceTree = "<group>"; };
 		D68BF25C20D14FE4009008C0 /* UserLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginRequest.swift; sourceTree = "<group>"; };
 		D68BF25F20D15338009008C0 /* UserLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginResponse.swift; sourceTree = "<group>"; };
 		D68BF26220D159EF009008C0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -200,7 +209,6 @@
 		D692616220C3CB2F00194C0B /* StoreDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetCardDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferChapterViewController.storyboard; sourceTree = "<group>"; };
-		D692616A20C4135100194C0B /* ShopDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D692616C20C4140200194C0B /* ImgTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgTitleCell.xib; sourceTree = "<group>"; };
 		D69E988920C28C8F0004B6DC /* SetChapterCardSearchShopTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetChapterCardSearchShopTC.xib; sourceTree = "<group>"; };
 		D69E988C20C2923B0004B6DC /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
@@ -387,6 +395,7 @@
 		1DEDA2D720B4477C001A5AA1 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				D6789B4920DE8FD1009071BF /* ShopDetail */,
 				1D4C0BAD20BA97FB00583735 /* SearchShop */,
 				1DEDA2DB20B44BFB001A5AA1 /* StoreViewController.storyboard */,
 				1DEDA2DD20B44C0E001A5AA1 /* StoreViewController.swift */,
@@ -483,6 +492,18 @@
 				D6F6C6E520CD3B8600D9ADC1 /* Request */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		D6789B4920DE8FD1009071BF /* ShopDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D6789B4E20DE9485009071BF /* ShopDetailsViewController.storyboard */,
+				D6789B4C20DE944E009071BF /* ShopDetailsViewController.swift */,
+				D6789B5020DE9514009071BF /* ShopDetailsTC.swift */,
+				D6789B5220DE966D009071BF /* ShopDetailsTC.xib */,
+				D6789B5420DE9755009071BF /* ShopDetailsViewModel.swift */,
+			);
+			path = ShopDetail;
 			sourceTree = "<group>";
 		};
 		D68BF25B20D14F98009008C0 /* UserRequest */ = {
@@ -604,7 +625,6 @@
 				D692616220C3CB2F00194C0B /* StoreDetailsViewController.storyboard */,
 				D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */,
 				D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */,
-				D692616A20C4135100194C0B /* ShopDetailsViewController.storyboard */,
 				D6AF9EFE20CACC5000E643FE /* RegisterViewController.storyboard */,
 				D675413B20CC1A9000D07E9C /* RecoverPasswordViewController.storyboard */,
 				D675413D20CC1C3D00D07E9C /* LogInViewController.storyboard */,
@@ -743,7 +763,9 @@
 				1D132CB220B18CBB000CEE6D /* LaunchScreen.storyboard in Resources */,
 				D69E988D20C2923B0004B6DC /* NoDataView.xib in Resources */,
 				1DEDA2DC20B44BFB001A5AA1 /* StoreViewController.storyboard in Resources */,
+				D6789B4F20DE9485009071BF /* ShopDetailsViewController.storyboard in Resources */,
 				D69E989120C2FEA20004B6DC /* ShopRecommendTC.xib in Resources */,
+				D6789B5320DE966D009071BF /* ShopDetailsTC.xib in Resources */,
 				1DEDA2E220B44C4D001A5AA1 /* SetChapterViewController.storyboard in Resources */,
 				D692615D20C3BE8400194C0B /* MsgStatusTC.xib in Resources */,
 				1D132CBB20B1A8CC000CEE6D /* MainTabBar.storyboard in Resources */,
@@ -751,7 +773,6 @@
 				D692616320C3CB2F00194C0B /* StoreDetailsViewController.storyboard in Resources */,
 				1DEDA2EE20B44CB8001A5AA1 /* MineViewController.storyboard in Resources */,
 				1DEDA2E820B44C79001A5AA1 /* SetCardViewController.storyboard in Resources */,
-				D692616B20C4135100194C0B /* ShopDetailsViewController.storyboard in Resources */,
 				D692615720C3935900194C0B /* FeedbackQuestionViewController.storyboard in Resources */,
 				D6E4874E20D6396E002C3D63 /* GuidePageThree.storyboard in Resources */,
 				D6AF9EFF20CACC5000E643FE /* RegisterViewController.storyboard in Resources */,
@@ -809,9 +830,9 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
@@ -828,9 +849,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
@@ -901,6 +922,7 @@
 				D6F6C6EB20CD3C3900D9ADC1 /* RxSessionRequestSender.swift in Sources */,
 				D6F494D220D967A7003A09E1 /* UserGetShopMsgResponse.swift in Sources */,
 				D6AF654D20DBEBDE00201E08 /* UserGetFromStampMsgsResponse.swift in Sources */,
+				D6789B5520DE9755009071BF /* ShopDetailsViewModel.swift in Sources */,
 				D6F494CA20D96442003A09E1 /* UserGetCouponsResponse.swift in Sources */,
 				D68BF25D20D14FE4009008C0 /* UserLoginRequest.swift in Sources */,
 				D6F494B620D95721003A09E1 /* UserShopCollectRequest.swift in Sources */,
@@ -910,6 +932,7 @@
 				1DEDA2F220B44CD7001A5AA1 /* MineViewModel.swift in Sources */,
 				D6AF655920DBF01E00201E08 /* UserGetFromStampMsgResponse.swift in Sources */,
 				D692615520C38CCE00194C0B /* AboutUsViewController.swift in Sources */,
+				D6789B5120DE9514009071BF /* ShopDetailsTC.swift in Sources */,
 				D6E4875620D65FF1002C3D63 /* UserRegisterRequest.swift in Sources */,
 				1D132CA820B18CBB000CEE6D /* AppDelegate.swift in Sources */,
 				1D4C0BB120BA9ACA00583735 /* SearchShopViewController.swift in Sources */,
@@ -958,6 +981,7 @@
 				D6E98B2A20DDCEA5007CC81E /* ShopTC.swift in Sources */,
 				D6F6C6EF20CD3CB300D9ADC1 /* Authentication.swift in Sources */,
 				D6F494D420D9685E003A09E1 /* UserGetShopMsgRequest.swift in Sources */,
+				D6789B4D20DE944E009071BF /* ShopDetailsViewController.swift in Sources */,
 				D6AF655120DBED9700201E08 /* UserReadFromStampMsgResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

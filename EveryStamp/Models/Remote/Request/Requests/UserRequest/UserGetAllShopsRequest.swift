@@ -15,10 +15,6 @@ struct UserGetAllShopsRequest: BaseRequest {
         return "api/shops/getallshops"
     }
     
-    var method: HTTPMethod {
-        return .get
-    }
-    
     var paramater: [String : Any]?
     
     init(time: String, token: String, page: Int, num: Int, is_recommend: Int) {

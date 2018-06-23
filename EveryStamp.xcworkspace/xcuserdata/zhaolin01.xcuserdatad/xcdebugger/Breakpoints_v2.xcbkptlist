@@ -25,46 +25,30 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Screen/Stores/StoreViewModel.swift"
-            timestampString = "551451672.9612271"
+            filePath = "EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewController.swift"
+            timestampString = "551460554.097876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "getShopsByLatlng()"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EveryStamp.StoreViewModel.getShopsByLatlng() -&gt; RxSwift.Observable&lt;EveryStamp.UserGetAllShopsResponse&gt;"
-                  moduleName = "EveryStamp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/Stores/StoreViewModel.swift"
-                  timestampString = "551451563.121326"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "857">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;EveryStamp.UserGetAllShopsResponse&gt;) -&gt; RxSwift.Disposable in EveryStamp.StoreViewModel.getShopsByLatlng() -&gt; RxSwift.Observable&lt;EveryStamp.UserGetAllShopsResponse&gt;"
-                  moduleName = "EveryStamp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/Stores/StoreViewModel.swift"
-                  timestampString = "551451563.1236989"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "19"
-                  endingLineNumber = "19"
-                  offsetFromSymbolStart = "62">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewController.swift"
+            timestampString = "551460554.097957"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

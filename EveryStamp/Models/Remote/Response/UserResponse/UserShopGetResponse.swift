@@ -12,7 +12,7 @@ import Gloss
 struct UserShopGetResponse: Decodable {
     var code: Int?
     var msg: String?
-    var data: Any?
+    var data: UserShopGetShortData?
     
     init(json: Gloss.JSON) {
         self.code = "code" <~~ json

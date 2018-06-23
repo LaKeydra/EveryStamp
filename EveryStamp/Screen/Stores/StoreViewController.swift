@@ -30,26 +30,8 @@ class StoreViewController: UIViewController {
         tableView.register(cellType: ShopRecommendTC.self)
         tableView.separatorStyle = .none
         self.requestData()
-        
-        
-        //        self.tableView.es.addPullToRefresh {[unowned self] in
-        //            /// Do anything you want...
-        //            /// ...
-        //            /// Stop refresh when your job finished, it will reset refresh footer if completion is true
-        //            self.tableView.es.stopPullToRefresh(ignoreDate: true)
-        //            /// Set ignore footer or not
-        //            self.tableView.es.stopPullToRefresh(ignoreDate: true, ignoreFooter: false)
-        //        }
-        //
-        //        self.tableView.es.addInfiniteScrolling {
-        //            [unowned self] in
-        //            /// Do anything you want...
-        //            /// ...
-        //            /// If common end
-        //            self.tableView.es.stopLoadingMore()
-        //            /// If no more data
-        //            self.tableView.es.noticeNoMoreData()
-        //        }
+        let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(gotoDetailVC))
+        self.view.addGestureRecognizer(tapGesture)
     }
     
     func bind() {
@@ -92,18 +74,25 @@ class StoreViewController: UIViewController {
     
     func requestData() {
         if isLatlng {
-            viewModel.getShopsByLatlng().subscribe(onNext: {[weak self] response in
+            viewModel.getShopsByLatlng(page: 1, num: 20).subscribe(onNext: {[weak self] response in
                 guard let `self` = self else { return }
                 self.data = response.data
                 self.tableView.reloadData()
             }).disposed(by: disposebag)
         } else {
-            viewModel.getShopsByRecommend().subscribe(onNext: {[weak self] response in
+            viewModel.getShopsByRecommend(num: 20, is_recommend: 1).subscribe(onNext: {[weak self] response in
                 guard let `self` = self else { return }
                 self.data = response.data
                 self.tableView.reloadData()
             }).disposed(by: disposebag)
         }
+    }
+    
+    
+    @objc func gotoDetailVC() {
+        let sb = UIStoryboard.init(name: "ShopDetailsViewController", bundle: nil)
+        let vc = sb.instantiateInitialViewController()
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
