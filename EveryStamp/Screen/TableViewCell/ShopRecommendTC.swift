@@ -21,7 +21,9 @@ class ShopRecommendTC: UITableViewCell, NibReusable {
         self.shopNameL.text = shopName
         self.shopAddressL.text = shopAddress
         self.ruleL.text = rule
-        self.shopImgV.kf.setImage(with: URL.init(string: shopImg), placeholder: nil, options: nil, progressBlock: nil) {[weak self] (image, erroe, cacheType, url) in
+        let url = RequestAPIManager.shared.requestAPIBaseUrl() + shopImg
+        
+        self.shopImgV.kf.setImage(with: URL.init(string: url), placeholder: nil, options: nil, progressBlock: nil) {[weak self] (image, erroe, cacheType, url) in
             guard let `self` = self else { return }
             if image != nil {
                 self.shopImgV.image = image
