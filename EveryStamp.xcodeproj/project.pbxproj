@@ -60,6 +60,9 @@
 		D69E989120C2FEA20004B6DC /* ShopRecommendTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E989020C2FEA20004B6DC /* ShopRecommendTC.xib */; };
 		D69E989420C311990004B6DC /* BeginningChapterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69E989320C311990004B6DC /* BeginningChapterViewController.storyboard */; };
 		D69E989620C311A90004B6DC /* BeginningChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E989520C311A90004B6DC /* BeginningChapterViewController.swift */; };
+		D6A56BA120DDF7F200261BC0 /* RefreshComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A56BA020DDF7F200261BC0 /* RefreshComponents.swift */; };
+		D6A56BA820DE100100261BC0 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A56BA720DE100100261BC0 /* LocationManager.swift */; };
+		D6A56BAA20DE15B800261BC0 /* ShopRecommendTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A56BA920DE15B800261BC0 /* ShopRecommendTC.swift */; };
 		D6A9724620BED84700F8AE39 /* PhoneNumBindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A9724520BED84700F8AE39 /* PhoneNumBindViewController.swift */; };
 		D6AF653B20DBE5BE00201E08 /* UserShopUnstampResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF653A20DBE5BE00201E08 /* UserShopUnstampResponse.swift */; };
 		D6AF654020DBE6C500201E08 /* UserShopStampRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF653E20DBE6C400201E08 /* UserShopStampRequest.swift */; };
@@ -115,6 +118,7 @@
 		D6E4877020D69933002C3D63 /* UserOauthLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4876F20D69933002C3D63 /* UserOauthLoginResponse.swift */; };
 		D6E4877220D699C2002C3D63 /* UserOauthLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4877120D699C2002C3D63 /* UserOauthLoginRequest.swift */; };
 		D6E4877420D69B9F002C3D63 /* UserGetCollectShopsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4877320D69B9F002C3D63 /* UserGetCollectShopsResponse.swift */; };
+		D6E98B2A20DDCEA5007CC81E /* ShopTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E98B2920DDCEA5007CC81E /* ShopTC.swift */; };
 		D6F494B220D955DC003A09E1 /* UserGetCollectShopsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F494B120D955DC003A09E1 /* UserGetCollectShopsRequest.swift */; };
 		D6F494B420D956D8003A09E1 /* UserShopCollectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F494B320D956D8003A09E1 /* UserShopCollectResponse.swift */; };
 		D6F494B620D95721003A09E1 /* UserShopCollectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F494B520D95721003A09E1 /* UserShopCollectRequest.swift */; };
@@ -202,6 +206,9 @@
 		D69E989020C2FEA20004B6DC /* ShopRecommendTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopRecommendTC.xib; sourceTree = "<group>"; };
 		D69E989320C311990004B6DC /* BeginningChapterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeginningChapterViewController.storyboard; sourceTree = "<group>"; };
 		D69E989520C311A90004B6DC /* BeginningChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginningChapterViewController.swift; sourceTree = "<group>"; };
+		D6A56BA020DDF7F200261BC0 /* RefreshComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshComponents.swift; sourceTree = "<group>"; };
+		D6A56BA720DE100100261BC0 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D6A56BA920DE15B800261BC0 /* ShopRecommendTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopRecommendTC.swift; sourceTree = "<group>"; };
 		D6A9724520BED84700F8AE39 /* PhoneNumBindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumBindViewController.swift; sourceTree = "<group>"; };
 		D6AF653A20DBE5BE00201E08 /* UserShopUnstampResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserShopUnstampResponse.swift; sourceTree = "<group>"; };
 		D6AF653E20DBE6C400201E08 /* UserShopStampRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserShopStampRequest.swift; sourceTree = "<group>"; };
@@ -257,6 +264,7 @@
 		D6E4876F20D69933002C3D63 /* UserOauthLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOauthLoginResponse.swift; sourceTree = "<group>"; };
 		D6E4877120D699C2002C3D63 /* UserOauthLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOauthLoginRequest.swift; sourceTree = "<group>"; };
 		D6E4877320D69B9F002C3D63 /* UserGetCollectShopsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGetCollectShopsResponse.swift; sourceTree = "<group>"; };
+		D6E98B2920DDCEA5007CC81E /* ShopTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTC.swift; sourceTree = "<group>"; };
 		D6F2130020BAF49E004451FB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		D6F494B120D955DC003A09E1 /* UserGetCollectShopsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGetCollectShopsRequest.swift; sourceTree = "<group>"; };
 		D6F494B320D956D8003A09E1 /* UserShopCollectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserShopCollectResponse.swift; sourceTree = "<group>"; };
@@ -322,6 +330,7 @@
 		1D132CA620B18CBB000CEE6D /* EveryStamp */ = {
 			isa = PBXGroup;
 			children = (
+				D6A56BA220DE0E5200261BC0 /* Tool */,
 				D68BF26120D159C7009008C0 /* Extension */,
 				D675413F20CC2EE200D07E9C /* Models */,
 				1D132CB920B1A71D000CEE6D /* Screen */,
@@ -443,6 +452,8 @@
 				D69E989020C2FEA20004B6DC /* ShopRecommendTC.xib */,
 				D692615C20C3BE8400194C0B /* MsgStatusTC.xib */,
 				D692616C20C4140200194C0B /* ImgTitleCell.xib */,
+				D6E98B2920DDCEA5007CC81E /* ShopTC.swift */,
+				D6A56BA920DE15B800261BC0 /* ShopRecommendTC.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -603,6 +614,7 @@
 			isa = PBXGroup;
 			children = (
 				D69E988C20C2923B0004B6DC /* NoDataView.xib */,
+				D6A56BA020DDF7F200261BC0 /* RefreshComponents.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -614,6 +626,14 @@
 				D69E989520C311A90004B6DC /* BeginningChapterViewController.swift */,
 			);
 			path = BeginningChapter;
+			sourceTree = "<group>";
+		};
+		D6A56BA220DE0E5200261BC0 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D6A56BA720DE100100261BC0 /* LocationManager.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		D6E4874820D6392C002C3D63 /* GuidePages */ = {
@@ -786,6 +806,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
@@ -797,17 +818,14 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxWebKit/RxWebKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
@@ -819,11 +837,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxWebKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -862,8 +876,10 @@
 				D692615020C388B900194C0B /* UserMessageViewController.swift in Sources */,
 				D6F494BE20D95BC4003A09E1 /* UserGetShopStateRequest.swift in Sources */,
 				D6AF655F20DBFB0E00201E08 /* UserGetRewardsRequest.swift in Sources */,
+				D6A56BA120DDF7F200261BC0 /* RefreshComponents.swift in Sources */,
 				D6E4875820D66139002C3D63 /* UserUpdatetokenResponse.swift in Sources */,
 				D6AF656920DBFE2200201E08 /* UserGetAllShopsResponse.swift in Sources */,
+				D6A56BA820DE100100261BC0 /* LocationManager.swift in Sources */,
 				1D132CAA20B18CBB000CEE6D /* ViewController.swift in Sources */,
 				D6AF655520DBEE5A00201E08 /* UserDeleteFromStampMsgResponse.swift in Sources */,
 				D6D2765320DBDC490080AEC7 /* UserGetSystemMsgsResponse.swift in Sources */,
@@ -926,6 +942,7 @@
 				D6AF653B20DBE5BE00201E08 /* UserShopUnstampResponse.swift in Sources */,
 				D6F494C420D96160003A09E1 /* UserGetShopsResponse.swift in Sources */,
 				D6D2765520DBDD3B0080AEC7 /* UserGetSystemMsgsRequest.swift in Sources */,
+				D6A56BAA20DE15B800261BC0 /* ShopRecommendTC.swift in Sources */,
 				D6E4876020D6667C002C3D63 /* UserFindPwdResponse.swift in Sources */,
 				D6F6C6F120CD3CD500D9ADC1 /* ResponseError.swift in Sources */,
 				D6F494D620D9691A003A09E1 /* UserDeleteMsgResponse.swift in Sources */,
@@ -934,6 +951,7 @@
 				D6F494D020D96708003A09E1 /* UserGetShopMsgsRequest.swift in Sources */,
 				D6E4875E20D665EC002C3D63 /* UserChangePwdRequest.swift in Sources */,
 				D6D2764F20DBDAA80080AEC7 /* UserReadMsgResponse.swift in Sources */,
+				D6E98B2A20DDCEA5007CC81E /* ShopTC.swift in Sources */,
 				D6F6C6EF20CD3CB300D9ADC1 /* Authentication.swift in Sources */,
 				D6F494D420D9685E003A09E1 /* UserGetShopMsgRequest.swift in Sources */,
 				D6AF655120DBED9700201E08 /* UserReadFromStampMsgResponse.swift in Sources */,

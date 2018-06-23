@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Screen/Stores/StoreViewController.swift"
-            timestampString = "550902550.311628"
+            filePath = "EveryStamp/Tool/GetCurrentLocation.swift"
+            timestampString = "551423958.750684"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "testAction(_:)"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "GetCurrentLocation"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EveryStamp/Screen/Stores/StoreViewController.swift"
+            timestampString = "551433313.333567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "requestData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EveryStamp/Screen/Stores/StoreViewController.swift"
-            timestampString = "550902550.311747"
+            timestampString = "551433313.333667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "request()"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "requestData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,14 +57,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Models/Remote/Request/RxSessionRequestSender.swift"
-            timestampString = "550902550.312297"
+            filePath = "EveryStamp/Screen/Stores/StoreViewController.swift"
+            timestampString = "551433313.33372"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "requestData()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -57,14 +73,62 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Models/Remote/Request/RxSessionRequestSender.swift"
-            timestampString = "550902550.312471"
+            filePath = "EveryStamp/Screen/Stores/StoreViewController.swift"
+            timestampString = "551433313.333763"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "requestData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EveryStamp.StoreViewController.requestData() -&gt; ()"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/Stores/StoreViewController.swift"
+                  timestampString = "551432380.364105"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "754">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (EveryStamp.UserGetAllShopsResponse) -&gt; () in EveryStamp.StoreViewController.requestData() -&gt; ()"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/Stores/StoreViewController.swift"
+                  timestampString = "551432380.366899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "100"
+                  endingLineNumber = "100"
+                  offsetFromSymbolStart = "26">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EveryStamp/Screen/Stores/StoreViewModel.swift"
+            timestampString = "551433313.333811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getShopsByRecommend()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -15,13 +15,43 @@ class StoreViewController: UIViewController {
     @IBOutlet weak var recommendBtn: UIButton!
     @IBOutlet weak var selectedview: UIView!
     @IBOutlet weak var selectViewLeading: NSLayoutConstraint!
+    @IBOutlet weak var tableView: UITableView!
     
     var disposebag: DisposeBag = DisposeBag()
+    var latlngData: [UserGetAllShopsData] = []
+    var recommendData: [UserGetAllShopsData] = []
+    var isLatlng: Bool = true
+    let viewModel = StoreViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .selected)
-        
+        bind()
+        tableView.register(cellType: ShopTC.self)
+        tableView.register(cellType: ShopRecommendTC.self)
+        tableView.separatorStyle = .none
+        self.requestData()
+//        self.tableView.es.addPullToRefresh {[unowned self] in
+//            /// Do anything you want...
+//            /// ...
+//            /// Stop refresh when your job finished, it will reset refresh footer if completion is true
+//            self.tableView.es.stopPullToRefresh(ignoreDate: true)
+//            /// Set ignore footer or not
+//            self.tableView.es.stopPullToRefresh(ignoreDate: true, ignoreFooter: false)
+//        }
+//
+//        self.tableView.es.addInfiniteScrolling {
+//            [unowned self] in
+//            /// Do anything you want...
+//            /// ...
+//            /// If common end
+//            self.tableView.es.stopLoadingMore()
+//            /// If no more data
+//            self.tableView.es.noticeNoMoreData()
+//        }
+    }
+    
+    func bind() {
         self.selectViewLeading.constant = self.nearbyBtn.frame.origin.x
         
         _ = searchBtn.rx.tap.subscribe(onNext: { [weak self] _ in
@@ -33,9 +63,15 @@ class StoreViewController: UIViewController {
         
         _ = nearbyBtn.rx.tap.subscribe(onNext: { [weak self] _ in
             guard let `self` = self else { return }
+            
             UIView.animate(withDuration: CATransaction.animationDuration(), delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
                 self.selectViewLeading.constant = self.nearbyBtn.frame.origin.x
-            }, completion: nil)
+            }, completion: { completion in
+                if completion {
+                    self.isLatlng = true
+                    self.requestData()
+                }
+            })
             
             
         }).disposed(by: disposebag)
@@ -44,65 +80,70 @@ class StoreViewController: UIViewController {
             guard let `self` = self else { return }
             UIView.animate(withDuration: CATransaction.animationDuration(), delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
                 self.selectViewLeading.constant = self.recommendBtn.frame.origin.x + (self.recommendBtn.superview?.frame.origin.x)!
-            }, completion: nil)
-        }).disposed(by: disposebag)
-    }
-    
-    @IBAction func testAction(_ sender: Any) {
-        let temp = request()
-        temp.subscribe(onNext: { response in
-            print(response)
-        }).disposed(by: disposebag)
-        
-        
-    }
-    //    return Observable<Void>.create({observer -> Disposable in
-    //    let request = SaveSettingRequest(subAppId: subAppId, settingList: settingData[2].rows)
-    //    let observable =
-    //    RxSessionRequestSender().sendRequest(request)
-    //    .subscribe(onNext: { result in
-    //    switch result {
-    //    case .success:
-    //    RealmManager.updateSetting(setting: settingData[2].rows)
-    //    observer.onNext()
-    //    case .failure(let error):
-    //    observer.onError(error)
-    //    case .interrupt(let error):
-    //    observer.onError(error)
-    //    }
-    //    })
-    //    return Disposables.create {
-    //    observable.dispose()
-    //    }
-    //    })
-    
-    func request() -> Observable<UserLoginResponse> {
-        let now = Date()
-        let timeInterval: TimeInterval = now.timeIntervalSince1970
-        let timeStamp = String(describing: Int(timeInterval))
-            //
-        let token = ("shop_api." + String.init(describing: timeStamp)).MD5()
-        
-        return Observable.create({ observer -> Disposable in
-            let request: UserLoginRequest = UserLoginRequest(time: timeStamp, token: token, userName: "15168366883", pwd: "123456".MD5(), from: "ios")
-            let observable = RxSessionRequestSender().sendRequest(request).subscribe(onNext: { result in
-                switch result {
-                case .success(let result):
-                    observer.onNext(result)
-                case .failure(let error):
-                    observer.onError(error)
-                case .interrupt(let error):
-                    observer.onError(error)
+            }, completion: { completion in
+                if completion {
+                    self.isLatlng = false
+                    self.requestData()
                 }
             })
-            return Disposables.create {
-                observable.dispose()
-            }
-        })
+        }).disposed(by: disposebag)
     }
     
+    func requestData() {
+        if isLatlng {
+            viewModel.getShopsByLatlng().subscribe(onNext: {[weak self] response in
+                guard let `self` = self else { return }
+                self.latlngData = response.data
+                self.tableView.reloadData()
+            }).disposed(by: disposebag)
+        } else {
+            viewModel.getShopsByRecommend().subscribe(onNext: {[weak self] response in
+                guard let `self` = self else { return }
+                self.recommendData = response.data
+                self.tableView.reloadData()
+            }).disposed(by: disposebag)
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+}
+
+extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isLatlng {
+            return latlngData.count
+        } else {
+            return recommendData.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if isLatlng {
+            let data = latlngData[indexPath.row]
+            
+            let cell: ShopTC = tableView.dequeueReusableCell(for: indexPath)
+            cell.refreshUI(bgImg: "", shopNameText: data.name ?? "", shopIntroductText: data.desp ?? "", shopDetailText: data.desp ?? "")
+            return cell
+        } else {
+            let data = recommendData[indexPath.row]
+            let cell: ShopRecommendTC = tableView.dequeueReusableCell(for: indexPath)
+            cell.refreshUI(shopImg: data.avator_url ?? "", shopName: data.name ?? "", shopAddress: data.address ?? "", rule: data.desp ?? "")
+            return cell
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if isLatlng {
+            return 221
+        } else {
+            return 126
+        }
+        
     }
 }

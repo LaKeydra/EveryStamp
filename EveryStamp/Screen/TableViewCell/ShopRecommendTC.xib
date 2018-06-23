@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="126" id="DRP-wz-x6g">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="126" id="DRP-wz-x6g" customClass="ShopRecommendTC" customModule="EveryStamp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="501" height="126"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DRP-wz-x6g" id="T2F-NZ-WMd">
@@ -92,6 +92,14 @@
                     <constraint firstItem="6Qx-DH-7HV" firstAttribute="leading" secondItem="25H-yQ-lx4" secondAttribute="trailing" constant="12" id="zaK-rt-8Kd"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="addressBtn" destination="2qE-O1-HuB" id="lJt-Zo-XYK"/>
+                <outlet property="giftBtn" destination="b9I-50-DZw" id="Hr9-5X-gr8"/>
+                <outlet property="ruleL" destination="GSG-xU-pQQ" id="QdR-2j-StF"/>
+                <outlet property="shopAddressL" destination="kCz-1o-sep" id="bG6-g0-OkN"/>
+                <outlet property="shopImgV" destination="25H-yQ-lx4" id="ofA-La-IRs"/>
+                <outlet property="shopNameL" destination="6Qx-DH-7HV" id="4BY-3Y-qZM"/>
+            </connections>
             <point key="canvasLocation" x="123.5" y="139"/>
         </tableViewCell>
     </objects>

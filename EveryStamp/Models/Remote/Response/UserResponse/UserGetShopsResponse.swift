@@ -12,12 +12,12 @@ import Gloss
 struct UserGetShopsResponse:Decodable {
     var code: Int?
     var msg: String?
-    var data: UserGetShopsData?
+    var data: [UserGetShopsData] = []
     
     init(json: Gloss.JSON) {
         self.code = "code" <~~ json
         self.msg = "msg" <~~ json
-        self.data = "data" <~~ json
+        self.data = "data" <~~ json ?? []
     }
     
     static func parse(data: Any) -> UserGetShopsResponse {

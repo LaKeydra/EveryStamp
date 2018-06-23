@@ -24,6 +24,10 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>MainTabBar</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>允许爱客章获取您的位置吗？</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>允许爱客章获取您的位置吗？</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

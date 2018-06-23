@@ -9,7 +9,7 @@
 import Foundation
 
 struct UserGetShopsByLatlngRequest: BaseRequest {
-    typealias Response = UserGetShopsResponse
+    typealias Response = UserGetAllShopsResponse
     
     var path: String {
         return "api/shops/getshops_bylatlng"
