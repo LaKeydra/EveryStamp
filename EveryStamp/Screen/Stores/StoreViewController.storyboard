@@ -111,8 +111,8 @@
                                     <constraint firstItem="fRp-Jb-2fe" firstAttribute="top" secondItem="APU-Un-2FE" secondAttribute="top" id="CM5-OW-Bcp"/>
                                     <constraint firstItem="fRp-Jb-2fe" firstAttribute="leading" secondItem="APU-Un-2FE" secondAttribute="leading" id="DbH-z5-O4b"/>
                                     <constraint firstItem="5rX-KL-acW" firstAttribute="width" secondItem="APU-Un-2FE" secondAttribute="width" multiplier="0.5" id="NbU-KV-qz7"/>
+                                    <constraint firstItem="7BA-DO-urt" firstAttribute="leading" secondItem="APU-Un-2FE" secondAttribute="leading" priority="750" id="hsG-hG-VIU"/>
                                     <constraint firstItem="5rX-KL-acW" firstAttribute="top" secondItem="APU-Un-2FE" secondAttribute="top" id="iQd-Ni-cye"/>
-                                    <constraint firstItem="7BA-DO-urt" firstAttribute="leading" secondItem="APU-Un-2FE" secondAttribute="leading" id="mpz-Gd-eX2"/>
                                     <constraint firstAttribute="bottom" secondItem="7BA-DO-urt" secondAttribute="bottom" constant="33" id="o1E-GH-zYC"/>
                                     <constraint firstAttribute="height" constant="87" id="r3a-bY-TXa"/>
                                     <constraint firstAttribute="trailing" secondItem="5rX-KL-acW" secondAttribute="trailing" id="w7W-Ai-lnU"/>
@@ -150,7 +150,6 @@
                         <outlet property="nearbyBtn" destination="HuS-Mh-xb8" id="ng2-qc-SSH"/>
                         <outlet property="recommendBtn" destination="pu3-Y0-Jmr" id="EFj-gY-xMQ"/>
                         <outlet property="searchBtn" destination="eYi-dD-JiD" id="biP-BD-qVq"/>
-                        <outlet property="selectViewLeading" destination="mpz-Gd-eX2" id="kYf-yK-aEQ"/>
                         <outlet property="selectedview" destination="7BA-DO-urt" id="V0I-zz-ZBf"/>
                         <outlet property="tableView" destination="zce-Ly-jDb" id="zUc-Iz-6xe"/>
                     </connections>

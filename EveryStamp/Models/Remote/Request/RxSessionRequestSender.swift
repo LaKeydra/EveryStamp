@@ -40,9 +40,9 @@ struct RxSessionRequestSender: RequestSender {
                     let res = T.Response.parse(data: jsonData)
                     return Observable.just(Result.success(res))
                 } else {
-                    var error:NSError!
-                    let errMessage = NSLocalizedString("Common Error Message", comment: "")
-                    error = NSError(domain: AppErrorDomain, code: responseHeader.statusCode, userInfo:  [NSLocalizedDescriptionKey: errMessage])
+                    var error: NSError!
+                    error = NSError(domain: AppErrorDomain, code: responseHeader.statusCode, userInfo: nil)
+                        //NSError(domain: AppErrorDomain, code: responseHeader.statusCode, userInfo:  [NSLocalizedDescriptionKey: errMessage])
                     DDLogDebug("[ResponseData]:\(url) \n no jsonData error")
                     return Observable.just(Result.failure(error as Error))
                 }

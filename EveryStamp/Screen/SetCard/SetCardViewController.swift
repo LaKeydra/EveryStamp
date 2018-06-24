@@ -9,17 +9,41 @@
 import UIKit
 
 class SetCardViewController: UIViewController {
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .selected)
         
-        let stoyboard = UIStoryboard.init(name: "LogInViewController", bundle: nil)
-        let vc = stoyboard.instantiateInitialViewController()
-        self.present(vc!, animated: true, completion: nil)
+        tableView.register(cellType: SetChapterCardTC.self)
+        
+//        let stoyboard = UIStoryboard.init(name: "LogInViewController", bundle: nil)
+//        let vc = stoyboard.instantiateInitialViewController()
+//        self.present(vc!, animated: true, completion: nil)
         
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+}
+
+extension SetCardViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: SetChapterCardTC = tableView.dequeueReusableCell(for: indexPath)
+
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard.init(name: "SetCardDetailsViewController", bundle: nil)
+        let vc = sb.instantiateInitialViewController()
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }

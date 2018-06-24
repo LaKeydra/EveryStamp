@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qv9-1z-tFb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cmI-Sb-c2X">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0jb-7b-sT6">
+            <objects>
+                <navigationController id="cmI-Sb-c2X" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="49w-DW-B7Y">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qv9-1z-tFb" kind="relationship" relationship="rootViewController" id="DkZ-Wf-awT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdr-ug-GbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-206" y="-213"/>
+        </scene>
         <!--集章卡-->
         <scene sceneID="lpm-1E-Tpv">
             <objects>
@@ -17,15 +33,35 @@
                     <view key="view" contentMode="scaleToFill" id="ufR-iK-FMc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mwI-sh-I1v">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qv9-1z-tFb" id="FLx-6W-eUc"/>
+                                    <outlet property="delegate" destination="qv9-1z-tFb" id="4PA-rg-yHY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iph-jC-Q8k" firstAttribute="trailing" secondItem="mwI-sh-I1v" secondAttribute="trailing" id="1Us-SX-9au"/>
+                            <constraint firstItem="mwI-sh-I1v" firstAttribute="leading" secondItem="iph-jC-Q8k" secondAttribute="leading" id="2SC-aM-GdW"/>
+                            <constraint firstItem="mwI-sh-I1v" firstAttribute="top" secondItem="iph-jC-Q8k" secondAttribute="top" id="seh-Yz-tfs"/>
+                            <constraint firstItem="iph-jC-Q8k" firstAttribute="bottom" secondItem="mwI-sh-I1v" secondAttribute="bottom" id="z1t-eD-nBc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iph-jC-Q8k"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="集章卡" image="tab_point_card_off" selectedImage="tab_point_card_on" id="HGf-1G-udG"/>
+                    <navigationItem key="navigationItem" id="V4r-aa-UAs"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="mwI-sh-I1v" id="IxM-Db-sE4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIE-Ab-9Dk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526" y="-212"/>
+            <point key="canvasLocation" x="518" y="-213"/>
         </scene>
     </scenes>
     <resources>

@@ -1,17 +1,18 @@
 //
-//  ShopDetailsViewModel.swift
+//  RecoverPasswordViewModel.swift
 //  EveryStamp
 //
-//  Created by zhaolin01 on 2018/6/23.
+//  Created by zhaolin01 on 2018/6/24.
 //  Copyright © 2018年 zhaolin. All rights reserved.
 //
 
 import Foundation
 
-class ShopDetailsViewModel: NSObject{
-    func getShopDetailData(shop_id: Int, is_all: Int) -> Observable<UserShopGetResponse> {
+class RecoverPasswordViewModel: NSObject {
+    func sendUserRecoverPasswordRequest(userName: Int, pwd: String, code: Int) -> Observable<UserFindPwdResponse> {
+        let requestPM = RequestAPIManager.shared.requestAPITimeAndToken()
         return Observable.create({ observer -> Disposable in
-            let request: UserShopGetRequest = UserShopGetRequest(access_token: RequestAPIManager.shared.access_token, shop_id: shop_id, is_all: is_all)
+            let request: UserFindPwdRequest = UserFindPwdRequest(time: requestPM["time"] ?? "", token: requestPM["token"] ?? "", userName: userName, pwd: pwd, code: code)
             let observable = RxSessionRequestSender().sendRequest(request).subscribe(onNext: { result in
                 switch result {
                 case .success(let value):

@@ -16,7 +16,7 @@ struct UserFindPwdRequest: BaseRequest {
     
     var paramater: [String : Any]?
     
-    init(time: Int, token: String, userName: Double, pwd: String, code: Double) {
+    init(time: String, token: String, userName: Int, pwd: String, code: Int) {
         paramater = ["time": time, "token": token, "user_name": userName, "pwd": pwd, "code": code]
     }
 }

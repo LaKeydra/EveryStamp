@@ -9,9 +9,40 @@
 import UIKit
 
 class MineViewController: UIViewController {
+    
+    @IBOutlet weak var myMsgBtn: UIButton!
+    @IBOutlet weak var feedbackQuestionBtn: UIButton!
+    @IBOutlet weak var aboutUsBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .selected)
+        bind()
+    }
+    
+    func bind() {
+       _ = self.myMsgBtn.rx.tap.subscribe(onNext: {[weak self]  in
+            guard let `self` = self else { return }
+            let sb = UIStoryboard(name: "FeedbackQuestionViewController", bundle: nil)
+            let vc = sb.instantiateInitialViewController()
+        self.navigationController?.pushViewController(vc!, animated: true)
+        })
+        
+        _ = self.feedbackQuestionBtn.rx.tap.subscribe(onNext: {[weak self]  in
+            guard let `self` = self else { return }
+            let sb = UIStoryboard(name: "FeedbackQuestionViewController", bundle: nil)
+            let vc = sb.instantiateInitialViewController()
+            self.navigationController?.pushViewController(vc!, animated: true)
+        })
+        
+        _ = self.aboutUsBtn.rx.tap.subscribe(onNext: {[weak self]  in
+            guard let `self` = self else { return }
+            let sb = UIStoryboard(name: "AboutUsViewController", bundle: nil)
+            let vc = sb.instantiateInitialViewController()
+            self.navigationController?.pushViewController(vc!, animated: true)
+        })
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

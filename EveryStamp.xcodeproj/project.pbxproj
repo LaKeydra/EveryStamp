@@ -13,7 +13,6 @@
 		1D132CAF20B18CBB000CEE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D132CAE20B18CBB000CEE6D /* Assets.xcassets */; };
 		1D132CB220B18CBB000CEE6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D132CB020B18CBB000CEE6D /* LaunchScreen.storyboard */; };
 		1D132CBB20B1A8CC000CEE6D /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D132CBA20B1A8CC000CEE6D /* MainTabBar.storyboard */; };
-		1D4C0BAB20BA96AE00583735 /* RegisterAndLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C0BAA20BA96AE00583735 /* RegisterAndLoginViewController.storyboard */; };
 		1D4C0BAF20BA982C00583735 /* SearchShopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C0BAE20BA982C00583735 /* SearchShopViewController.storyboard */; };
 		1D4C0BB120BA9ACA00583735 /* SearchShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C0BB020BA9ACA00583735 /* SearchShopViewController.swift */; };
 		1D4C0BB520BA9D6C00583735 /* SearchSpeciesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C0BB420BA9D6C00583735 /* SearchSpeciesCell.swift */; };
@@ -34,14 +33,21 @@
 		D670B60120BDA2A300951BDA /* NoInternetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D670B60020BDA2A300951BDA /* NoInternetViewController.storyboard */; };
 		D670B60420BDA61800951BDA /* SetChapterTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D670B60320BDA61800951BDA /* SetChapterTC.xib */; };
 		D670B60620BDAD7600951BDA /* PhoneNumBindViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D670B60520BDAD7600951BDA /* PhoneNumBindViewController.storyboard */; };
-		D675413C20CC1A9000D07E9C /* RecoverPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D675413B20CC1A9000D07E9C /* RecoverPasswordViewController.storyboard */; };
-		D675413E20CC1C3D00D07E9C /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D675413D20CC1C3D00D07E9C /* LogInViewController.storyboard */; };
 		D6789B4820DE6621009071BF /* RequestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6789B4720DE6621009071BF /* RequestAPIManager.swift */; };
 		D6789B4D20DE944E009071BF /* ShopDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6789B4C20DE944E009071BF /* ShopDetailsViewController.swift */; };
 		D6789B4F20DE9485009071BF /* ShopDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6789B4E20DE9485009071BF /* ShopDetailsViewController.storyboard */; };
 		D6789B5120DE9514009071BF /* ShopDetailsTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6789B5020DE9514009071BF /* ShopDetailsTC.swift */; };
 		D6789B5320DE966D009071BF /* ShopDetailsTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6789B5220DE966D009071BF /* ShopDetailsTC.xib */; };
 		D6789B5520DE9755009071BF /* ShopDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6789B5420DE9755009071BF /* ShopDetailsViewModel.swift */; };
+		D67E97E920DF4371007EA35A /* RecoverPasswordViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67E97E420DF4371007EA35A /* RecoverPasswordViewController.storyboard */; };
+		D67E97EA20DF4371007EA35A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E97E520DF4371007EA35A /* RegisterViewController.swift */; };
+		D67E97EB20DF4371007EA35A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E97E620DF4371007EA35A /* LogInViewController.swift */; };
+		D67E97EC20DF4371007EA35A /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67E97E720DF4371007EA35A /* RegisterViewController.storyboard */; };
+		D67E97ED20DF4371007EA35A /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67E97E820DF4371007EA35A /* LogInViewController.storyboard */; };
+		D67E97EF20DF4500007EA35A /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E97EE20DF4500007EA35A /* RecoverPasswordViewController.swift */; };
+		D686916620DFD87E008463DA /* AlertErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686916520DFD87E008463DA /* AlertErrorManager.swift */; };
+		D686916820DFE44D008463DA /* SetChapterCardTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686916720DFE44D008463DA /* SetChapterCardTC.swift */; };
+		D686916A20DFE95D008463DA /* SetCardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */; };
 		D68BF25D20D14FE4009008C0 /* UserLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF25C20D14FE4009008C0 /* UserLoginRequest.swift */; };
 		D68BF26020D15338009008C0 /* UserLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF25F20D15338009008C0 /* UserLoginResponse.swift */; };
 		D68BF26320D159EF009008C0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF26220D159EF009008C0 /* StringExtension.swift */; };
@@ -55,7 +61,6 @@
 		D692615920C3936900194C0B /* FeedbackQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692615820C3936900194C0B /* FeedbackQuestionViewController.swift */; };
 		D692615D20C3BE8400194C0B /* MsgStatusTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D692615C20C3BE8400194C0B /* MsgStatusTC.xib */; };
 		D692616120C3C3E000194C0B /* MsgDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616020C3C3E000194C0B /* MsgDetailsViewController.storyboard */; };
-		D692616320C3CB2F00194C0B /* StoreDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616220C3CB2F00194C0B /* StoreDetailsViewController.storyboard */; };
 		D692616520C3D00600194C0B /* SetCardDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */; };
 		D692616720C40BBC00194C0B /* TransferChapterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */; };
 		D692616D20C4140200194C0B /* ImgTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D692616C20C4140200194C0B /* ImgTitleCell.xib */; };
@@ -96,7 +101,10 @@
 		D6AF656F20DC005000201E08 /* UserFeedbackRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF656E20DC005000201E08 /* UserFeedbackRequest.swift */; };
 		D6AF657120DC013F00201E08 /* UserCheckUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF657020DC013F00201E08 /* UserCheckUserResponse.swift */; };
 		D6AF657320DC01C700201E08 /* UserCheckUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF657220DC01C700201E08 /* UserCheckUserRequest.swift */; };
-		D6AF9EFF20CACC5000E643FE /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AF9EFE20CACC5000E643FE /* RegisterViewController.storyboard */; };
+		D6D03FB920DF612A00C9D5C1 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D03FB820DF612A00C9D5C1 /* LogInViewModel.swift */; };
+		D6D03FBB20DF62AE00C9D5C1 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D03FBA20DF62AE00C9D5C1 /* RegisterViewModel.swift */; };
+		D6D03FBD20DF639600C9D5C1 /* RecoverPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D03FBC20DF639600C9D5C1 /* RecoverPasswordViewModel.swift */; };
+		D6D03FBF20DF933E00C9D5C1 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D03FBE20DF933E00C9D5C1 /* Wireframe.swift */; };
 		D6D2764F20DBDAA80080AEC7 /* UserReadMsgResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2764E20DBDAA80080AEC7 /* UserReadMsgResponse.swift */; };
 		D6D2765120DBDB5F0080AEC7 /* UserReadMsgRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2765020DBDB5F0080AEC7 /* UserReadMsgRequest.swift */; };
 		D6D2765320DBDC490080AEC7 /* UserGetSystemMsgsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2765220DBDC490080AEC7 /* UserGetSystemMsgsResponse.swift */; };
@@ -164,7 +172,6 @@
 		1D132CB120B18CBB000CEE6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D132CB320B18CBB000CEE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D132CBA20B1A8CC000CEE6D /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
-		1D4C0BAA20BA96AE00583735 /* RegisterAndLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterAndLoginViewController.storyboard; sourceTree = "<group>"; };
 		1D4C0BAE20BA982C00583735 /* SearchShopViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchShopViewController.storyboard; sourceTree = "<group>"; };
 		1D4C0BB020BA9ACA00583735 /* SearchShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShopViewController.swift; sourceTree = "<group>"; };
 		1D4C0BB420BA9D6C00583735 /* SearchSpeciesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSpeciesCell.swift; sourceTree = "<group>"; };
@@ -185,14 +192,21 @@
 		D670B60020BDA2A300951BDA /* NoInternetViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoInternetViewController.storyboard; sourceTree = "<group>"; };
 		D670B60320BDA61800951BDA /* SetChapterTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetChapterTC.xib; sourceTree = "<group>"; };
 		D670B60520BDAD7600951BDA /* PhoneNumBindViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhoneNumBindViewController.storyboard; sourceTree = "<group>"; };
-		D675413B20CC1A9000D07E9C /* RecoverPasswordViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecoverPasswordViewController.storyboard; sourceTree = "<group>"; };
-		D675413D20CC1C3D00D07E9C /* LogInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
 		D6789B4720DE6621009071BF /* RequestAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIManager.swift; sourceTree = "<group>"; };
 		D6789B4C20DE944E009071BF /* ShopDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsViewController.swift; sourceTree = "<group>"; };
 		D6789B4E20DE9485009071BF /* ShopDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShopDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D6789B5020DE9514009071BF /* ShopDetailsTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsTC.swift; sourceTree = "<group>"; };
 		D6789B5220DE966D009071BF /* ShopDetailsTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopDetailsTC.xib; sourceTree = "<group>"; };
 		D6789B5420DE9755009071BF /* ShopDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetailsViewModel.swift; sourceTree = "<group>"; };
+		D67E97E420DF4371007EA35A /* RecoverPasswordViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecoverPasswordViewController.storyboard; sourceTree = "<group>"; };
+		D67E97E520DF4371007EA35A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D67E97E620DF4371007EA35A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		D67E97E720DF4371007EA35A /* RegisterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		D67E97E820DF4371007EA35A /* LogInViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
+		D67E97EE20DF4500007EA35A /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
+		D686916520DFD87E008463DA /* AlertErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertErrorManager.swift; sourceTree = "<group>"; };
+		D686916720DFE44D008463DA /* SetChapterCardTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetChapterCardTC.swift; sourceTree = "<group>"; };
+		D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardDetailsViewController.swift; sourceTree = "<group>"; };
 		D68BF25C20D14FE4009008C0 /* UserLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginRequest.swift; sourceTree = "<group>"; };
 		D68BF25F20D15338009008C0 /* UserLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginResponse.swift; sourceTree = "<group>"; };
 		D68BF26220D159EF009008C0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -206,7 +220,6 @@
 		D692615820C3936900194C0B /* FeedbackQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackQuestionViewController.swift; sourceTree = "<group>"; };
 		D692615C20C3BE8400194C0B /* MsgStatusTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MsgStatusTC.xib; sourceTree = "<group>"; };
 		D692616020C3C3E000194C0B /* MsgDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MsgDetailsViewController.storyboard; sourceTree = "<group>"; };
-		D692616220C3CB2F00194C0B /* StoreDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetCardDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferChapterViewController.storyboard; sourceTree = "<group>"; };
 		D692616C20C4140200194C0B /* ImgTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgTitleCell.xib; sourceTree = "<group>"; };
@@ -247,7 +260,10 @@
 		D6AF656E20DC005000201E08 /* UserFeedbackRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedbackRequest.swift; sourceTree = "<group>"; };
 		D6AF657020DC013F00201E08 /* UserCheckUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCheckUserResponse.swift; sourceTree = "<group>"; };
 		D6AF657220DC01C700201E08 /* UserCheckUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCheckUserRequest.swift; sourceTree = "<group>"; };
-		D6AF9EFE20CACC5000E643FE /* RegisterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
+		D6D03FB820DF612A00C9D5C1 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		D6D03FBA20DF62AE00C9D5C1 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		D6D03FBC20DF639600C9D5C1 /* RecoverPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewModel.swift; sourceTree = "<group>"; };
+		D6D03FBE20DF933E00C9D5C1 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		D6D2764E20DBDAA80080AEC7 /* UserReadMsgResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReadMsgResponse.swift; sourceTree = "<group>"; };
 		D6D2765020DBDB5F0080AEC7 /* UserReadMsgRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReadMsgRequest.swift; sourceTree = "<group>"; };
 		D6D2765220DBDC490080AEC7 /* UserGetSystemMsgsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGetSystemMsgsResponse.swift; sourceTree = "<group>"; };
@@ -377,7 +393,15 @@
 		1D4C0BA920BA95AF00583735 /* RegisterAndLogin */ = {
 			isa = PBXGroup;
 			children = (
-				1D4C0BAA20BA96AE00583735 /* RegisterAndLoginViewController.storyboard */,
+				D67E97E820DF4371007EA35A /* LogInViewController.storyboard */,
+				D67E97E620DF4371007EA35A /* LogInViewController.swift */,
+				D6D03FB820DF612A00C9D5C1 /* LogInViewModel.swift */,
+				D67E97E720DF4371007EA35A /* RegisterViewController.storyboard */,
+				D67E97E520DF4371007EA35A /* RegisterViewController.swift */,
+				D6D03FBA20DF62AE00C9D5C1 /* RegisterViewModel.swift */,
+				D67E97E420DF4371007EA35A /* RecoverPasswordViewController.storyboard */,
+				D67E97EE20DF4500007EA35A /* RecoverPasswordViewController.swift */,
+				D6D03FBC20DF639600C9D5C1 /* RecoverPasswordViewModel.swift */,
 			);
 			path = RegisterAndLogin;
 			sourceTree = "<group>";
@@ -465,6 +489,7 @@
 				D692616C20C4140200194C0B /* ImgTitleCell.xib */,
 				D6E98B2920DDCEA5007CC81E /* ShopTC.swift */,
 				D6A56BA920DE15B800261BC0 /* ShopRecommendTC.swift */,
+				D686916720DFE44D008463DA /* SetChapterCardTC.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -622,12 +647,9 @@
 				D692615620C3935900194C0B /* FeedbackQuestionViewController.storyboard */,
 				D692615820C3936900194C0B /* FeedbackQuestionViewController.swift */,
 				D692616020C3C3E000194C0B /* MsgDetailsViewController.storyboard */,
-				D692616220C3CB2F00194C0B /* StoreDetailsViewController.storyboard */,
 				D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */,
 				D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */,
-				D6AF9EFE20CACC5000E643FE /* RegisterViewController.storyboard */,
-				D675413B20CC1A9000D07E9C /* RecoverPasswordViewController.storyboard */,
-				D675413D20CC1C3D00D07E9C /* LogInViewController.storyboard */,
+				D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -655,6 +677,8 @@
 			children = (
 				D6A56BA720DE100100261BC0 /* LocationManager.swift */,
 				D6789B4720DE6621009071BF /* RequestAPIManager.swift */,
+				D6D03FBE20DF933E00C9D5C1 /* Wireframe.swift */,
+				D686916520DFD87E008463DA /* AlertErrorManager.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -767,16 +791,15 @@
 				D69E989120C2FEA20004B6DC /* ShopRecommendTC.xib in Resources */,
 				D6789B5320DE966D009071BF /* ShopDetailsTC.xib in Resources */,
 				1DEDA2E220B44C4D001A5AA1 /* SetChapterViewController.storyboard in Resources */,
+				D67E97E920DF4371007EA35A /* RecoverPasswordViewController.storyboard in Resources */,
 				D692615D20C3BE8400194C0B /* MsgStatusTC.xib in Resources */,
 				1D132CBB20B1A8CC000CEE6D /* MainTabBar.storyboard in Resources */,
 				D6E4874C20D6395D002C3D63 /* GuidePageTwo.storyboard in Resources */,
-				D692616320C3CB2F00194C0B /* StoreDetailsViewController.storyboard in Resources */,
 				1DEDA2EE20B44CB8001A5AA1 /* MineViewController.storyboard in Resources */,
 				1DEDA2E820B44C79001A5AA1 /* SetCardViewController.storyboard in Resources */,
 				D692615720C3935900194C0B /* FeedbackQuestionViewController.storyboard in Resources */,
 				D6E4874E20D6396E002C3D63 /* GuidePageThree.storyboard in Resources */,
-				D6AF9EFF20CACC5000E643FE /* RegisterViewController.storyboard in Resources */,
-				D675413E20CC1C3D00D07E9C /* LogInViewController.storyboard in Resources */,
+				D67E97ED20DF4371007EA35A /* LogInViewController.storyboard in Resources */,
 				D670B60620BDAD7600951BDA /* PhoneNumBindViewController.storyboard in Resources */,
 				D69E989420C311990004B6DC /* BeginningChapterViewController.storyboard in Resources */,
 				D692616520C3D00600194C0B /* SetCardDetailsViewController.storyboard in Resources */,
@@ -791,9 +814,8 @@
 				1D4C0BAF20BA982C00583735 /* SearchShopViewController.storyboard in Resources */,
 				1D132CAD20B18CBB000CEE6D /* Main.storyboard in Resources */,
 				D692616720C40BBC00194C0B /* TransferChapterViewController.storyboard in Resources */,
-				D675413C20CC1A9000D07E9C /* RecoverPasswordViewController.storyboard in Resources */,
-				1D4C0BAB20BA96AE00583735 /* RegisterAndLoginViewController.storyboard in Resources */,
 				D692614E20C388AA00194C0B /* UserMessageViewController.storyboard in Resources */,
+				D67E97EC20DF4371007EA35A /* RegisterViewController.storyboard in Resources */,
 				D692615320C38CBE00194C0B /* AboutUsViewController.storyboard in Resources */,
 				D670B60420BDA61800951BDA /* SetChapterTC.xib in Resources */,
 			);
@@ -910,10 +932,12 @@
 				D6D2765320DBDC490080AEC7 /* UserGetSystemMsgsResponse.swift in Sources */,
 				D6AF656F20DC005000201E08 /* UserFeedbackRequest.swift in Sources */,
 				D6F494C820D96385003A09E1 /* UserGetShopsByAddressRequest.swift in Sources */,
+				D686916820DFE44D008463DA /* SetChapterCardTC.swift in Sources */,
 				D6F494D820D96951003A09E1 /* UserDeleteMsgRequest.swift in Sources */,
 				D6D2765120DBDB5F0080AEC7 /* UserReadMsgRequest.swift in Sources */,
 				D692615920C3936900194C0B /* FeedbackQuestionViewController.swift in Sources */,
 				D6D2765720DBDDBF0080AEC7 /* UserShopStampResponse.swift in Sources */,
+				D67E97EA20DF4371007EA35A /* RegisterViewController.swift in Sources */,
 				D68BF26020D15338009008C0 /* UserLoginResponse.swift in Sources */,
 				D6A9724620BED84700F8AE39 /* PhoneNumBindViewController.swift in Sources */,
 				D6F494B420D956D8003A09E1 /* UserShopCollectResponse.swift in Sources */,
@@ -925,7 +949,9 @@
 				D6789B5520DE9755009071BF /* ShopDetailsViewModel.swift in Sources */,
 				D6F494CA20D96442003A09E1 /* UserGetCouponsResponse.swift in Sources */,
 				D68BF25D20D14FE4009008C0 /* UserLoginRequest.swift in Sources */,
+				D6D03FBB20DF62AE00C9D5C1 /* RegisterViewModel.swift in Sources */,
 				D6F494B620D95721003A09E1 /* UserShopCollectRequest.swift in Sources */,
+				D686916A20DFE95D008463DA /* SetCardDetailsViewController.swift in Sources */,
 				D6E4877020D69933002C3D63 /* UserOauthLoginResponse.swift in Sources */,
 				D6AF654020DBE6C500201E08 /* UserShopStampRequest.swift in Sources */,
 				D6F494B820D95800003A09E1 /* UserShopUnCollectResponse.swift in Sources */,
@@ -942,6 +968,7 @@
 				1DEDA2EC20B44CA0001A5AA1 /* SetCardViewModel.swift in Sources */,
 				D6AF656520DBFD1300201E08 /* UserGetRewardsCountResponse.swift in Sources */,
 				D6E4876420D66724002C3D63 /* UserUpdateUserResponse.swift in Sources */,
+				D67E97EB20DF4371007EA35A /* LogInViewController.swift in Sources */,
 				D6F494C220D96079003A09E1 /* UserShopGetRequest.swift in Sources */,
 				1DEDA2DE20B44C0E001A5AA1 /* StoreViewController.swift in Sources */,
 				D6E4875220D65E65002C3D63 /* UserGetCodeResponse.swift in Sources */,
@@ -951,11 +978,15 @@
 				D6F494BC20D95894003A09E1 /* UserGetShopStateResponse.swift in Sources */,
 				D6AF654320DBE79A00201E08 /* UserDoNateStampResponse.swift in Sources */,
 				D6AF657320DC01C700201E08 /* UserCheckUserRequest.swift in Sources */,
+				D67E97EF20DF4500007EA35A /* RecoverPasswordViewController.swift in Sources */,
 				D6E4876A20D6951B002C3D63 /* UserUpdateLatlngResponse.swift in Sources */,
 				D6AF654920DBEAF800201E08 /* UserAskForStampResponse.swift in Sources */,
 				D6AF656B20DBFF5E00201E08 /* UserGetAllShopsRequest.swift in Sources */,
 				D6AF656720DBFDA500201E08 /* UserGetRewardsCountRequest.swift in Sources */,
+				D6D03FBD20DF639600C9D5C1 /* RecoverPasswordViewModel.swift in Sources */,
+				D6D03FBF20DF933E00C9D5C1 /* Wireframe.swift in Sources */,
 				1DEDA2E420B44C5A001A5AA1 /* SetChapterViewController.swift in Sources */,
+				D6D03FB920DF612A00C9D5C1 /* LogInViewModel.swift in Sources */,
 				D6F6C6E720CD3BA300D9ADC1 /* Request.swift in Sources */,
 				D6E4875A20D6641C002C3D63 /* UserUpdatetokenRequest.swift in Sources */,
 				D6E4876220D666A9002C3D63 /* UserFindPwdRequest.swift in Sources */,
@@ -975,6 +1006,7 @@
 				D6F494D620D9691A003A09E1 /* UserDeleteMsgResponse.swift in Sources */,
 				1DEDA2EA20B44C85001A5AA1 /* SetCardViewController.swift in Sources */,
 				D68BF26320D159EF009008C0 /* StringExtension.swift in Sources */,
+				D686916620DFD87E008463DA /* AlertErrorManager.swift in Sources */,
 				D6F494D020D96708003A09E1 /* UserGetShopMsgsRequest.swift in Sources */,
 				D6E4875E20D665EC002C3D63 /* UserChangePwdRequest.swift in Sources */,
 				D6D2764F20DBDAA80080AEC7 /* UserReadMsgResponse.swift in Sources */,

@@ -25,12 +25,124 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewController.swift"
-            timestampString = "551460554.097876"
+            filePath = "EveryStamp/Tool/RequestAPIManager.swift"
+            timestampString = "551547770.136492"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "sendUserGetcodeRequest(name:isExist:type:checkExist:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EveryStamp.RequestAPIManager.sendUserGetcodeRequest(name: Swift.String, isExist: Swift.Int, type: Swift.Int, checkExist: Swift.Int) -&gt; RxSwift.Observable&lt;EveryStamp.UserGetCodeResponse&gt;"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Tool/RequestAPIManager.swift"
+                  timestampString = "551545285.986612"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "149">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;EveryStamp.UserGetCodeResponse&gt;) -&gt; RxSwift.Disposable in EveryStamp.RequestAPIManager.sendUserGetcodeRequest(name: Swift.String, isExist: Swift.Int, type: Swift.Int, checkExist: Swift.Int) -&gt; RxSwift.Observable&lt;EveryStamp.UserGetCodeResponse&gt;"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Tool/RequestAPIManager.swift"
+                  timestampString = "551545285.988429"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EveryStamp/Screen/RegisterAndLogin/LogInViewController.swift"
+            timestampString = "551526670.529112"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "bind()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EveryStamp.UserLoginResponse) -&gt; () in closure #4 () -&gt; () in EveryStamp.LogInViewController.bind() -&gt; ()"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/RegisterAndLogin/LogInViewController.swift"
+                  timestampString = "551545285.994296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "3618">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #3 : @autoclosure () -&gt; Swift.String in closure #1 (EveryStamp.UserLoginResponse) -&gt; () in closure #4 () -&gt; () in EveryStamp.LogInViewController.bind() -&gt; ()"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/RegisterAndLogin/LogInViewController.swift"
+                  timestampString = "551545285.996421"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EveryStamp/Screen/RegisterAndLogin/RegisterViewModel.swift"
+            timestampString = "551526670.529194"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "sendUserRegisterRequest(userName:pwd:code:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewController.swift"
+            timestampString = "551526670.529235"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,12 +154,108 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewController.swift"
-            timestampString = "551460554.097957"
+            timestampString = "551526670.5292881"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EveryStamp.ShopDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewController.swift"
+                  timestampString = "551545286.011013"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "385">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EveryStamp.UserShopGetResponse) -&gt; () in EveryStamp.ShopDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewController.swift"
+                  timestampString = "551545286.0136991"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EveryStamp/Screen/RegisterAndLogin/RegisterViewController.swift"
+            timestampString = "551547770.136621"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "bind()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (EveryStamp.UserRegisterResponse) -&gt; () in closure #2 () -&gt; () in EveryStamp.RegisterViewController.bind() -&gt; ()"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/RegisterAndLogin/RegisterViewController.swift"
+                  timestampString = "551545286.019417"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #1 : @autoclosure () -&gt; Swift.String in closure #1 (EveryStamp.UserRegisterResponse) -&gt; () in closure #2 () -&gt; () in EveryStamp.RegisterViewController.bind() -&gt; ()"
+                  moduleName = "EveryStamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/RegisterAndLogin/RegisterViewController.swift"
+                  timestampString = "551545286.021219"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EveryStamp/Screen/SetCard/SetCardViewController.swift"
+            timestampString = "551547770.136668"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

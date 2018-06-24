@@ -110,7 +110,6 @@
                                     <constraint firstItem="pcC-gA-7nq" firstAttribute="top" secondItem="K9X-6J-24Q" secondAttribute="top" id="BzT-1D-Q2e"/>
                                     <constraint firstItem="aWi-kQ-EAl" firstAttribute="leading" secondItem="K9X-6J-24Q" secondAttribute="leading" constant="58" id="JM0-nG-It5"/>
                                     <constraint firstItem="jfs-N9-S06" firstAttribute="top" secondItem="K9X-6J-24Q" secondAttribute="top" id="L3D-ig-85b"/>
-                                    <constraint firstAttribute="height" constant="84" id="VGY-mz-eba"/>
                                     <constraint firstAttribute="trailing" secondItem="jfs-N9-S06" secondAttribute="trailing" id="rNp-rU-bd6"/>
                                     <constraint firstItem="jfs-N9-S06" firstAttribute="leading" secondItem="pcC-gA-7nq" secondAttribute="trailing" constant="15" id="s6n-z8-vUy"/>
                                 </constraints>

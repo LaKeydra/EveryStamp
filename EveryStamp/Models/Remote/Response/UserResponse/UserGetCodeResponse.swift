@@ -12,7 +12,7 @@ import Gloss
 struct UserGetCodeResponse: Decodable {
     var code: Int?
     var msg: String?
-    var data: Any?
+    var data: UserGetCodeData?
     
     init(json: Gloss.JSON) {
         self.code = "code" <~~ json
@@ -22,5 +22,12 @@ struct UserGetCodeResponse: Decodable {
     
     static func parse(data: Any) -> UserGetCodeResponse {
         return UserGetCodeResponse(json: data as! Gloss.JSON)
+    }
+}
+
+struct UserGetCodeData: Gloss.JSONDecodable {
+    var code: Int?
+    init?(json: Gloss.JSON) {
+        self.code = "code" <~~ json
     }
 }

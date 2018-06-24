@@ -8,8 +8,21 @@
 
 import Foundation
 
+enum CodeErrorType: Int {
+    case noSend = 400001
+    case timeOut = 400002
+    case invalid = 400003
+    case unMatched = 400004
+    case often = 400005
+    case emailSendFail = 400006
+    case phoneSendFail = 400007
+    case none 
+}
+
 class RequestAPIManager: NSObject {
     static let shared = RequestAPIManager()
+    var access_token: String = ""
+    var userId: Int = 0
     
     func requestAPIBaseUrl() -> String {
         return "https://api.everystamp.cc"
@@ -24,5 +37,27 @@ class RequestAPIManager: NSObject {
         dic["time"] = timeStamp
         dic["token"] = token
         return dic
+    }
+    
+    //有多处要用到的API
+    func sendUserGetcodeRequest(name: String,isExist: Int, type: Int = 0, checkExist: Int = 1) -> Observable<UserGetCodeResponse> {
+        let requestPM = RequestAPIManager.shared.requestAPITimeAndToken()
+        return Observable.create({ observer -> Disposable in
+            let request: UserGetCodeRequest = UserGetCodeRequest(time: requestPM["time"] ?? "", token: requestPM["token"] ?? "", name: name, isExist: isExist, type: type, checkExist: checkExist)
+            let observable = RxSessionRequestSender().sendRequest(request).subscribe(onNext: { result in
+                switch result {
+                case .success(let value):
+                    observer.onNext(value)
+                case .failure(let error):
+                    observer.onError(error)
+                case .interrupt(let error):
+                    observer.onError(error)
+                }
+            })
+            
+            return Disposables.create {
+                return observable.dispose()
+            }
+        })
     }
 }

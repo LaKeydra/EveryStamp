@@ -14,13 +14,13 @@ class StoreViewController: UIViewController {
     @IBOutlet weak var nearbyBtn: UIButton!
     @IBOutlet weak var recommendBtn: UIButton!
     @IBOutlet weak var selectedview: UIView!
-    @IBOutlet weak var selectViewLeading: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     
     var disposebag: DisposeBag = DisposeBag()
     var data: [UserGetAllShopsData] = []
     var isLatlng: Bool = true
     let viewModel = StoreViewModel()
+    let distance: CGFloat = ((UIScreen.main.bounds.width / 2) - 110) / 2
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +31,13 @@ class StoreViewController: UIViewController {
         tableView.separatorStyle = .none
         self.requestData()
         let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(gotoDetailVC))
-        self.view.addGestureRecognizer(tapGesture)
+        self.tableView.addGestureRecognizer(tapGesture)
     }
     
     func bind() {
-        self.selectViewLeading.constant = self.nearbyBtn.frame.origin.x
+        self.selectedview.snp.remakeConstraints({ maker in
+            maker.left.equalToSuperview().offset(self.distance)
+        })
         
         _ = searchBtn.rx.tap.subscribe(onNext: { [weak self] _ in
             guard let `self` = self else { return }
@@ -48,7 +50,9 @@ class StoreViewController: UIViewController {
             guard let `self` = self else { return }
             
             UIView.animate(withDuration: CATransaction.animationDuration(), delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
-                self.selectViewLeading.constant = self.nearbyBtn.frame.origin.x
+                self.selectedview.snp.remakeConstraints({ maker in
+                    maker.left.equalToSuperview().offset(self.distance)
+                })
             }, completion: { completion in
                 if completion {
                     self.isLatlng = true
@@ -62,7 +66,9 @@ class StoreViewController: UIViewController {
         _ = recommendBtn.rx.tap.subscribe(onNext: { [weak self] _ in
             guard let `self` = self else { return }
             UIView.animate(withDuration: CATransaction.animationDuration(), delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
-                self.selectViewLeading.constant = self.recommendBtn.frame.origin.x + (self.recommendBtn.superview?.frame.origin.x)!
+                self.selectedview.snp.remakeConstraints({ maker in
+                    maker.right.equalToSuperview().offset(-self.distance)
+                })
             }, completion: { completion in
                 if completion {
                     self.isLatlng = false

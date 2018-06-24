@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="152" id="fDZ-k5-Dhx">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="152" id="fDZ-k5-Dhx" customClass="SetChapterCardTC" customModule="EveryStamp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="487" height="152"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fDZ-k5-Dhx" id="9kE-Ou-zeo">
@@ -112,7 +112,15 @@
                     <constraint firstItem="yVM-FQ-Owk" firstAttribute="top" secondItem="9kE-Ou-zeo" secondAttribute="top" constant="37" id="zmO-F2-pg9"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="156.5" y="12"/>
+            <connections>
+                <outlet property="addressL" destination="hX3-jL-Oxk" id="jxp-4s-mP5"/>
+                <outlet property="currentL" destination="6yL-BR-c8R" id="8Tz-eL-Spm"/>
+                <outlet property="detailL" destination="IOL-or-EH6" id="1ZQ-Ph-18I"/>
+                <outlet property="icon" destination="nwW-Jp-L9W" id="HPR-lU-Fek"/>
+                <outlet property="nameL" destination="yVM-FQ-Owk" id="TxJ-CA-umW"/>
+                <outlet property="totalNumL" destination="Kgy-TI-zWi" id="84z-56-iD1"/>
+            </connections>
+            <point key="canvasLocation" x="-103" y="1"/>
         </tableViewCell>
     </objects>
     <resources>
