@@ -8,21 +8,12 @@
 
 import Foundation
 
-enum CodeErrorType: Int {
-    case noSend = 400001
-    case timeOut = 400002
-    case invalid = 400003
-    case unMatched = 400004
-    case often = 400005
-    case emailSendFail = 400006
-    case phoneSendFail = 400007
-    case none 
-}
-
 class RequestAPIManager: NSObject {
     static let shared = RequestAPIManager()
     var access_token: String = ""
     var userId: Int = 0
+    var isLogin: Bool = false
+    var userName: String = ""
     
     func requestAPIBaseUrl() -> String {
         return "https://api.everystamp.cc"

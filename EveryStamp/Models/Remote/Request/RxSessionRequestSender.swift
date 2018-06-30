@@ -35,15 +35,19 @@ struct RxSessionRequestSender: RequestSender {
             .flatMap{ (responseHeader, responseData) -> Observable<Result<T.Response>> in
                 
                 DDLogDebug("[StatusCode]: \(url) \n \(responseHeader.statusCode)")
+                var error: NSError!
                 if responseHeader.statusCode == 200 {
                     let jsonData = JSON(responseData).dictionaryObject
-                    let res = T.Response.parse(data: jsonData)
-                    return Observable.just(Result.success(res))
+                    let code: Int = jsonData!["code"] as! Int
+                    if code == 200 {
+                        let res = T.Response.parse(data: jsonData as Any)
+                        return Observable.just(Result.success(res))
+                    } else {
+                        error = NSError(domain: AppErrorDomain, code: code, userInfo: nil)
+                        return Observable.just(Result.failure(error as Error))
+                    }
                 } else {
-                    var error: NSError!
                     error = NSError(domain: AppErrorDomain, code: responseHeader.statusCode, userInfo: nil)
-                        //NSError(domain: AppErrorDomain, code: responseHeader.statusCode, userInfo:  [NSLocalizedDescriptionKey: errMessage])
-                    DDLogDebug("[ResponseData]:\(url) \n no jsonData error")
                     return Observable.just(Result.failure(error as Error))
                 }
             }

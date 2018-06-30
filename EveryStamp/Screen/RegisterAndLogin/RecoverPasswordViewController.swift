@@ -41,20 +41,26 @@ class RecoverPasswordViewController: UIViewController {
             let pwd: String = self.pwTextfield.text ?? ""
             let code = Int(self.msgTextField.text ?? "") ?? 0
             self.viewModel.sendUserRecoverPasswordRequest(userName: userName, pwd: pwd, code: code).subscribe(onNext: { response in
-                DDLogDebug("找回密码成功")
+                ToastView.instance.showToast(content: "爱客章：找回密码成功")
+                self.dismiss(animated: false, completion: nil)
+            }, onError: { error in
+                let err = error as NSError
+                let str = RequestAPIErrorManager.shared.dealErrorStatusCode(statusCode: err.code)
+                ToastView.instance.showToast(content: str)
             }).disposed(by: self.disposebag)
         }).disposed(by: disposebag)
         
         _ = getCodeBtn.rx.tap.subscribe(onNext: {[weak self]  in
             guard let `self` = self else { return }
             //MARK 发验证码
+            self.getCodeBtn.countDown(count: 60)
             let name = self.phoneTextField.text ?? ""
             RequestAPIManager.shared.sendUserGetcodeRequest(name: name, isExist: 1).subscribe(onNext: { response in
                 DDLogDebug("发送二维码成功")
             }, onError: { error in
                 let err = error as NSError
-                let codeError: CodeErrorType = CodeErrorType(rawValue: err.code) ?? .none
-                AlertErrorManager.shared.alertCodeError(codeError: codeError)
+                let str = RequestAPIErrorManager.shared.dealErrorCode(code: err.code)
+                ToastView.instance.showToast(content: str)
             }).disposed(by: self.disposebag)
         }).disposed(by: disposebag)
         

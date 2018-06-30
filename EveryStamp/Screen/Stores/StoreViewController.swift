@@ -48,33 +48,25 @@ class StoreViewController: UIViewController {
         
         _ = nearbyBtn.rx.tap.subscribe(onNext: { [weak self] _ in
             guard let `self` = self else { return }
-            
-            UIView.animate(withDuration: CATransaction.animationDuration(), delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
-                self.selectedview.snp.remakeConstraints({ maker in
-                    maker.left.equalToSuperview().offset(self.distance)
-                })
-            }, completion: { completion in
-                if completion {
-                    self.isLatlng = true
-                    self.requestData()
-                }
+            self.recommendBtn.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+            self.nearbyBtn.setTitleColor(#colorLiteral(red: 0.9764705882, green: 0.4862745098, blue: 0.1607843137, alpha: 1), for: .normal)
+            self.selectedview.snp.remakeConstraints({ maker in
+                maker.left.equalToSuperview().offset(self.distance)
             })
-            
-            
+            self.isLatlng = true
+            self.requestData()
         }).disposed(by: disposebag)
         
         _ = recommendBtn.rx.tap.subscribe(onNext: { [weak self] _ in
             guard let `self` = self else { return }
-            UIView.animate(withDuration: CATransaction.animationDuration(), delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
-                self.selectedview.snp.remakeConstraints({ maker in
-                    maker.right.equalToSuperview().offset(-self.distance)
-                })
-            }, completion: { completion in
-                if completion {
-                    self.isLatlng = false
-                    self.requestData()
-                }
+            self.recommendBtn.setTitleColor(#colorLiteral(red: 0.9764705882, green: 0.4862745098, blue: 0.1607843137, alpha: 1), for: .normal)
+            self.nearbyBtn.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+            self.selectedview.snp.remakeConstraints({ maker in
+                maker.right.equalToSuperview().offset(-self.distance)
             })
+            self.isLatlng = false
+            self.requestData()
+            
         }).disposed(by: disposebag)
     }
     

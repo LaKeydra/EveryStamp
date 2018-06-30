@@ -19,7 +19,7 @@ struct UserLoginRequest: BaseRequest {
     var paramater: [String : Any]?
     
     init(time: String, token: String, userName: String, pwd: String, from: String) {
-        paramater = ["time": time , "token": token, "user_name": userName,"pwd": pwd, "from": from]
+        paramater = ["time": time , "token": token, "user_name": userName,"pwd": pwd.MD5(), "from": from]
     }
     
 }

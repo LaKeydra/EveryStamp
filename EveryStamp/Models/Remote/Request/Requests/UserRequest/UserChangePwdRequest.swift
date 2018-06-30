@@ -17,6 +17,6 @@ struct UserChangePwdRequest: BaseRequest {
     var paramater: [String : Any]?
     
     init(accessToken: String, userId: Int, iniPwd: String, pwd: String) {
-        paramater = ["access_token": accessToken , "user_id": userId, "ini_pwd": iniPwd,"pwd": pwd]
+        paramater = ["access_token": accessToken , "user_id": userId, "ini_pwd": iniPwd,"pwd": pwd.MD5()]
     }
 }

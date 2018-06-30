@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-244" y="-186"/>
         </scene>
-        <!--我的-->
+        <!--爱客章-->
         <scene sceneID="te7-Vp-WzX">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="uJg-R8-2Th" customClass="MineViewController" customModule="EveryStamp" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,12 +112,16 @@
                         <viewLayoutGuide key="safeArea" id="EFB-rU-DdW"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="我的" image="tab_mine_off" selectedImage="tab_mine_on" id="fb1-go-TJt"/>
-                    <navigationItem key="navigationItem" id="LPX-Bz-8V0"/>
+                    <navigationItem key="navigationItem" title="爱客章" id="GGh-2z-gSe">
+                        <barButtonItem key="rightBarButtonItem" image="mine_setting_icon" style="plain" id="ejv-5I-XQf"/>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="aboutUsBtn" destination="VcG-lZ-fw3" id="05L-F4-JOW"/>
+                        <outlet property="avatarImg" destination="D5y-Up-yGo" id="Zl6-e2-JzV"/>
                         <outlet property="feedbackQuestionBtn" destination="YC9-wt-Yj8" id="E8e-ya-DAd"/>
                         <outlet property="myMsgBtn" destination="zSX-xo-36c" id="DJk-gG-K7N"/>
+                        <outlet property="userNameL" destination="go8-hv-dU1" id="KyX-IV-3Zi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X3t-pV-EUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -126,6 +130,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mine_setting_icon" width="32" height="32"/>
         <image name="tab_mine_off" width="19" height="21"/>
         <image name="tab_mine_on" width="19" height="20"/>
         <image name="组 17" width="400" height="300"/>

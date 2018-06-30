@@ -12,10 +12,6 @@ struct UserGetCodeRequest: BaseRequest {
     
     typealias Response = UserGetCodeResponse
     
-    var method: HTTPMethod {
-        return .get
-    }
-    
     var path: String {
         return "api/code/getcode/"
     }

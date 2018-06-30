@@ -45,7 +45,10 @@
 		D67E97EC20DF4371007EA35A /* RegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67E97E720DF4371007EA35A /* RegisterViewController.storyboard */; };
 		D67E97ED20DF4371007EA35A /* LogInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67E97E820DF4371007EA35A /* LogInViewController.storyboard */; };
 		D67E97EF20DF4500007EA35A /* RecoverPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67E97EE20DF4500007EA35A /* RecoverPasswordViewController.swift */; };
-		D686916620DFD87E008463DA /* AlertErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686916520DFD87E008463DA /* AlertErrorManager.swift */; };
+		D684954920E1322200D8E23B /* MyMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684954820E1322200D8E23B /* MyMessageViewController.swift */; };
+		D684954B20E1322E00D8E23B /* MyMessageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D684954A20E1322E00D8E23B /* MyMessageViewController.storyboard */; };
+		D684954D20E13CF200D8E23B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684954C20E13CF200D8E23B /* CustomButton.swift */; };
+		D684954F20E13D9500D8E23B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684954E20E13D9500D8E23B /* ColorExtension.swift */; };
 		D686916820DFE44D008463DA /* SetChapterCardTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686916720DFE44D008463DA /* SetChapterCardTC.swift */; };
 		D686916A20DFE95D008463DA /* SetCardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */; };
 		D68BF25D20D14FE4009008C0 /* UserLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF25C20D14FE4009008C0 /* UserLoginRequest.swift */; };
@@ -101,10 +104,18 @@
 		D6AF656F20DC005000201E08 /* UserFeedbackRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF656E20DC005000201E08 /* UserFeedbackRequest.swift */; };
 		D6AF657120DC013F00201E08 /* UserCheckUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF657020DC013F00201E08 /* UserCheckUserResponse.swift */; };
 		D6AF657320DC01C700201E08 /* UserCheckUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AF657220DC01C700201E08 /* UserCheckUserRequest.swift */; };
+		D6B1AA1E20E77142004356A5 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B1AA1D20E77142004356A5 /* SettingViewController.storyboard */; };
+		D6B1AA2020E77151004356A5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AA1F20E77151004356A5 /* SettingViewController.swift */; };
+		D6B1AA2220E7C8A7004356A5 /* MsgStatusTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AA2120E7C8A7004356A5 /* MsgStatusTC.swift */; };
+		D6B1AA2420E7CA94004356A5 /* MyMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AA2320E7CA94004356A5 /* MyMessageViewModel.swift */; };
+		D6B1AA2620E7CEF0004356A5 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AA2520E7CEF0004356A5 /* UIButtonExtension.swift */; };
+		D6B1AA2A20E7D32D004356A5 /* RequestAPIErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AA2920E7D32D004356A5 /* RequestAPIErrorManager.swift */; };
+		D6B1AA2C20E7E4D7004356A5 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AA2B20E7E4D7004356A5 /* ToastView.swift */; };
+		D6B1AA2E20E7E50C004356A5 /* AnimationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AA2D20E7E50C004356A5 /* AnimationUtil.swift */; };
+		D6B1AA3020E7ED7F004356A5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B1AA2F20E7ED7F004356A5 /* BaseViewController.swift */; };
 		D6D03FB920DF612A00C9D5C1 /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D03FB820DF612A00C9D5C1 /* LogInViewModel.swift */; };
 		D6D03FBB20DF62AE00C9D5C1 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D03FBA20DF62AE00C9D5C1 /* RegisterViewModel.swift */; };
 		D6D03FBD20DF639600C9D5C1 /* RecoverPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D03FBC20DF639600C9D5C1 /* RecoverPasswordViewModel.swift */; };
-		D6D03FBF20DF933E00C9D5C1 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D03FBE20DF933E00C9D5C1 /* Wireframe.swift */; };
 		D6D2764F20DBDAA80080AEC7 /* UserReadMsgResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2764E20DBDAA80080AEC7 /* UserReadMsgResponse.swift */; };
 		D6D2765120DBDB5F0080AEC7 /* UserReadMsgRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2765020DBDB5F0080AEC7 /* UserReadMsgRequest.swift */; };
 		D6D2765320DBDC490080AEC7 /* UserGetSystemMsgsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2765220DBDC490080AEC7 /* UserGetSystemMsgsResponse.swift */; };
@@ -204,7 +215,10 @@
 		D67E97E720DF4371007EA35A /* RegisterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterViewController.storyboard; sourceTree = "<group>"; };
 		D67E97E820DF4371007EA35A /* LogInViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogInViewController.storyboard; sourceTree = "<group>"; };
 		D67E97EE20DF4500007EA35A /* RecoverPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewController.swift; sourceTree = "<group>"; };
-		D686916520DFD87E008463DA /* AlertErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertErrorManager.swift; sourceTree = "<group>"; };
+		D684954820E1322200D8E23B /* MyMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageViewController.swift; sourceTree = "<group>"; };
+		D684954A20E1322E00D8E23B /* MyMessageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMessageViewController.storyboard; sourceTree = "<group>"; };
+		D684954C20E13CF200D8E23B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D684954E20E13D9500D8E23B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		D686916720DFE44D008463DA /* SetChapterCardTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetChapterCardTC.swift; sourceTree = "<group>"; };
 		D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardDetailsViewController.swift; sourceTree = "<group>"; };
 		D68BF25C20D14FE4009008C0 /* UserLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginRequest.swift; sourceTree = "<group>"; };
@@ -260,10 +274,18 @@
 		D6AF656E20DC005000201E08 /* UserFeedbackRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedbackRequest.swift; sourceTree = "<group>"; };
 		D6AF657020DC013F00201E08 /* UserCheckUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCheckUserResponse.swift; sourceTree = "<group>"; };
 		D6AF657220DC01C700201E08 /* UserCheckUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCheckUserRequest.swift; sourceTree = "<group>"; };
+		D6B1AA1D20E77142004356A5 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
+		D6B1AA1F20E77151004356A5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D6B1AA2120E7C8A7004356A5 /* MsgStatusTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgStatusTC.swift; sourceTree = "<group>"; };
+		D6B1AA2320E7CA94004356A5 /* MyMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageViewModel.swift; sourceTree = "<group>"; };
+		D6B1AA2520E7CEF0004356A5 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		D6B1AA2920E7D32D004356A5 /* RequestAPIErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPIErrorManager.swift; sourceTree = "<group>"; };
+		D6B1AA2B20E7E4D7004356A5 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		D6B1AA2D20E7E50C004356A5 /* AnimationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationUtil.swift; sourceTree = "<group>"; };
+		D6B1AA2F20E7ED7F004356A5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D6D03FB820DF612A00C9D5C1 /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		D6D03FBA20DF62AE00C9D5C1 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		D6D03FBC20DF639600C9D5C1 /* RecoverPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewModel.swift; sourceTree = "<group>"; };
-		D6D03FBE20DF933E00C9D5C1 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		D6D2764E20DBDAA80080AEC7 /* UserReadMsgResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReadMsgResponse.swift; sourceTree = "<group>"; };
 		D6D2765020DBDB5F0080AEC7 /* UserReadMsgRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReadMsgRequest.swift; sourceTree = "<group>"; };
 		D6D2765220DBDC490080AEC7 /* UserGetSystemMsgsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGetSystemMsgsResponse.swift; sourceTree = "<group>"; };
@@ -456,6 +478,11 @@
 				1DEDA2ED20B44CB8001A5AA1 /* MineViewController.storyboard */,
 				1DEDA2EF20B44CC9001A5AA1 /* MineViewController.swift */,
 				1DEDA2F120B44CD7001A5AA1 /* MineViewModel.swift */,
+				D684954820E1322200D8E23B /* MyMessageViewController.swift */,
+				D684954A20E1322E00D8E23B /* MyMessageViewController.storyboard */,
+				D6B1AA1D20E77142004356A5 /* SettingViewController.storyboard */,
+				D6B1AA1F20E77151004356A5 /* SettingViewController.swift */,
+				D6B1AA2320E7CA94004356A5 /* MyMessageViewModel.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -490,6 +517,7 @@
 				D6E98B2920DDCEA5007CC81E /* ShopTC.swift */,
 				D6A56BA920DE15B800261BC0 /* ShopRecommendTC.swift */,
 				D686916720DFE44D008463DA /* SetChapterCardTC.swift */,
+				D6B1AA2120E7C8A7004356A5 /* MsgStatusTC.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -625,6 +653,8 @@
 				D68BF26220D159EF009008C0 /* StringExtension.swift */,
 				D68BF26420D15A34009008C0 /* DataExtension.swift */,
 				D68BF26620D15CA6009008C0 /* IntExtension.swift */,
+				D684954E20E13D9500D8E23B /* ColorExtension.swift */,
+				D6B1AA2520E7CEF0004356A5 /* UIButtonExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -650,6 +680,7 @@
 				D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */,
 				D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */,
 				D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */,
+				D6B1AA2F20E7ED7F004356A5 /* BaseViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -677,8 +708,10 @@
 			children = (
 				D6A56BA720DE100100261BC0 /* LocationManager.swift */,
 				D6789B4720DE6621009071BF /* RequestAPIManager.swift */,
-				D6D03FBE20DF933E00C9D5C1 /* Wireframe.swift */,
-				D686916520DFD87E008463DA /* AlertErrorManager.swift */,
+				D684954C20E13CF200D8E23B /* CustomButton.swift */,
+				D6B1AA2920E7D32D004356A5 /* RequestAPIErrorManager.swift */,
+				D6B1AA2B20E7E4D7004356A5 /* ToastView.swift */,
+				D6B1AA2D20E7E50C004356A5 /* AnimationUtil.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -784,11 +817,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B1AA1E20E77142004356A5 /* SettingViewController.storyboard in Resources */,
 				1D132CB220B18CBB000CEE6D /* LaunchScreen.storyboard in Resources */,
 				D69E988D20C2923B0004B6DC /* NoDataView.xib in Resources */,
 				1DEDA2DC20B44BFB001A5AA1 /* StoreViewController.storyboard in Resources */,
 				D6789B4F20DE9485009071BF /* ShopDetailsViewController.storyboard in Resources */,
 				D69E989120C2FEA20004B6DC /* ShopRecommendTC.xib in Resources */,
+				D684954B20E1322E00D8E23B /* MyMessageViewController.storyboard in Resources */,
 				D6789B5320DE966D009071BF /* ShopDetailsTC.xib in Resources */,
 				1DEDA2E220B44C4D001A5AA1 /* SetChapterViewController.storyboard in Resources */,
 				D67E97E920DF4371007EA35A /* RecoverPasswordViewController.storyboard in Resources */,
@@ -898,11 +933,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6F6C6ED20CD3C5F00D9ADC1 /* BaseRequest.swift in Sources */,
+				D6B1AA2020E77151004356A5 /* SettingViewController.swift in Sources */,
 				D6AF657120DC013F00201E08 /* UserCheckUserResponse.swift in Sources */,
 				D6AF654120DBE6C500201E08 /* UserShopUnstampRequest.swift in Sources */,
 				D6F494DC20D96AE0003A09E1 /* UserGetMsgRequest.swift in Sources */,
 				1D4C0BB520BA9D6C00583735 /* SearchSpeciesCell.swift in Sources */,
 				D6F494BA20D95828003A09E1 /* UserShopUnCollectRequest.swift in Sources */,
+				D684954920E1322200D8E23B /* MyMessageViewController.swift in Sources */,
 				D6AF656320DBFC6600201E08 /* UserRewardStampRequest.swift in Sources */,
 				1DEDA2E020B44C26001A5AA1 /* StoreViewModel.swift in Sources */,
 				D6AF655B20DBF99A00201E08 /* UserGetFromStampMsgRequest.swift in Sources */,
@@ -938,8 +975,12 @@
 				D692615920C3936900194C0B /* FeedbackQuestionViewController.swift in Sources */,
 				D6D2765720DBDDBF0080AEC7 /* UserShopStampResponse.swift in Sources */,
 				D67E97EA20DF4371007EA35A /* RegisterViewController.swift in Sources */,
+				D684954F20E13D9500D8E23B /* ColorExtension.swift in Sources */,
+				D6B1AA2E20E7E50C004356A5 /* AnimationUtil.swift in Sources */,
 				D68BF26020D15338009008C0 /* UserLoginResponse.swift in Sources */,
 				D6A9724620BED84700F8AE39 /* PhoneNumBindViewController.swift in Sources */,
+				D684954D20E13CF200D8E23B /* CustomButton.swift in Sources */,
+				D6B1AA2A20E7D32D004356A5 /* RequestAPIErrorManager.swift in Sources */,
 				D6F494B420D956D8003A09E1 /* UserShopCollectResponse.swift in Sources */,
 				D6AF656120DBFB8B00201E08 /* UserRewardStampResponse.swift in Sources */,
 				1DEDA2F020B44CC9001A5AA1 /* MineViewController.swift in Sources */,
@@ -963,6 +1004,8 @@
 				1D132CA820B18CBB000CEE6D /* AppDelegate.swift in Sources */,
 				1D4C0BB120BA9ACA00583735 /* SearchShopViewController.swift in Sources */,
 				D6AF656D20DC002600201E08 /* UserFeedbackResponse.swift in Sources */,
+				D6B1AA2220E7C8A7004356A5 /* MsgStatusTC.swift in Sources */,
+				D6B1AA2620E7CEF0004356A5 /* UIButtonExtension.swift in Sources */,
 				D6E4877420D69B9F002C3D63 /* UserGetCollectShopsResponse.swift in Sources */,
 				D6E4875420D65F76002C3D63 /* UserRegisterResponse.swift in Sources */,
 				1DEDA2EC20B44CA0001A5AA1 /* SetCardViewModel.swift in Sources */,
@@ -984,7 +1027,6 @@
 				D6AF656B20DBFF5E00201E08 /* UserGetAllShopsRequest.swift in Sources */,
 				D6AF656720DBFDA500201E08 /* UserGetRewardsCountRequest.swift in Sources */,
 				D6D03FBD20DF639600C9D5C1 /* RecoverPasswordViewModel.swift in Sources */,
-				D6D03FBF20DF933E00C9D5C1 /* Wireframe.swift in Sources */,
 				1DEDA2E420B44C5A001A5AA1 /* SetChapterViewController.swift in Sources */,
 				D6D03FB920DF612A00C9D5C1 /* LogInViewModel.swift in Sources */,
 				D6F6C6E720CD3BA300D9ADC1 /* Request.swift in Sources */,
@@ -992,9 +1034,11 @@
 				D6E4876220D666A9002C3D63 /* UserFindPwdRequest.swift in Sources */,
 				D6AF655320DBEDDD00201E08 /* UserReadFromStampMsgRequest.swift in Sources */,
 				D6AF655D20DBF9ED00201E08 /* UserGetRewardsResponse.swift in Sources */,
+				D6B1AA2C20E7E4D7004356A5 /* ToastView.swift in Sources */,
 				D6E4877220D699C2002C3D63 /* UserOauthLoginRequest.swift in Sources */,
 				D68BF26520D15A34009008C0 /* DataExtension.swift in Sources */,
 				D6F494DA20D969D8003A09E1 /* UserGetMsgResponse.swift in Sources */,
+				D6B1AA3020E7ED7F004356A5 /* BaseViewController.swift in Sources */,
 				D6AF654F20DBECF000201E08 /* UserGetFromStampMsgsRequest.swift in Sources */,
 				1DEDA2E620B44C67001A5AA1 /* SetChapterViewModel.swift in Sources */,
 				D6AF653B20DBE5BE00201E08 /* UserShopUnstampResponse.swift in Sources */,
@@ -1002,11 +1046,11 @@
 				D6D2765520DBDD3B0080AEC7 /* UserGetSystemMsgsRequest.swift in Sources */,
 				D6A56BAA20DE15B800261BC0 /* ShopRecommendTC.swift in Sources */,
 				D6E4876020D6667C002C3D63 /* UserFindPwdResponse.swift in Sources */,
+				D6B1AA2420E7CA94004356A5 /* MyMessageViewModel.swift in Sources */,
 				D6F6C6F120CD3CD500D9ADC1 /* ResponseError.swift in Sources */,
 				D6F494D620D9691A003A09E1 /* UserDeleteMsgResponse.swift in Sources */,
 				1DEDA2EA20B44C85001A5AA1 /* SetCardViewController.swift in Sources */,
 				D68BF26320D159EF009008C0 /* StringExtension.swift in Sources */,
-				D686916620DFD87E008463DA /* AlertErrorManager.swift in Sources */,
 				D6F494D020D96708003A09E1 /* UserGetShopMsgsRequest.swift in Sources */,
 				D6E4875E20D665EC002C3D63 /* UserChangePwdRequest.swift in Sources */,
 				D6D2764F20DBDAA80080AEC7 /* UserReadMsgResponse.swift in Sources */,

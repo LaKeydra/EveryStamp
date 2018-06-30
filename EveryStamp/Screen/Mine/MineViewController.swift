@@ -8,11 +8,13 @@
 
 import UIKit
 
-class MineViewController: UIViewController {
+class MineViewController: BaseViewController {
     
     @IBOutlet weak var myMsgBtn: UIButton!
     @IBOutlet weak var feedbackQuestionBtn: UIButton!
     @IBOutlet weak var aboutUsBtn: UIButton!
+    @IBOutlet weak var avatarImg: UIImageView!
+    @IBOutlet weak var userNameL: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +22,17 @@ class MineViewController: UIViewController {
         bind()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if RequestAPIManager.shared.isLogin {
+            self.userNameL.text = RequestAPIManager.shared.userName
+        }
+    }
+    
     func bind() {
        _ = self.myMsgBtn.rx.tap.subscribe(onNext: {[weak self]  in
             guard let `self` = self else { return }
-            let sb = UIStoryboard(name: "FeedbackQuestionViewController", bundle: nil)
+            let sb = UIStoryboard(name: "MyMessageViewController", bundle: nil)
             let vc = sb.instantiateInitialViewController()
         self.navigationController?.pushViewController(vc!, animated: true)
         })

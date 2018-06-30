@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetCardViewController: UIViewController {
+class SetCardViewController: BaseViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -16,13 +16,12 @@ class SetCardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .selected)
-        
+        if !RequestAPIManager.shared.isLogin {
+            let stoyboard = UIStoryboard.init(name: "LogInViewController", bundle: nil)
+            let vc = stoyboard.instantiateInitialViewController()
+            self.present(vc!, animated: true, completion: nil)
+        }
         tableView.register(cellType: SetChapterCardTC.self)
-        
-//        let stoyboard = UIStoryboard.init(name: "LogInViewController", bundle: nil)
-//        let vc = stoyboard.instantiateInitialViewController()
-//        self.present(vc!, animated: true, completion: nil)
-        
     }
     
     override func didReceiveMemoryWarning() {
