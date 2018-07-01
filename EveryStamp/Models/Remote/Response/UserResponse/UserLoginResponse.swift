@@ -26,7 +26,7 @@ struct UserLoginResponse:Decodable {
 }
 
 struct UserLoginData: Gloss.JSONDecodable {
-    var userId: Int?
+    var userId: String?
     var updateToken: String?
     var nickname: String?
     var avator: String?

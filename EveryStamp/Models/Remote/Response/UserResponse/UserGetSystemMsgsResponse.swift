@@ -29,7 +29,7 @@ struct UserGetSystemMsgsData: Gloss.JSONDecodable {
     var msg_id: Int?
     var msg_text_id: Int?
     var name: String?
-    var msg_time: Int?
+    var msg_time: String?
     var img_url: String?
     var img_alt: String?
     var status: String?

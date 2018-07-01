@@ -51,10 +51,11 @@ class LogInViewController: UIViewController {
             let userName: String = self.phoneTextField.text ?? ""
             let pwd: String = self.pwTextfield.text ?? ""
             self.viewModel.sendUserLoginRequest(userName: userName, pwd: pwd).subscribe(onNext: { response in
-                RequestAPIManager.shared.isLogin = true
+                let manager = UserDefaults()
+                manager.set(true, forKey: "isLogin")
                 RequestAPIManager.shared.userName = userName
                 RequestAPIManager.shared.access_token = response.data?.accessToken ?? ""
-                RequestAPIManager.shared.userId = response.data?.userId ?? 0
+                RequestAPIManager.shared.userId = Int(response.data?.userId ?? "") ?? 0
                 ToastView.instance.showToast(content: "爱客章：登录成功")
                 self.dismiss(animated: false, completion: nil)
             }, onError: { error in

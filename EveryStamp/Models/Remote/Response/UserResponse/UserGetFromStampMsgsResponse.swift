@@ -26,16 +26,15 @@ struct UserGetFromStampMsgsResponse: Decodable {
 }
 
 struct UserGetFromStampMsgsData: Gloss.JSONDecodable {
-    var stamp_msg_id: Int?
-    var type: Int?
-    var user_id: Int?
+    var stamp_msg_id: String?
+    var type: String?
+    var user_id: String?
     var user_name: String?
-    var timestamp: Int?
-    var shop_id: Int?
+    var timestamp: String?
+    var shop_id: String?
     var shop_name: String?
-    var status: Int?
+    var status: String?
    
-    
     init?(json: Gloss.JSON) {
         self.stamp_msg_id = "stamp_msg_id" <~~ json
         self.type = "type" <~~ json

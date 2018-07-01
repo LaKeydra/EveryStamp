@@ -8,11 +8,25 @@
 
 import Foundation
 
+enum GetFromStampType: String {
+    case get = "1"
+    case give = "-1"
+    case none
+}
+
+enum GetFromStampStatus: String {
+    case unread = "0"
+    case read = "1"
+    case delete = "-1"
+    case transferred = "2"
+    case none
+}
+
 class RequestAPIManager: NSObject {
     static let shared = RequestAPIManager()
     var access_token: String = ""
     var userId: Int = 0
-    var isLogin: Bool = false
+    var isLogin: Bool = UserDefaults().bool(forKey: "isLogin")
     var userName: String = ""
     
     func requestAPIBaseUrl() -> String {

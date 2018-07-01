@@ -76,12 +76,14 @@ class StoreViewController: UIViewController {
                 guard let `self` = self else { return }
                 self.data = response.data
                 self.tableView.reloadData()
+                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
             }).disposed(by: disposebag)
         } else {
             viewModel.getShopsByRecommend(num: 20, is_recommend: 1).subscribe(onNext: {[weak self] response in
                 guard let `self` = self else { return }
                 self.data = response.data
                 self.tableView.reloadData()
+                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
             }).disposed(by: disposebag)
         }
     }

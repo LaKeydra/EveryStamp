@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Msg Details View Controller-->
         <scene sceneID="cKt-aZ-Dip">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Dgt-Vw-1HH" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Dgt-Vw-1HH" customClass="MsgDetailsViewController" customModule="EveryStamp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XfM-A7-Mgz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,10 +87,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EtC-VW-rJy"/>
                     </view>
+                    <connections>
+                        <outlet property="detailL" destination="iBu-h6-dBZ" id="KvU-Ha-t9o"/>
+                        <outlet property="iconImage" destination="9Ab-hI-3Dg" id="der-mn-n92"/>
+                        <outlet property="timeLabel" destination="rRK-SQ-lha" id="pGO-El-JuD"/>
+                        <outlet property="titleLabel" destination="rq6-mF-LZo" id="H6P-su-xff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udX-62-uLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="207" y="217"/>
+            <point key="canvasLocation" x="-602" y="213"/>
         </scene>
     </scenes>
     <resources>

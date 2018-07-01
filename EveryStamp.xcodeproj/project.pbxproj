@@ -67,6 +67,7 @@
 		D692616520C3D00600194C0B /* SetCardDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */; };
 		D692616720C40BBC00194C0B /* TransferChapterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */; };
 		D692616D20C4140200194C0B /* ImgTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D692616C20C4140200194C0B /* ImgTitleCell.xib */; };
+		D6958F6E20E8E61B00598674 /* MsgDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6958F6D20E8E61B00598674 /* MsgDetailsViewController.swift */; };
 		D69E988A20C28C8F0004B6DC /* SetChapterCardSearchShopTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E988920C28C8F0004B6DC /* SetChapterCardSearchShopTC.xib */; };
 		D69E988D20C2923B0004B6DC /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E988C20C2923B0004B6DC /* NoDataView.xib */; };
 		D69E988F20C2F8FE0004B6DC /* ShopTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69E988E20C2F8FE0004B6DC /* ShopTC.xib */; };
@@ -237,6 +238,7 @@
 		D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetCardDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferChapterViewController.storyboard; sourceTree = "<group>"; };
 		D692616C20C4140200194C0B /* ImgTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgTitleCell.xib; sourceTree = "<group>"; };
+		D6958F6D20E8E61B00598674 /* MsgDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgDetailsViewController.swift; sourceTree = "<group>"; };
 		D69E988920C28C8F0004B6DC /* SetChapterCardSearchShopTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetChapterCardSearchShopTC.xib; sourceTree = "<group>"; };
 		D69E988C20C2923B0004B6DC /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		D69E988E20C2F8FE0004B6DC /* ShopTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopTC.xib; sourceTree = "<group>"; };
@@ -681,6 +683,7 @@
 				D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */,
 				D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */,
 				D6B1AA2F20E7ED7F004356A5 /* BaseViewController.swift */,
+				D6958F6D20E8E61B00598674 /* MsgDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -969,6 +972,7 @@
 				D6D2765320DBDC490080AEC7 /* UserGetSystemMsgsResponse.swift in Sources */,
 				D6AF656F20DC005000201E08 /* UserFeedbackRequest.swift in Sources */,
 				D6F494C820D96385003A09E1 /* UserGetShopsByAddressRequest.swift in Sources */,
+				D6958F6E20E8E61B00598674 /* MsgDetailsViewController.swift in Sources */,
 				D686916820DFE44D008463DA /* SetChapterCardTC.swift in Sources */,
 				D6F494D820D96951003A09E1 /* UserDeleteMsgRequest.swift in Sources */,
 				D6D2765120DBDB5F0080AEC7 /* UserReadMsgRequest.swift in Sources */,

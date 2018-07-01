@@ -9,6 +9,8 @@
 import Foundation
 
 class BaseViewController: UIViewController {
+    var disposeBag: DisposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if !RequestAPIManager.shared.isLogin {

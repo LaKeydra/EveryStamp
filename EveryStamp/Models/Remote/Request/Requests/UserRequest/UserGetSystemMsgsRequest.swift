@@ -15,13 +15,9 @@ struct UserGetSystemMsgsRequest: BaseRequest {
         return "api/user/getsystemmsgs"
     }
     
-    var method: HTTPMethod {
-        return .get
-    }
-    
     var paramater: [String : Any]?
     
-    init(access_token: String, user_id: Int, type: Int) {
+    init(access_token: String, user_id: Int, type: Int?) {
         paramater = ["access_token": access_token, "user_id": user_id, "type": type]
     }
 }

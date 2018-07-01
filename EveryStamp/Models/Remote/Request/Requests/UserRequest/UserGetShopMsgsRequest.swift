@@ -15,13 +15,9 @@ struct UserGetShopMsgsRequest: BaseRequest {
         return "api/user/getshopmsgs"
     }
     
-    var method: HTTPMethod {
-        return .get
-    }
-    
     var paramater: [String : Any]?
     
-    init(access_token: String, user_id: Int, type: Int, page: Int, num: Int) {
+    init(access_token: String, user_id: Int, type: Int?, page: Int, num: Int) {
         paramater = ["access_token": access_token, "user_id": user_id, "type": type, "page": page, "num": num]
     }
 }
