@@ -51,8 +51,9 @@ class LogInViewController: UIViewController {
             let userName: String = self.phoneTextField.text ?? ""
             let pwd: String = self.pwTextfield.text ?? ""
             self.viewModel.sendUserLoginRequest(userName: userName, pwd: pwd).subscribe(onNext: { response in
-                let manager = UserDefaults()
-                manager.set(true, forKey: "isLogin")
+//                let manager = UserDefaults()
+//                manager.set(true, forKey: "isLogin")
+                RequestAPIManager.shared.isLogin = true
                 RequestAPIManager.shared.userName = userName
                 RequestAPIManager.shared.access_token = response.data?.accessToken ?? ""
                 RequestAPIManager.shared.userId = Int(response.data?.userId ?? "") ?? 0

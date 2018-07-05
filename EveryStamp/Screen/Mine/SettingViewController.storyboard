@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TKE-Jh-pVn">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,9 +15,66 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="TKE-Jh-pVn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WEv-tY-joh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_setting" translatesAutoresizingMaskIntoConstraints="NO" id="kd3-Yd-DW9">
+                                <rect key="frame" x="0.0" y="60" width="414" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="vq0-Er-E8L"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="or2-vv-axl">
+                                <rect key="frame" x="157" y="262" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZO9-ox-z9I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="25"/>
+                                <state key="normal" title="账号设置">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKN-lb-P7Q">
+                                <rect key="frame" x="157" y="332" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Gw-6x-eRM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="25"/>
+                                <state key="normal" title="清除缓存">
+                                    <color key="titleColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VA0-pr-abc">
+                                <rect key="frame" x="20" y="429" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.48627450979999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5vf-VQ-qp2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
+                                <state key="normal" title="退出登录">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="or2-vv-axl" firstAttribute="top" secondItem="kd3-Yd-DW9" secondAttribute="bottom" constant="40" id="8c5-y7-NDA"/>
+                            <constraint firstItem="VA0-pr-abc" firstAttribute="top" secondItem="nKN-lb-P7Q" secondAttribute="bottom" constant="47" id="D5i-ea-CRb"/>
+                            <constraint firstItem="nKN-lb-P7Q" firstAttribute="centerX" secondItem="WEv-tY-joh" secondAttribute="centerX" id="FRF-R8-xOE"/>
+                            <constraint firstItem="nKN-lb-P7Q" firstAttribute="top" secondItem="or2-vv-axl" secondAttribute="bottom" constant="20" id="K6N-W5-nIt"/>
+                            <constraint firstItem="kd3-Yd-DW9" firstAttribute="top" secondItem="fOj-Eu-Vus" secondAttribute="top" constant="40" id="LVZ-S4-Tmz"/>
+                            <constraint firstItem="fOj-Eu-Vus" firstAttribute="trailing" secondItem="kd3-Yd-DW9" secondAttribute="trailing" id="Vip-Y2-uTO"/>
+                            <constraint firstItem="kd3-Yd-DW9" firstAttribute="leading" secondItem="fOj-Eu-Vus" secondAttribute="leading" id="eIG-CR-rXL"/>
+                            <constraint firstItem="VA0-pr-abc" firstAttribute="leading" secondItem="fOj-Eu-Vus" secondAttribute="leading" constant="20" id="fan-TU-ohe"/>
+                            <constraint firstItem="or2-vv-axl" firstAttribute="centerX" secondItem="WEv-tY-joh" secondAttribute="centerX" id="oJr-CV-za7"/>
+                            <constraint firstItem="fOj-Eu-Vus" firstAttribute="trailing" secondItem="VA0-pr-abc" secondAttribute="trailing" constant="20" id="rxI-4o-ZdO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fOj-Eu-Vus"/>
                     </view>
                 </viewController>
@@ -26,4 +83,7 @@
             <point key="canvasLocation" x="180" y="120"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_setting" width="81" height="81"/>
+    </resources>
 </document>

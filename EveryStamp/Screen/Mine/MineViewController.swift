@@ -30,11 +30,18 @@ class MineViewController: BaseViewController {
     }
     
     func bind() {
-       _ = self.myMsgBtn.rx.tap.subscribe(onNext: {[weak self]  in
+        _ = self.navigationItem.rightBarButtonItem?.rx.tap.subscribe(onNext: {[weak self]  in
+            guard let `self` = self else { return }
+            let sb = UIStoryboard(name: "SettingViewController", bundle: nil)
+            let vc = sb.instantiateInitialViewController()
+            self.navigationController?.pushViewController(vc!, animated: true)
+        })
+        
+        _ = self.myMsgBtn.rx.tap.subscribe(onNext: {[weak self]  in
             guard let `self` = self else { return }
             let sb = UIStoryboard(name: "MyMessageViewController", bundle: nil)
             let vc = sb.instantiateInitialViewController()
-        self.navigationController?.pushViewController(vc!, animated: true)
+            self.navigationController?.pushViewController(vc!, animated: true)
         })
         
         _ = self.feedbackQuestionBtn.rx.tap.subscribe(onNext: {[weak self]  in

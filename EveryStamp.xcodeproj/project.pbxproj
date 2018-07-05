@@ -29,6 +29,8 @@
 		1DEDA2F020B44CC9001A5AA1 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA2EF20B44CC9001A5AA1 /* MineViewController.swift */; };
 		1DEDA2F220B44CD7001A5AA1 /* MineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA2F120B44CD7001A5AA1 /* MineViewModel.swift */; };
 		5140F57CE731BDC1DCDED343 /* Pods_EveryStamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5D34780E761AB60DF07CAC /* Pods_EveryStamp.framework */; };
+		D62A6C2B20ED3BE600F29031 /* AccountSettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62A6C2A20ED3BE600F29031 /* AccountSettingViewController.storyboard */; };
+		D62A6C2D20ED3BF500F29031 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A6C2C20ED3BF500F29031 /* AccountSettingViewController.swift */; };
 		D6529C1E20C0090E00F5E7E9 /* SetChapterCardTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6529C1D20C0090E00F5E7E9 /* SetChapterCardTC.xib */; };
 		D670B60120BDA2A300951BDA /* NoInternetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D670B60020BDA2A300951BDA /* NoInternetViewController.storyboard */; };
 		D670B60420BDA61800951BDA /* SetChapterTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D670B60320BDA61800951BDA /* SetChapterTC.xib */; };
@@ -144,6 +146,8 @@
 		D6E4877220D699C2002C3D63 /* UserOauthLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4877120D699C2002C3D63 /* UserOauthLoginRequest.swift */; };
 		D6E4877420D69B9F002C3D63 /* UserGetCollectShopsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E4877320D69B9F002C3D63 /* UserGetCollectShopsResponse.swift */; };
 		D6E98B2A20DDCEA5007CC81E /* ShopTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E98B2920DDCEA5007CC81E /* ShopTC.swift */; };
+		D6EFC62420ED224B00EF4137 /* StoreHighlightsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC62320ED224B00EF4137 /* StoreHighlightsCell.xib */; };
+		D6EFC62620ED225700EF4137 /* StoreHighlightsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFC62520ED225700EF4137 /* StoreHighlightsCell.swift */; };
 		D6F494B220D955DC003A09E1 /* UserGetCollectShopsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F494B120D955DC003A09E1 /* UserGetCollectShopsRequest.swift */; };
 		D6F494B420D956D8003A09E1 /* UserShopCollectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F494B320D956D8003A09E1 /* UserShopCollectResponse.swift */; };
 		D6F494B620D95721003A09E1 /* UserShopCollectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F494B520D95721003A09E1 /* UserShopCollectRequest.swift */; };
@@ -200,6 +204,8 @@
 		1DEDA2ED20B44CB8001A5AA1 /* MineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MineViewController.storyboard; sourceTree = "<group>"; };
 		1DEDA2EF20B44CC9001A5AA1 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		1DEDA2F120B44CD7001A5AA1 /* MineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewModel.swift; sourceTree = "<group>"; };
+		D62A6C2A20ED3BE600F29031 /* AccountSettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountSettingViewController.storyboard; sourceTree = "<group>"; };
+		D62A6C2C20ED3BF500F29031 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
 		D6529C1D20C0090E00F5E7E9 /* SetChapterCardTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetChapterCardTC.xib; sourceTree = "<group>"; };
 		D670B60020BDA2A300951BDA /* NoInternetViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoInternetViewController.storyboard; sourceTree = "<group>"; };
 		D670B60320BDA61800951BDA /* SetChapterTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetChapterTC.xib; sourceTree = "<group>"; };
@@ -315,6 +321,8 @@
 		D6E4877120D699C2002C3D63 /* UserOauthLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserOauthLoginRequest.swift; sourceTree = "<group>"; };
 		D6E4877320D69B9F002C3D63 /* UserGetCollectShopsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGetCollectShopsResponse.swift; sourceTree = "<group>"; };
 		D6E98B2920DDCEA5007CC81E /* ShopTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTC.swift; sourceTree = "<group>"; };
+		D6EFC62320ED224B00EF4137 /* StoreHighlightsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreHighlightsCell.xib; sourceTree = "<group>"; };
+		D6EFC62520ED225700EF4137 /* StoreHighlightsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHighlightsCell.swift; sourceTree = "<group>"; };
 		D6F2130020BAF49E004451FB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		D6F494B120D955DC003A09E1 /* UserGetCollectShopsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGetCollectShopsRequest.swift; sourceTree = "<group>"; };
 		D6F494B320D956D8003A09E1 /* UserShopCollectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserShopCollectResponse.swift; sourceTree = "<group>"; };
@@ -485,6 +493,8 @@
 				D6B1AA1D20E77142004356A5 /* SettingViewController.storyboard */,
 				D6B1AA1F20E77151004356A5 /* SettingViewController.swift */,
 				D6B1AA2320E7CA94004356A5 /* MyMessageViewModel.swift */,
+				D62A6C2A20ED3BE600F29031 /* AccountSettingViewController.storyboard */,
+				D62A6C2C20ED3BF500F29031 /* AccountSettingViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -557,6 +567,8 @@
 				D6789B5020DE9514009071BF /* ShopDetailsTC.swift */,
 				D6789B5220DE966D009071BF /* ShopDetailsTC.xib */,
 				D6789B5420DE9755009071BF /* ShopDetailsViewModel.swift */,
+				D6EFC62320ED224B00EF4137 /* StoreHighlightsCell.xib */,
+				D6EFC62520ED225700EF4137 /* StoreHighlightsCell.swift */,
 			);
 			path = ShopDetail;
 			sourceTree = "<group>";
@@ -854,7 +866,9 @@
 				D692616720C40BBC00194C0B /* TransferChapterViewController.storyboard in Resources */,
 				D692614E20C388AA00194C0B /* UserMessageViewController.storyboard in Resources */,
 				D67E97EC20DF4371007EA35A /* RegisterViewController.storyboard in Resources */,
+				D6EFC62420ED224B00EF4137 /* StoreHighlightsCell.xib in Resources */,
 				D692615320C38CBE00194C0B /* AboutUsViewController.storyboard in Resources */,
+				D62A6C2B20ED3BE600F29031 /* AccountSettingViewController.storyboard in Resources */,
 				D670B60420BDA61800951BDA /* SetChapterTC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1008,6 +1022,7 @@
 				1D132CA820B18CBB000CEE6D /* AppDelegate.swift in Sources */,
 				1D4C0BB120BA9ACA00583735 /* SearchShopViewController.swift in Sources */,
 				D6AF656D20DC002600201E08 /* UserFeedbackResponse.swift in Sources */,
+				D6EFC62620ED225700EF4137 /* StoreHighlightsCell.swift in Sources */,
 				D6B1AA2220E7C8A7004356A5 /* MsgStatusTC.swift in Sources */,
 				D6B1AA2620E7CEF0004356A5 /* UIButtonExtension.swift in Sources */,
 				D6E4877420D69B9F002C3D63 /* UserGetCollectShopsResponse.swift in Sources */,
@@ -1023,6 +1038,7 @@
 				D6F494C620D96253003A09E1 /* UserGetShopsByLatlngRequest.swift in Sources */,
 				D6E4875C20D665AD002C3D63 /* UserChangePwdResponse.swift in Sources */,
 				D6F494BC20D95894003A09E1 /* UserGetShopStateResponse.swift in Sources */,
+				D62A6C2D20ED3BF500F29031 /* AccountSettingViewController.swift in Sources */,
 				D6AF654320DBE79A00201E08 /* UserDoNateStampResponse.swift in Sources */,
 				D6AF657320DC01C700201E08 /* UserCheckUserRequest.swift in Sources */,
 				D67E97EF20DF4500007EA35A /* RecoverPasswordViewController.swift in Sources */,
@@ -1117,7 +1133,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 1499648173@qq.com (B4WF5476D6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1174,7 +1190,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 1499648173@qq.com (B4WF5476D6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -1202,10 +1218,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VK89TW355W;
+				DEVELOPMENT_TEAM = 3PBTLASJAN;
 				INFOPLIST_FILE = EveryStamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zl.EveryStamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaolin.EveryStamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EveryStamp/Bridging-Header.h";
@@ -1221,10 +1238,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VK89TW355W;
+				DEVELOPMENT_TEAM = 3PBTLASJAN;
 				INFOPLIST_FILE = EveryStamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zl.EveryStamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaolin.EveryStamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "EveryStamp/Bridging-Header.h";

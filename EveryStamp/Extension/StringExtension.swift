@@ -24,4 +24,14 @@ extension String {
         dformatter.dateFormat = "yyyy-MM-dd HH:mm"
         return dformatter.string(from: date)
     }
+    
+    func getHHmmByTimeStamp() -> String {
+        let timeStamp = Int(self)
+        //转换为时间
+        let timeInterval: TimeInterval = TimeInterval(timeStamp!)
+        let date = Date(timeIntervalSince1970: timeInterval)
+        let dformatter = DateFormatter()
+        dformatter.dateFormat = "HH:mm"
+        return dformatter.string(from: date)
+    }
 }

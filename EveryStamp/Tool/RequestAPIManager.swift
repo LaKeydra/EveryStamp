@@ -26,7 +26,8 @@ class RequestAPIManager: NSObject {
     static let shared = RequestAPIManager()
     var access_token: String = ""
     var userId: Int = 0
-    var isLogin: Bool = UserDefaults().bool(forKey: "isLogin")
+    //var isLogin: Bool = UserDefaults().bool(forKey: "isLogin")
+    var isLogin: Bool = false
     var userName: String = ""
     
     func requestAPIBaseUrl() -> String {

@@ -26,7 +26,7 @@ struct UserGetAllShopsResponse: Decodable {
 }
 
 struct UserGetAllShopsData: Gloss.JSONDecodable {
-    var shop_id: Int?
+    var shop_id: String?
     var name: String?
     var desp: String?
     var type_id: String?

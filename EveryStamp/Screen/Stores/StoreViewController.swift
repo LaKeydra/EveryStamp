@@ -30,8 +30,6 @@ class StoreViewController: UIViewController {
         tableView.register(cellType: ShopRecommendTC.self)
         tableView.separatorStyle = .none
         self.requestData()
-        let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(gotoDetailVC))
-        self.tableView.addGestureRecognizer(tapGesture)
     }
     
     func bind() {
@@ -89,10 +87,11 @@ class StoreViewController: UIViewController {
     }
     
     
-    @objc func gotoDetailVC() {
+    func gotoDetailVC(shopid: Int) {
         let sb = UIStoryboard.init(name: "ShopDetailsViewController", bundle: nil)
-        let vc = sb.instantiateInitialViewController()
-        self.navigationController?.pushViewController(vc!, animated: true)
+        let vc: ShopDetailsViewController = sb.instantiateInitialViewController() as! ShopDetailsViewController
+        vc.shopId = shopid
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -129,5 +128,10 @@ extension StoreViewController: UITableViewDelegate, UITableViewDataSource {
             return 126
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let shopId = Int(data[indexPath.row].shop_id ?? "") ?? 0
+        self.gotoDetailVC(shopid: shopId)
     }
 }

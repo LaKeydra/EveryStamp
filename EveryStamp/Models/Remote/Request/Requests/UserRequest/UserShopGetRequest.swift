@@ -15,10 +15,6 @@ struct UserShopGetRequest: BaseRequest {
         return "api/shop/get"
     }
     
-    var method: HTTPMethod {
-        return .get
-    }
-    
     var paramater: [String : Any]?
     
     init(access_token: String, shop_id: Int, is_all: Int) {
