@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LogInViewController: UIViewController {
+class LogInViewController: BaseViewController {
     
     @IBOutlet weak var dismissBtn: UIButton!
     @IBOutlet weak var registerBtn: UIButton!
@@ -21,6 +21,7 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         bind()
     }
     
@@ -51,12 +52,12 @@ class LogInViewController: UIViewController {
             let userName: String = self.phoneTextField.text ?? ""
             let pwd: String = self.pwTextfield.text ?? ""
             self.viewModel.sendUserLoginRequest(userName: userName, pwd: pwd).subscribe(onNext: { response in
-//                let manager = UserDefaults()
-//                manager.set(true, forKey: "isLogin")
-                RequestAPIManager.shared.isLogin = true
-                RequestAPIManager.shared.userName = userName
-                RequestAPIManager.shared.access_token = response.data?.accessToken ?? ""
-                RequestAPIManager.shared.userId = Int(response.data?.userId ?? "") ?? 0
+                let manager = UserDefaults.standard
+                manager.set(true, forKey: "isLogin")
+                manager.set(userName, forKey: "userName")
+                manager.set(response.data?.accessToken ?? "", forKey: "access_token")
+                manager.set(Int(response.data?.userId ?? "") ?? 0, forKey: "userId")
+                manager.synchronize()
                 ToastView.instance.showToast(content: "爱客章：登录成功")
                 self.dismiss(animated: false, completion: nil)
             }, onError: { error in
@@ -70,4 +71,6 @@ class LogInViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+   
 }

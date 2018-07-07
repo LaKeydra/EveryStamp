@@ -24,11 +24,25 @@ enum GetFromStampStatus: String {
 
 class RequestAPIManager: NSObject {
     static let shared = RequestAPIManager()
+//    var access_token: String = ""
+//    var userId: Int = 0
+//    //var isLogin: Bool = UserDefaults().bool(forKey: "isLogin")
+//    var isLogin: Bool = false
+//    var userName: String = ""
     var access_token: String = ""
     var userId: Int = 0
-    //var isLogin: Bool = UserDefaults().bool(forKey: "isLogin")
     var isLogin: Bool = false
     var userName: String = ""
+    
+    override init() {
+        super.init()
+        let userDefault = UserDefaults.standard
+        access_token = userDefault.string(forKey: "access_token") ?? ""
+        userId = userDefault.integer(forKey: "userId")
+        isLogin = userDefault.bool(forKey: "isLogin")
+        userName = userDefault.string(forKey: "userName") ?? ""
+    }
+    
     
     func requestAPIBaseUrl() -> String {
         return "https://api.everystamp.cc"

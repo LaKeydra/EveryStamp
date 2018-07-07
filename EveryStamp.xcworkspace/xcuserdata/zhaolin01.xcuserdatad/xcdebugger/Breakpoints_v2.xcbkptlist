@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EveryStamp/Screen/SetCard/SetCardViewController.swift"
-            timestampString = "552416980.080766"
+            timestampString = "552662701.084716"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -65,70 +65,6 @@
             endingLineNumber = "199"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewController.swift"
-            timestampString = "552418000.916593"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewModel.swift"
-            timestampString = "552412577.93001"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "getShopDetailData(shop_id:is_all:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;EveryStamp.UserShopGetResponse&gt;) -&gt; RxSwift.Disposable in EveryStamp.ShopDetailsViewModel.getShopDetailData(shop_id: Swift.Int, is_all: Swift.Int) -&gt; RxSwift.Observable&lt;EveryStamp.UserShopGetResponse&gt;"
-                  moduleName = "EveryStamp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewModel.swift"
-                  timestampString = "552415728.767491"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "208">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (EveryStamp.Result&lt;EveryStamp.UserShopGetResponse&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;EveryStamp.UserShopGetResponse&gt;) -&gt; RxSwift.Disposable in EveryStamp.ShopDetailsViewModel.getShopDetailData(shop_id: Swift.Int, is_all: Swift.Int) -&gt; RxSwift.Observable&lt;EveryStamp.UserShopGetResponse&gt;"
-                  moduleName = "EveryStamp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/Stores/ShopDetail/ShopDetailsViewModel.swift"
-                  timestampString = "552415728.771053"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "34">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

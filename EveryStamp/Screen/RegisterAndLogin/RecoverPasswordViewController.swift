@@ -9,7 +9,7 @@
 import Foundation
 
 
-class RecoverPasswordViewController: UIViewController {
+class RecoverPasswordViewController: BaseViewController {
     
     @IBOutlet weak var dismissBtn: UIButton!
     @IBOutlet weak var phoneTextField: UITextField!

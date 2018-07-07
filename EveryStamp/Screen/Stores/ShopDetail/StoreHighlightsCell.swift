@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StoreHighlightsCell: UITableViewCell {
+class StoreHighlightsCell: UITableViewCell, NibReusable {
     
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var introductionL: UILabel!

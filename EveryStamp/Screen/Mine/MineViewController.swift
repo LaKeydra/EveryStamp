@@ -19,6 +19,7 @@ class MineViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .selected)
+        super.gotoLogInViewController()
         bind()
     }
     

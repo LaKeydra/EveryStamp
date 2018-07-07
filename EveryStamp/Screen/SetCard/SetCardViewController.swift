@@ -16,11 +16,7 @@ class SetCardViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .selected)
-        if !RequestAPIManager.shared.isLogin {
-            let stoyboard = UIStoryboard.init(name: "LogInViewController", bundle: nil)
-            let vc = stoyboard.instantiateInitialViewController()
-            self.present(vc!, animated: true, completion: nil)
-        }
+        super.gotoLogInViewController()
         tableView.register(cellType: SetChapterCardTC.self)
     }
     

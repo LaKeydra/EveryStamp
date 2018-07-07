@@ -70,6 +70,8 @@ struct UserShopGetDetailData: Gloss.JSONDecodable {
     var sign_url: String?
     var avator_url: String?
     var point_rules: String?
+    var min_stamp_count: String?
+    var max_stamp_count: String?
     var min_stamp_rules: String?
     var address: String?
     var status: String?
@@ -77,6 +79,17 @@ struct UserShopGetDetailData: Gloss.JSONDecodable {
     var open_end_time: String?
     var stamp_begin_time: String?
     var stamp_end_time: String?
+    var latitude: String?
+    var longitude: String?
+    var country: String?
+    var province: String?
+    var city: String?
+    var district: String?
+    var company: String?
+    var telephone: String?
+    var mobilephone: String?
+    var img_urls: String?
+    var img_alts: String?
     var type_name: String?
     
     init?(json: Gloss.JSON) {
@@ -87,6 +100,8 @@ struct UserShopGetDetailData: Gloss.JSONDecodable {
         self.sign_url = "sign_url" <~~ json
         self.avator_url = "avator_url" <~~ json
         self.point_rules = "point_rules" <~~ json
+        self.min_stamp_count = "min_stamp_count" <~~ json
+        self.max_stamp_count = "max_stamp_count" <~~ json
         self.min_stamp_rules = "min_stamp_rules" <~~ json
         self.address = "address" <~~ json
         self.status = "status" <~~ json
@@ -94,6 +109,17 @@ struct UserShopGetDetailData: Gloss.JSONDecodable {
         self.open_end_time = "open_end_time" <~~ json
         self.stamp_begin_time = "stamp_begin_time" <~~ json
         self.stamp_end_time = "stamp_end_time" <~~ json
+        self.latitude = "latitude" <~~ json
+        self.longitude = "longitude" <~~ json
+        self.country = "country" <~~ json
+        self.province = "province" <~~ json
+        self.city = "city" <~~ json
+        self.district = "district" <~~ json
+        self.company = "company" <~~ json
+        self.telephone = "telephone" <~~ json
+        self.mobilephone = "mobilephone" <~~ json
+        self.img_urls = "img_urls" <~~ json
+        self.img_alts = "img_alts" <~~ json
         self.type_name = "type_name" <~~ json
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: BaseViewController {
     
     @IBOutlet weak var dismissBtn: UIButton!
     @IBOutlet weak var loginBtn: UIButton!

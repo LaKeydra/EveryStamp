@@ -13,6 +13,15 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let hideKeyBoardGR: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyBoard))
+        self.view.addGestureRecognizer(hideKeyBoardGR)
+    }
+    
+    @objc func hideKeyBoard() {
+        self.view.endEditing(true)
+    }
+    
+    func gotoLogInViewController() {
         if !RequestAPIManager.shared.isLogin {
             let stoyboard = UIStoryboard.init(name: "LogInViewController", bundle: nil)
             let vc = stoyboard.instantiateInitialViewController()
