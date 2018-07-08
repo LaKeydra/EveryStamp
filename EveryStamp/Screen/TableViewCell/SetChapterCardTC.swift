@@ -29,7 +29,7 @@ class SetChapterCardTC: UITableViewCell, NibReusable {
         self.detailL.text = detail
         self.currentL.text = currentNum
         self.totalNumL.text = totalNum
-        let url = RequestAPIManager.shared.requestAPIBaseUrl() + icon
+        let url = RequestAPIManager.requestAPIBaseUrl() + icon
         
         self.icon.kf.setImage(with: URL.init(string: url), placeholder: nil, options: nil, progressBlock: nil) {[weak self] (image, erroe, cacheType, url) in
             guard let `self` = self else { return }

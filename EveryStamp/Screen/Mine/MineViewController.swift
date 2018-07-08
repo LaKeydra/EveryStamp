@@ -25,8 +25,8 @@ class MineViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        if RequestAPIManager.shared.isLogin {
-            self.userNameL.text = RequestAPIManager.shared.userName
+        if RequestAPIManager().isLogin {
+            self.userNameL.text = RequestAPIManager().userName
         }
     }
     

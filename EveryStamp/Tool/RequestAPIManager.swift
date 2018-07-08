@@ -23,7 +23,7 @@ enum GetFromStampStatus: String {
 }
 
 class RequestAPIManager: NSObject {
-    static let shared = RequestAPIManager()
+    //static let shared = RequestAPIManager()
 //    var access_token: String = ""
 //    var userId: Int = 0
 //    //var isLogin: Bool = UserDefaults().bool(forKey: "isLogin")
@@ -44,11 +44,11 @@ class RequestAPIManager: NSObject {
     }
     
     
-    func requestAPIBaseUrl() -> String {
+    static func requestAPIBaseUrl() -> String {
         return "https://api.everystamp.cc"
     }
     
-    func requestAPITimeAndToken() -> [String: String] {
+    static func requestAPITimeAndToken() -> [String: String] {
         var dic: [String: String] = [:]
         let now = Date()
         let timeInterval: TimeInterval = now.timeIntervalSince1970
@@ -60,8 +60,8 @@ class RequestAPIManager: NSObject {
     }
     
     //有多处要用到的API
-    func sendUserGetcodeRequest(name: String,isExist: Int, type: Int = 0, checkExist: Int = 1) -> Observable<UserGetCodeResponse> {
-        let requestPM = RequestAPIManager.shared.requestAPITimeAndToken()
+    static func sendUserGetcodeRequest(name: String,isExist: Int, type: Int = 0, checkExist: Int = 1) -> Observable<UserGetCodeResponse> {
+        let requestPM = RequestAPIManager.requestAPITimeAndToken()
         return Observable.create({ observer -> Disposable in
             let request: UserGetCodeRequest = UserGetCodeRequest(time: requestPM["time"] ?? "", token: requestPM["token"] ?? "", name: name, isExist: isExist, type: type, checkExist: checkExist)
             let observable = RxSessionRequestSender().sendRequest(request).subscribe(onNext: { result in

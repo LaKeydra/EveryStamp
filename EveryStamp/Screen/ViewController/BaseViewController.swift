@@ -22,7 +22,7 @@ class BaseViewController: UIViewController {
     }
     
     func gotoLogInViewController() {
-        if !RequestAPIManager.shared.isLogin {
+        if !RequestAPIManager().isLogin {
             let stoyboard = UIStoryboard.init(name: "LogInViewController", bundle: nil)
             let vc = stoyboard.instantiateInitialViewController()
             self.present(vc!, animated: true, completion: nil)

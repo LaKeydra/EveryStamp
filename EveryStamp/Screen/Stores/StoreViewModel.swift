@@ -11,7 +11,7 @@ import Foundation
 class StoreViewModel: NSObject {
     //附近商铺
     func getShopsByLatlng(distance: Float = 3000, page: Int = 1, num: Int = 10) -> Observable<UserGetAllShopsResponse> {
-        let requestPM = RequestAPIManager.shared.requestAPITimeAndToken()
+        let requestPM = RequestAPIManager.requestAPITimeAndToken()
         
         let lat: Float = Float(LocationManager.shared.currentLocation?.coordinate.latitude ?? 0)
         let lng: Float = Float(LocationManager.shared.currentLocation?.coordinate.longitude ?? 0)
@@ -36,7 +36,7 @@ class StoreViewModel: NSObject {
     
     //推荐商铺
     func getShopsByRecommend(page: Int = 1, num: Int = 10, is_recommend: Int = 0) -> Observable<UserGetAllShopsResponse> {
-         let requestPM = RequestAPIManager.shared.requestAPITimeAndToken()
+         let requestPM = RequestAPIManager.requestAPITimeAndToken()
         
         return Observable.create({ observer -> Disposable in
             let request: UserGetAllShopsRequest = UserGetAllShopsRequest(time: requestPM["time"] ?? "", token: requestPM["token"] ?? "", page: page, num: num, is_recommend: is_recommend)

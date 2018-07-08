@@ -11,7 +11,7 @@ import Foundation
 class ShopDetailsViewModel: NSObject{
     func getShopDetailData(shop_id: Int, is_all: Int) -> Observable<UserShopGetResponse> {
         return Observable.create({ observer -> Disposable in
-            let request: UserShopGetRequest = UserShopGetRequest(access_token: RequestAPIManager.shared.access_token, shop_id: shop_id, is_all: is_all)
+            let request: UserShopGetRequest = UserShopGetRequest(access_token: RequestAPIManager().access_token, shop_id: shop_id, is_all: is_all)
             let observable = RxSessionRequestSender().sendRequest(request).subscribe(onNext: { result in
                 switch result {
                 case .success(let value):

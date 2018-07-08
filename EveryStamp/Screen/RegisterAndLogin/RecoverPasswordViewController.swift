@@ -55,7 +55,7 @@ class RecoverPasswordViewController: BaseViewController {
             //MARK 发验证码
             self.getCodeBtn.countDown(count: 60)
             let name = self.phoneTextField.text ?? ""
-            RequestAPIManager.shared.sendUserGetcodeRequest(name: name, isExist: 1).subscribe(onNext: { response in
+            RequestAPIManager.sendUserGetcodeRequest(name: name, isExist: 1).subscribe(onNext: { response in
                 DDLogDebug("发送二维码成功")
             }, onError: { error in
                 let err = error as NSError

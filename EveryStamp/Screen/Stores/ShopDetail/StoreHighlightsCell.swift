@@ -16,7 +16,7 @@ class StoreHighlightsCell: UITableViewCell, NibReusable {
     func refreshUI(img: String, introducText: String)  {
         self.introductionL.text = introducText
         
-        let url = RequestAPIManager.shared.requestAPIBaseUrl() + img
+        let url = RequestAPIManager.requestAPIBaseUrl() + img
         
         self.imgView.kf.setImage(with: URL.init(string: url), placeholder: nil, options: nil, progressBlock: nil) {[weak self] (image, erroe, cacheType, url) in
             guard let `self` = self else { return }

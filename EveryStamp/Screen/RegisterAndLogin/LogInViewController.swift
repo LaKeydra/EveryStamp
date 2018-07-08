@@ -57,7 +57,6 @@ class LogInViewController: BaseViewController {
                 manager.set(userName, forKey: "userName")
                 manager.set(response.data?.accessToken ?? "", forKey: "access_token")
                 manager.set(Int(response.data?.userId ?? "") ?? 0, forKey: "userId")
-                manager.synchronize()
                 ToastView.instance.showToast(content: "爱客章：登录成功")
                 self.dismiss(animated: false, completion: nil)
             }, onError: { error in

@@ -25,7 +25,7 @@ class ShopTC: UITableViewCell, NibReusable {
         self.shopNameL.text = shopNameText
         self.shopIntroductionL.text = shopIntroductText
         self.shopDetailL.text = shopDetailText
-        let url = RequestAPIManager.shared.requestAPIBaseUrl() + bgImg
+        let url = RequestAPIManager.requestAPIBaseUrl() + bgImg
         
         self.bgImgV.kf.setImage(with: URL.init(string: url), placeholder: nil, options: nil, progressBlock: nil) {[weak self] (image, erroe, cacheType, url) in
             guard let `self` = self else { return }

@@ -10,7 +10,7 @@ import Foundation
 
 class RegisterViewModel: NSObject {
     func sendUserRegisterRequest(userName: String, pwd: String, code: Int) -> Observable<UserRegisterResponse> {
-        let requestPM = RequestAPIManager.shared.requestAPITimeAndToken()
+        let requestPM = RequestAPIManager.requestAPITimeAndToken()
         return Observable.create({ observer -> Disposable in
             let request: UserRegisterRequest = UserRegisterRequest(time: requestPM["time"] ?? "", token: requestPM["token"] ?? "", userName: userName, pwd: pwd, code: code, from: "ios")
             let observable = RxSessionRequestSender().sendRequest(request).subscribe(onNext: { result in

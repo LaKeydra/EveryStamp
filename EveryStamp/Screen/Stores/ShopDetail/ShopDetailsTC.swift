@@ -36,7 +36,7 @@ class ShopDetailsTC: UITableViewCell, NibReusable {
         self.ruleTwoL.text = model.ruleTwo
         self.ruleThreeL.text = model.ruleThree
         
-        let url = RequestAPIManager.shared.requestAPIBaseUrl() + model.shopIcon
+        let url = RequestAPIManager.requestAPIBaseUrl() + model.shopIcon
         
         self.shopIcon.kf.setImage(with: URL.init(string: url), placeholder: nil, options: nil, progressBlock: nil) {[weak self] (image, erroe, cacheType, url) in
             guard let `self` = self else { return }

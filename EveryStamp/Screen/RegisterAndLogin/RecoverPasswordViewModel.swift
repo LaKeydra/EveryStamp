@@ -10,7 +10,7 @@ import Foundation
 
 class RecoverPasswordViewModel: NSObject {
     func sendUserRecoverPasswordRequest(userName: Int, pwd: String, code: Int) -> Observable<UserFindPwdResponse> {
-        let requestPM = RequestAPIManager.shared.requestAPITimeAndToken()
+        let requestPM = RequestAPIManager.requestAPITimeAndToken()
         return Observable.create({ observer -> Disposable in
             let request: UserFindPwdRequest = UserFindPwdRequest(time: requestPM["time"] ?? "", token: requestPM["token"] ?? "", userName: userName, pwd: pwd, code: code)
             let observable = RxSessionRequestSender().sendRequest(request).subscribe(onNext: { result in

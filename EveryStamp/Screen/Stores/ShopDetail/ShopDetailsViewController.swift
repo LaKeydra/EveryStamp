@@ -26,8 +26,14 @@ class ShopDetailsViewController: UIViewController {
         viewModel.getShopDetailData(shop_id: shopId, is_all: 1).subscribe(onNext: {[weak self] response in
             guard let `self` = self else { return }
             self.shopDetailData = response.data
-            self.titles = (response.data?.img_alts?.split(separator: ","))!.map(String.init)
-            self.imgs = (response.data?.img_urls?.split(separator: ";"))!.map(String.init)
+            self.titles = (response.data?.img_alts?.split(separator: "]") ?? []).map(String.init)
+            
+            for (index, _) in self.titles.enumerated() {
+                self.titles[index].removeLast()
+                self.titles[index].removeLast()
+            }
+
+            self.imgs = (response.data?.img_urls?.split(separator: ";") ?? []).map(String.init)
             self.tableView.reloadData()
         }).disposed(by: disposebag)
     }
@@ -39,7 +45,7 @@ class ShopDetailsViewController: UIViewController {
 
 extension ShopDetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1 + self.titles.count
+        return 1 + self.imgs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -65,7 +71,7 @@ extension ShopDetailsViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 681
+            return UITableViewAutomaticDimension
         } else {
             return 286
         }

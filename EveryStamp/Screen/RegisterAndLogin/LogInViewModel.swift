@@ -10,7 +10,7 @@ import Foundation
 
 class LogInViewModel: NSObject {
     func sendUserLoginRequest(userName: String, pwd: String) -> Observable<UserLoginResponse> {
-            let requestPM = RequestAPIManager.shared.requestAPITimeAndToken()
+            let requestPM = RequestAPIManager.requestAPITimeAndToken()
             return Observable.create({ observer -> Disposable in
                 let request: UserLoginRequest = UserLoginRequest(time: requestPM["time"] ?? "", token: requestPM["token"] ?? "", userName: userName, pwd: pwd, from: "ios")
                 let observable = RxSessionRequestSender().sendRequest(request).subscribe(onNext: { result in
