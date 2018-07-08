@@ -20,7 +20,7 @@
 @import CocoaLumberjack;
 @import MJRefresh;
 
-
+#import "AudioStamp.h"
 #import <CommonCrypto/CommonDigest.h>
 
 #endif /* Bridging_Header_h */

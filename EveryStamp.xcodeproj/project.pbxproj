@@ -31,6 +31,12 @@
 		5140F57CE731BDC1DCDED343 /* Pods_EveryStamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5D34780E761AB60DF07CAC /* Pods_EveryStamp.framework */; };
 		D62A6C2B20ED3BE600F29031 /* AccountSettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62A6C2A20ED3BE600F29031 /* AccountSettingViewController.storyboard */; };
 		D62A6C2D20ED3BF500F29031 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A6C2C20ED3BF500F29031 /* AccountSettingViewController.swift */; };
+		D640853B20F2066000E3E49F /* SetCardDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D640853920F2066000E3E49F /* SetCardDetailsViewController.storyboard */; };
+		D640853C20F2066000E3E49F /* SetCardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D640853A20F2066000E3E49F /* SetCardDetailsViewController.swift */; };
+		D640854020F20BFB00E3E49F /* libMOBIDOOLIB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D640853F20F20BFA00E3E49F /* libMOBIDOOLIB.a */; };
+		D640854320F20C7700E3E49F /* AudioStamp.h in Frameworks */ = {isa = PBXBuildFile; fileRef = D640854220F20C7700E3E49F /* AudioStamp.h */; };
+		D640854820F2480200E3E49F /* TransferViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D640854720F2480200E3E49F /* TransferViewController.storyboard */; };
+		D640854A20F2481000E3E49F /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D640854920F2481000E3E49F /* TransferViewController.swift */; };
 		D6529C1E20C0090E00F5E7E9 /* SetChapterCardTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6529C1D20C0090E00F5E7E9 /* SetChapterCardTC.xib */; };
 		D670B60120BDA2A300951BDA /* NoInternetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D670B60020BDA2A300951BDA /* NoInternetViewController.storyboard */; };
 		D670B60420BDA61800951BDA /* SetChapterTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D670B60320BDA61800951BDA /* SetChapterTC.xib */; };
@@ -52,7 +58,6 @@
 		D684954D20E13CF200D8E23B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684954C20E13CF200D8E23B /* CustomButton.swift */; };
 		D684954F20E13D9500D8E23B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684954E20E13D9500D8E23B /* ColorExtension.swift */; };
 		D686916820DFE44D008463DA /* SetChapterCardTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686916720DFE44D008463DA /* SetChapterCardTC.swift */; };
-		D686916A20DFE95D008463DA /* SetCardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */; };
 		D68BF25D20D14FE4009008C0 /* UserLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF25C20D14FE4009008C0 /* UserLoginRequest.swift */; };
 		D68BF26020D15338009008C0 /* UserLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF25F20D15338009008C0 /* UserLoginResponse.swift */; };
 		D68BF26320D159EF009008C0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF26220D159EF009008C0 /* StringExtension.swift */; };
@@ -67,7 +72,6 @@
 		D692615920C3936900194C0B /* FeedbackQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692615820C3936900194C0B /* FeedbackQuestionViewController.swift */; };
 		D692615D20C3BE8400194C0B /* MsgStatusTC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D692615C20C3BE8400194C0B /* MsgStatusTC.xib */; };
 		D692616120C3C3E000194C0B /* MsgDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616020C3C3E000194C0B /* MsgDetailsViewController.storyboard */; };
-		D692616520C3D00600194C0B /* SetCardDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */; };
 		D692616720C40BBC00194C0B /* TransferChapterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */; };
 		D692616D20C4140200194C0B /* ImgTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D692616C20C4140200194C0B /* ImgTitleCell.xib */; };
 		D6958F6E20E8E61B00598674 /* MsgDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6958F6D20E8E61B00598674 /* MsgDetailsViewController.swift */; };
@@ -207,6 +211,13 @@
 		1DEDA2F120B44CD7001A5AA1 /* MineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewModel.swift; sourceTree = "<group>"; };
 		D62A6C2A20ED3BE600F29031 /* AccountSettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountSettingViewController.storyboard; sourceTree = "<group>"; };
 		D62A6C2C20ED3BF500F29031 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
+		D640853920F2066000E3E49F /* SetCardDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetCardDetailsViewController.storyboard; sourceTree = "<group>"; };
+		D640853A20F2066000E3E49F /* SetCardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCardDetailsViewController.swift; sourceTree = "<group>"; };
+		D640853F20F20BFA00E3E49F /* libMOBIDOOLIB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMOBIDOOLIB.a; sourceTree = "<group>"; };
+		D640854120F20C5200E3E49F /* AudioStamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStamp.h; sourceTree = "<group>"; };
+		D640854220F20C7700E3E49F /* AudioStamp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AudioStamp.h; path = ../AudioStamp.h; sourceTree = "<group>"; };
+		D640854720F2480200E3E49F /* TransferViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferViewController.storyboard; sourceTree = "<group>"; };
+		D640854920F2481000E3E49F /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		D6529C1D20C0090E00F5E7E9 /* SetChapterCardTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetChapterCardTC.xib; sourceTree = "<group>"; };
 		D670B60020BDA2A300951BDA /* NoInternetViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoInternetViewController.storyboard; sourceTree = "<group>"; };
 		D670B60320BDA61800951BDA /* SetChapterTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetChapterTC.xib; sourceTree = "<group>"; };
@@ -228,7 +239,6 @@
 		D684954C20E13CF200D8E23B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D684954E20E13D9500D8E23B /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		D686916720DFE44D008463DA /* SetChapterCardTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetChapterCardTC.swift; sourceTree = "<group>"; };
-		D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardDetailsViewController.swift; sourceTree = "<group>"; };
 		D68BF25C20D14FE4009008C0 /* UserLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginRequest.swift; sourceTree = "<group>"; };
 		D68BF25F20D15338009008C0 /* UserLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginResponse.swift; sourceTree = "<group>"; };
 		D68BF26220D159EF009008C0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -243,7 +253,6 @@
 		D692615820C3936900194C0B /* FeedbackQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackQuestionViewController.swift; sourceTree = "<group>"; };
 		D692615C20C3BE8400194C0B /* MsgStatusTC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MsgStatusTC.xib; sourceTree = "<group>"; };
 		D692616020C3C3E000194C0B /* MsgDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MsgDetailsViewController.storyboard; sourceTree = "<group>"; };
-		D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetCardDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferChapterViewController.storyboard; sourceTree = "<group>"; };
 		D692616C20C4140200194C0B /* ImgTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgTitleCell.xib; sourceTree = "<group>"; };
 		D6958F6D20E8E61B00598674 /* MsgDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgDetailsViewController.swift; sourceTree = "<group>"; };
@@ -362,7 +371,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D640854320F20C7700E3E49F /* AudioStamp.h in Frameworks */,
 				5140F57CE731BDC1DCDED343 /* Pods_EveryStamp.framework in Frameworks */,
+				D640854020F20BFB00E3E49F /* libMOBIDOOLIB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +401,8 @@
 		1D132CA620B18CBB000CEE6D /* EveryStamp */ = {
 			isa = PBXGroup;
 			children = (
+				D640854120F20C5200E3E49F /* AudioStamp.h */,
+				D640853F20F20BFA00E3E49F /* libMOBIDOOLIB.a */,
 				D6A56BA220DE0E5200261BC0 /* Tool */,
 				D68BF26120D159C7009008C0 /* Extension */,
 				D675413F20CC2EE200D07E9C /* Models */,
@@ -487,6 +500,7 @@
 		1DEDA2DA20B447E9001A5AA1 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				D640854620F247D400E3E49F /* Transfer */,
 				D692614C20C3887100194C0B /* UserMessage */,
 				1DEDA2ED20B44CB8001A5AA1 /* MineViewController.storyboard */,
 				1DEDA2EF20B44CC9001A5AA1 /* MineViewController.swift */,
@@ -514,6 +528,7 @@
 		CC468D57F1795FE3F5ABCA25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D640854220F20C7700E3E49F /* AudioStamp.h */,
 				1D5D34780E761AB60DF07CAC /* Pods_EveryStamp.framework */,
 			);
 			name = Frameworks;
@@ -522,8 +537,19 @@
 		D640853820F2055D00E3E49F /* SetCardDetailsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D640853920F2066000E3E49F /* SetCardDetailsViewController.storyboard */,
+				D640853A20F2066000E3E49F /* SetCardDetailsViewController.swift */,
 			);
 			path = SetCardDetailsViewController;
+			sourceTree = "<group>";
+		};
+		D640854620F247D400E3E49F /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				D640854720F2480200E3E49F /* TransferViewController.storyboard */,
+				D640854920F2481000E3E49F /* TransferViewController.swift */,
+			);
+			path = Transfer;
 			sourceTree = "<group>";
 		};
 		D670B60220BDA55400951BDA /* TableViewCell */ = {
@@ -701,9 +727,7 @@
 				D692615620C3935900194C0B /* FeedbackQuestionViewController.storyboard */,
 				D692615820C3936900194C0B /* FeedbackQuestionViewController.swift */,
 				D692616020C3C3E000194C0B /* MsgDetailsViewController.storyboard */,
-				D692616420C3D00600194C0B /* SetCardDetailsViewController.storyboard */,
 				D692616620C40BBC00194C0B /* TransferChapterViewController.storyboard */,
-				D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */,
 				D6B1AA2F20E7ED7F004356A5 /* BaseViewController.swift */,
 				D6958F6D20E8E61B00598674 /* MsgDetailsViewController.swift */,
 				D68EA44420F1A773006490E4 /* FeedbackQuestionViewModel.swift */,
@@ -860,10 +884,10 @@
 				1DEDA2E820B44C79001A5AA1 /* SetCardViewController.storyboard in Resources */,
 				D692615720C3935900194C0B /* FeedbackQuestionViewController.storyboard in Resources */,
 				D6E4874E20D6396E002C3D63 /* GuidePageThree.storyboard in Resources */,
+				D640853B20F2066000E3E49F /* SetCardDetailsViewController.storyboard in Resources */,
 				D67E97ED20DF4371007EA35A /* LogInViewController.storyboard in Resources */,
 				D670B60620BDAD7600951BDA /* PhoneNumBindViewController.storyboard in Resources */,
 				D69E989420C311990004B6DC /* BeginningChapterViewController.storyboard in Resources */,
-				D692616520C3D00600194C0B /* SetCardDetailsViewController.storyboard in Resources */,
 				D6529C1E20C0090E00F5E7E9 /* SetChapterCardTC.xib in Resources */,
 				D692616D20C4140200194C0B /* ImgTitleCell.xib in Resources */,
 				D670B60120BDA2A300951BDA /* NoInternetViewController.storyboard in Resources */,
@@ -873,6 +897,7 @@
 				D69E988F20C2F8FE0004B6DC /* ShopTC.xib in Resources */,
 				1D132CAF20B18CBB000CEE6D /* Assets.xcassets in Resources */,
 				1D4C0BAF20BA982C00583735 /* SearchShopViewController.storyboard in Resources */,
+				D640854820F2480200E3E49F /* TransferViewController.storyboard in Resources */,
 				1D132CAD20B18CBB000CEE6D /* Main.storyboard in Resources */,
 				D692616720C40BBC00194C0B /* TransferChapterViewController.storyboard in Resources */,
 				D692614E20C388AA00194C0B /* UserMessageViewController.storyboard in Resources */,
@@ -1022,7 +1047,6 @@
 				D68BF25D20D14FE4009008C0 /* UserLoginRequest.swift in Sources */,
 				D6D03FBB20DF62AE00C9D5C1 /* RegisterViewModel.swift in Sources */,
 				D6F494B620D95721003A09E1 /* UserShopCollectRequest.swift in Sources */,
-				D686916A20DFE95D008463DA /* SetCardDetailsViewController.swift in Sources */,
 				D6E4877020D69933002C3D63 /* UserOauthLoginResponse.swift in Sources */,
 				D6AF654020DBE6C500201E08 /* UserShopStampRequest.swift in Sources */,
 				D6F494B820D95800003A09E1 /* UserShopUnCollectResponse.swift in Sources */,
@@ -1052,6 +1076,8 @@
 				D6F494BC20D95894003A09E1 /* UserGetShopStateResponse.swift in Sources */,
 				D62A6C2D20ED3BF500F29031 /* AccountSettingViewController.swift in Sources */,
 				D6AF654320DBE79A00201E08 /* UserDoNateStampResponse.swift in Sources */,
+				D640854A20F2481000E3E49F /* TransferViewController.swift in Sources */,
+				D640853C20F2066000E3E49F /* SetCardDetailsViewController.swift in Sources */,
 				D6AF657320DC01C700201E08 /* UserCheckUserRequest.swift in Sources */,
 				D67E97EF20DF4500007EA35A /* RecoverPasswordViewController.swift in Sources */,
 				D6E4876A20D6951B002C3D63 /* UserUpdateLatlngResponse.swift in Sources */,
@@ -1234,6 +1260,10 @@
 				INFOPLIST_FILE = EveryStamp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EveryStamp",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaolin.EveryStamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1254,6 +1284,10 @@
 				INFOPLIST_FILE = EveryStamp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EveryStamp",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaolin.EveryStamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

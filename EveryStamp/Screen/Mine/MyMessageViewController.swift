@@ -15,7 +15,7 @@ enum MsgType {
     case none
 }
 
-class MyMessageViewController: BaseViewController {
+class MyMessageViewController: UIViewController {
     
     @IBOutlet weak var findMsgBtn: UIButton!
     @IBOutlet weak var officialMsgBtn: UIButton!
@@ -29,6 +29,7 @@ class MyMessageViewController: BaseViewController {
     var shopMsgsData: [UserGetShopMsgsData] = []
     var currentMsgType: MsgType = .fromStampMsg
     let viewModel = MyMessageViewModel()
+    var disposeBag: DisposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,6 +133,12 @@ class MyMessageViewController: BaseViewController {
         vc.detail = detail
         self.navigationController?.pushViewController(vc, animated: false)
     }
+    
+    func gotoTransferViewController() {
+        let sb = UIStoryboard.init(name: "TransferViewController", bundle: nil)
+        let vc: TransferViewController = sb.instantiateInitialViewController() as! TransferViewController
+        self.navigationController?.pushViewController(vc, animated: false)
+    }
 }
 
 extension MyMessageViewController: UITableViewDelegate, UITableViewDataSource {
@@ -193,6 +200,7 @@ extension MyMessageViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: false)
         switch currentMsgType {
         case .fromStampMsg:
+            self.gotoTransferViewController()
             break
         case .systemMsg:
             let data = systemMsgsData[indexPath.row]
