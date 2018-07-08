@@ -58,6 +58,7 @@
 		D68BF26320D159EF009008C0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF26220D159EF009008C0 /* StringExtension.swift */; };
 		D68BF26520D15A34009008C0 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF26420D15A34009008C0 /* DataExtension.swift */; };
 		D68BF26720D15CA6009008C0 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68BF26620D15CA6009008C0 /* IntExtension.swift */; };
+		D68EA44520F1A773006490E4 /* FeedbackQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68EA44420F1A773006490E4 /* FeedbackQuestionViewModel.swift */; };
 		D692614E20C388AA00194C0B /* UserMessageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692614D20C388AA00194C0B /* UserMessageViewController.storyboard */; };
 		D692615020C388B900194C0B /* UserMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D692614F20C388B900194C0B /* UserMessageViewController.swift */; };
 		D692615320C38CBE00194C0B /* AboutUsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D692615220C38CBE00194C0B /* AboutUsViewController.storyboard */; };
@@ -233,6 +234,7 @@
 		D68BF26220D159EF009008C0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		D68BF26420D15A34009008C0 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		D68BF26620D15CA6009008C0 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		D68EA44420F1A773006490E4 /* FeedbackQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackQuestionViewModel.swift; sourceTree = "<group>"; };
 		D692614D20C388AA00194C0B /* UserMessageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserMessageViewController.storyboard; sourceTree = "<group>"; };
 		D692614F20C388B900194C0B /* UserMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessageViewController.swift; sourceTree = "<group>"; };
 		D692615220C38CBE00194C0B /* AboutUsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUsViewController.storyboard; sourceTree = "<group>"; };
@@ -474,6 +476,7 @@
 		1DEDA2D920B447C6001A5AA1 /* SetCard */ = {
 			isa = PBXGroup;
 			children = (
+				D640853820F2055D00E3E49F /* SetCardDetailsViewController */,
 				1DEDA2E720B44C79001A5AA1 /* SetCardViewController.storyboard */,
 				1DEDA2E920B44C85001A5AA1 /* SetCardViewController.swift */,
 				1DEDA2EB20B44CA0001A5AA1 /* SetCardViewModel.swift */,
@@ -514,6 +517,13 @@
 				1D5D34780E761AB60DF07CAC /* Pods_EveryStamp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D640853820F2055D00E3E49F /* SetCardDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SetCardDetailsViewController;
 			sourceTree = "<group>";
 		};
 		D670B60220BDA55400951BDA /* TableViewCell */ = {
@@ -696,6 +706,7 @@
 				D686916920DFE95D008463DA /* SetCardDetailsViewController.swift */,
 				D6B1AA2F20E7ED7F004356A5 /* BaseViewController.swift */,
 				D6958F6D20E8E61B00598674 /* MsgDetailsViewController.swift */,
+				D68EA44420F1A773006490E4 /* FeedbackQuestionViewModel.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -967,6 +978,7 @@
 				D6AF654B20DBEB3000201E08 /* UserAskForStampRequest.swift in Sources */,
 				D6E4876C20D6953F002C3D63 /* UserUpdateLatlngRequest.swift in Sources */,
 				D6F6C6E920CD3BEE00D9ADC1 /* RequestSender.swift in Sources */,
+				D68EA44520F1A773006490E4 /* FeedbackQuestionViewModel.swift in Sources */,
 				D6AF655720DBEF1400201E08 /* UserDeleteFromStampMsgRequest.swift in Sources */,
 				D6E4875020D65D22002C3D63 /* UserGetCodeRequest.swift in Sources */,
 				D6E4876E20D69645002C3D63 /* UserGetResponse.swift in Sources */,
@@ -1218,7 +1230,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VMTN98C772;
+				DEVELOPMENT_TEAM = 3PBTLASJAN;
 				INFOPLIST_FILE = EveryStamp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1238,7 +1250,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VMTN98C772;
+				DEVELOPMENT_TEAM = 3PBTLASJAN;
 				INFOPLIST_FILE = EveryStamp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

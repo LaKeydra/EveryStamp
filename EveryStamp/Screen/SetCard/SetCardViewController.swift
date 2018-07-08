@@ -8,31 +8,45 @@
 
 import UIKit
 
-class SetCardViewController: BaseViewController {
-    
+class SetCardViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    let viewModel: SetCardViewModel = SetCardViewModel()
+    var data: [UserGetCollectShopsData] = []
+    var disposeBag: DisposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .selected)
-        super.gotoLogInViewController()
         tableView.register(cellType: SetChapterCardTC.self)
+        requestData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func requestData() {
+        self.viewModel.getCollectShopsRequest().subscribe(onNext: { [weak self] response in
+            guard let `self` = self else { return }
+            self.data = response.data
+            self.tableView.reloadData()
+        }).disposed(by: disposeBag)
+    }
 }
 
 extension SetCardViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: SetChapterCardTC = tableView.dequeueReusableCell(for: indexPath)
-
+        let uidata: UserGetCollectShopsData = data[indexPath.row]
+        let currentNum = uidata.totalStampCount ?? ""
+        let totalNum = "/ " + (uidata.maxStampCount ?? "")
+        cell.refreshUI(icon: uidata.avatorUrl ?? "", shopNameText: uidata.name ?? "", addressText: uidata.address ?? "", detail: uidata.minStampRules ?? "", currentNum: currentNum, totalNum: totalNum)
+        cell.selectionStyle = .none
         return cell
     }
     

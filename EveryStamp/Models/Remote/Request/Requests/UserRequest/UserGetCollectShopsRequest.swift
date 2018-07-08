@@ -13,14 +13,10 @@ struct UserGetCollectShopsRequest: BaseRequest {
     var path: String {
         return "api/user/getcollectshops"
     }
-    
-    var method: HTTPMethod {
-        return .get
-    }
-    
+
     var paramater: [String : Any]?
     
-    init(accessToken: String, userId: Double, page: Double, num: Double) {
+    init(accessToken: String, userId: Int, page: Int, num: Int) {
         paramater = ["access_token": accessToken, "user_id": userId, "page": page, "num": num]
     }
 }

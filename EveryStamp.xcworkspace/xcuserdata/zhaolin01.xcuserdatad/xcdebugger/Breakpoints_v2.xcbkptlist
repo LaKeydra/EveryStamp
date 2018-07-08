@@ -26,28 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EveryStamp/Screen/RegisterAndLogin/RegisterViewModel.swift"
-            timestampString = "552706783.7035"
+            timestampString = "552709066.855154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "sendUserRegisterRequest(userName:pwd:code:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Screen/SetCard/SetCardViewController.swift"
-            timestampString = "552662701.084716"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,110 +57,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Screen/RegisterAndLogin/LogInViewController.swift"
-            timestampString = "552706783.703611"
+            filePath = "EveryStamp/Screen/ViewController/FeedbackQuestionViewModel.swift"
+            timestampString = "552709066.855389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "bind()"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "feedbackQuestionRequest(contact:content:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Tool/RequestAPIManager.swift"
-            timestampString = "552706783.703666"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "init()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Tool/RequestAPIManager.swift"
-            timestampString = "552706783.70372"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "RequestAPIManager"
-            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EveryStamp.RequestAPIManager.userId.getter : Swift.Int"
+                  symbolName = "closure #1 (RxSwift.AnyObserver&lt;EveryStamp.UserFeedbackResponse&gt;) -&gt; RxSwift.Disposable in EveryStamp.FeedbackQuestionViewModel.feedbackQuestionRequest(contact: Swift.String, content: Swift.String) -&gt; RxSwift.Observable&lt;EveryStamp.UserFeedbackResponse&gt;"
                   moduleName = "EveryStamp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Tool/RequestAPIManager.swift"
-                  timestampString = "552706661.76028"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/ViewController/FeedbackQuestionViewModel.swift"
+                  timestampString = "552731647.4838589"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "97">
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "436">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EveryStamp.RequestAPIManager.userId.setter : Swift.Int"
+                  symbolName = "closure #1 (EveryStamp.Result&lt;EveryStamp.UserFeedbackResponse&gt;) -&gt; () in closure #1 (RxSwift.AnyObserver&lt;EveryStamp.UserFeedbackResponse&gt;) -&gt; RxSwift.Disposable in EveryStamp.FeedbackQuestionViewModel.feedbackQuestionRequest(contact: Swift.String, content: Swift.String) -&gt; RxSwift.Observable&lt;EveryStamp.UserFeedbackResponse&gt;"
                   moduleName = "EveryStamp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Tool/RequestAPIManager.swift"
-                  timestampString = "552706661.762411"
+                  urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/ViewController/FeedbackQuestionViewModel.swift"
+                  timestampString = "552731647.485579"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "98">
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "29">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Tool/RequestAPIManager.swift"
-            timestampString = "552706783.703769"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "init()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Tool/RequestAPIManager.swift"
-            timestampString = "552706783.7038209"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "RequestAPIManager"
-            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -26,11 +26,31 @@
                                     <outlet property="delegate" destination="Msy-X5-Awp" id="qpW-O3-Odf"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FK-oC-Yia">
+                                <rect key="frame" x="20" y="600" width="335" height="47"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.48627450979999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="vfl-QF-bLD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="18"/>
+                                <state key="normal" title="开始集章">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BTO-L6-ner" firstAttribute="leading" secondItem="HW0-UH-19q" secondAttribute="leading" id="6mS-Gy-flm"/>
+                            <constraint firstItem="HW0-UH-19q" firstAttribute="bottom" secondItem="4FK-oC-Yia" secondAttribute="bottom" constant="20" id="Asj-Oi-ncV"/>
                             <constraint firstItem="HW0-UH-19q" firstAttribute="bottom" secondItem="BTO-L6-ner" secondAttribute="bottom" id="Q9h-0d-vjY"/>
+                            <constraint firstItem="4FK-oC-Yia" firstAttribute="leading" secondItem="HW0-UH-19q" secondAttribute="leading" constant="20" id="U7S-8j-hdA"/>
+                            <constraint firstItem="4FK-oC-Yia" firstAttribute="trailing" secondItem="HW0-UH-19q" secondAttribute="trailing" constant="-20" id="let-fJ-vrn"/>
                             <constraint firstItem="HW0-UH-19q" firstAttribute="trailing" secondItem="BTO-L6-ner" secondAttribute="trailing" id="tFp-2N-34R"/>
                             <constraint firstItem="BTO-L6-ner" firstAttribute="top" secondItem="HW0-UH-19q" secondAttribute="top" id="zVg-uq-ogW"/>
                         </constraints>

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Feedback Question View Controller-->
         <scene sceneID="eYm-k6-THL">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="qdq-4W-R5U" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="qdq-4W-R5U" customClass="FeedbackQuestionViewController" customModule="EveryStamp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1hj-W9-YXc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,10 +88,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mHt-7T-j8O"/>
                     </view>
+                    <connections>
+                        <outlet property="commitBtn" destination="ekx-I7-Q0k" id="ON7-Qq-hsR"/>
+                        <outlet property="contactTF" destination="DTn-rB-4os" id="L1G-Kb-JKQ"/>
+                        <outlet property="contentTF" destination="pTy-po-BAd" id="c2P-Q2-Cvq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mu3-Wv-wre" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="226" y="175"/>
+            <point key="canvasLocation" x="-273" y="147"/>
         </scene>
     </scenes>
 </document>
