@@ -134,9 +134,17 @@ class MyMessageViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: false)
     }
     
-    func gotoTransferViewController() {
+    func gotoTransferViewController(row: Int) {
+        let data = fromStampMsgsData[row]
+        let fromStampType = GetFromStampType(rawValue: data.type ?? "") ?? .none
         let sb = UIStoryboard.init(name: "TransferViewController", bundle: nil)
         let vc: TransferViewController = sb.instantiateInitialViewController() as! TransferViewController
+        vc.userName = data.user_name ?? ""
+        vc.imgstr = ""
+        vc.shopName = data.shop_name ?? ""
+        vc.type = fromStampType
+        vc.stamp_msg_id = Int(data.stamp_msg_id ?? "") ?? 0
+        vc.shop_id = Int(data.shop_id ?? "") ?? 0
         self.navigationController?.pushViewController(vc, animated: false)
     }
 }
@@ -200,7 +208,7 @@ extension MyMessageViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: false)
         switch currentMsgType {
         case .fromStampMsg:
-            self.gotoTransferViewController()
+            self.gotoTransferViewController(row: indexPath.row)
             break
         case .systemMsg:
             let data = systemMsgsData[indexPath.row]

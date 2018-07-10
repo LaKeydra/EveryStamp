@@ -58,7 +58,7 @@
                   moduleName = "EveryStamp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/ViewController/FeedbackQuestionViewModel.swift"
-                  timestampString = "552754134.636488"
+                  timestampString = "552928499.024812"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
@@ -73,7 +73,7 @@
                   moduleName = "EveryStamp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhaolin01/Desktop/EveryStamp/EveryStamp/Screen/ViewController/FeedbackQuestionViewModel.swift"
-                  timestampString = "552754134.63993"
+                  timestampString = "552928499.030239"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -89,29 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Screen/Mine/MyMessageViewController.swift"
-            timestampString = "552755710.8758349"
+            filePath = "EveryStamp/Screen/Mine/Transfer/TransferViewController.swift"
+            timestampString = "552928498.964065"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EveryStamp/Screen/Mine/MyMessageViewController.swift"
-            timestampString = "552755710.875892"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "gotoTransferViewController()"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "bind()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

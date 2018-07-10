@@ -153,6 +153,7 @@
 		D6E98B2A20DDCEA5007CC81E /* ShopTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E98B2920DDCEA5007CC81E /* ShopTC.swift */; };
 		D6EFC62420ED224B00EF4137 /* StoreHighlightsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC62320ED224B00EF4137 /* StoreHighlightsCell.xib */; };
 		D6EFC62620ED225700EF4137 /* StoreHighlightsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EFC62520ED225700EF4137 /* StoreHighlightsCell.swift */; };
+		D6F332AE20F3A61F001C8D13 /* TransferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F332AD20F3A61F001C8D13 /* TransferViewModel.swift */; };
 		D6F494B220D955DC003A09E1 /* UserGetCollectShopsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F494B120D955DC003A09E1 /* UserGetCollectShopsRequest.swift */; };
 		D6F494B420D956D8003A09E1 /* UserShopCollectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F494B320D956D8003A09E1 /* UserShopCollectResponse.swift */; };
 		D6F494B620D95721003A09E1 /* UserShopCollectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F494B520D95721003A09E1 /* UserShopCollectRequest.swift */; };
@@ -335,6 +336,7 @@
 		D6EFC62320ED224B00EF4137 /* StoreHighlightsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreHighlightsCell.xib; sourceTree = "<group>"; };
 		D6EFC62520ED225700EF4137 /* StoreHighlightsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHighlightsCell.swift; sourceTree = "<group>"; };
 		D6F2130020BAF49E004451FB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D6F332AD20F3A61F001C8D13 /* TransferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewModel.swift; sourceTree = "<group>"; };
 		D6F494B120D955DC003A09E1 /* UserGetCollectShopsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGetCollectShopsRequest.swift; sourceTree = "<group>"; };
 		D6F494B320D956D8003A09E1 /* UserShopCollectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserShopCollectResponse.swift; sourceTree = "<group>"; };
 		D6F494B520D95721003A09E1 /* UserShopCollectRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserShopCollectRequest.swift; sourceTree = "<group>"; };
@@ -548,6 +550,7 @@
 			children = (
 				D640854720F2480200E3E49F /* TransferViewController.storyboard */,
 				D640854920F2481000E3E49F /* TransferViewController.swift */,
+				D6F332AD20F3A61F001C8D13 /* TransferViewModel.swift */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -1024,6 +1027,7 @@
 				D6AF656F20DC005000201E08 /* UserFeedbackRequest.swift in Sources */,
 				D6F494C820D96385003A09E1 /* UserGetShopsByAddressRequest.swift in Sources */,
 				D6958F6E20E8E61B00598674 /* MsgDetailsViewController.swift in Sources */,
+				D6F332AE20F3A61F001C8D13 /* TransferViewModel.swift in Sources */,
 				D686916820DFE44D008463DA /* SetChapterCardTC.swift in Sources */,
 				D6F494D820D96951003A09E1 /* UserDeleteMsgRequest.swift in Sources */,
 				D6D2765120DBDB5F0080AEC7 /* UserReadMsgRequest.swift in Sources */,

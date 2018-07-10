@@ -20,15 +20,34 @@ class TransferViewController: UIViewController {
     @IBOutlet weak var commitBtn: UIButton!
     @IBOutlet weak var despL: UILabel!
     var userName: String = ""
-    var detail: String = ""
     var imgstr: String = ""
     var shopName: String = ""
-    var type: viewControllerType = .get
+    var type: GetFromStampType = .get
+    var disposeBag: DisposeBag = DisposeBag()
+    var stamp_msg_id: Int = 1
+    var shop_id: Int = 0
+    let viewModel = TransferViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        bind()
+    }
+    
+    func bind() {
+        if type == .get {
+            _ = self.commitBtn.rx.tap.subscribe(onNext: { _ in
+                let stamp_id = 0
+                let to_uid = 0
+                self.viewModel.sendUserDoNateStampRequest(shop_id: self.shop_id, stamp_id: stamp_id, to_uid: to_uid, stamp_msg_id: self.stamp_msg_id).subscribe(onNext: { response in
+                    ToastView.instance.showToast(content: "爱客章: 转赠成功")
+                }).disposed(by: self.disposeBag)
+            }).disposed(by: disposeBag)
+        }
+    }
+    
+    func setupUI() {
         self.userNameL.text = userName
-        self.detailL.text = detail
         self.shopNameL.text = shopName
         let url = RequestAPIManager.requestAPIBaseUrl() + imgstr
         
@@ -42,25 +61,22 @@ class TransferViewController: UIViewController {
         }
         
         switch type {
-        case .get:
+        case .give:
             icon.image = #imageLiteral(resourceName: "message-zengsong")
             numL.text = "+"
             commitBtn.setTitle("收下", for: .normal)
             despL.text = "在店铺集章活动中增加一枚章"
+            detailL.text = "赠送您一枚" + shopName + "集章"
         default:
             icon.image = #imageLiteral(resourceName: "message-suoqu")
             numL.text = "-"
             commitBtn.setTitle("转赠", for: .normal)
             despL.text = "在店铺集章活动中减少一枚章"
+            detailL.text = "向您索取一枚" + shopName + "集章"
         }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-}
-
-enum viewControllerType {
-    case get
-    case give
 }
