@@ -16,7 +16,6 @@
 		1D4C0BAF20BA982C00583735 /* SearchShopViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C0BAE20BA982C00583735 /* SearchShopViewController.storyboard */; };
 		1D4C0BB120BA9ACA00583735 /* SearchShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C0BB020BA9ACA00583735 /* SearchShopViewController.swift */; };
 		1D4C0BB520BA9D6C00583735 /* SearchSpeciesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C0BB420BA9D6C00583735 /* SearchSpeciesCell.swift */; };
-		1DEDA2DC20B44BFB001A5AA1 /* StoreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEDA2DB20B44BFB001A5AA1 /* StoreViewController.storyboard */; };
 		1DEDA2DE20B44C0E001A5AA1 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA2DD20B44C0E001A5AA1 /* StoreViewController.swift */; };
 		1DEDA2E020B44C26001A5AA1 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA2DF20B44C26001A5AA1 /* StoreViewModel.swift */; };
 		1DEDA2E220B44C4D001A5AA1 /* SetChapterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DEDA2E120B44C4D001A5AA1 /* SetChapterViewController.storyboard */; };
@@ -29,6 +28,8 @@
 		1DEDA2F020B44CC9001A5AA1 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA2EF20B44CC9001A5AA1 /* MineViewController.swift */; };
 		1DEDA2F220B44CD7001A5AA1 /* MineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDA2F120B44CD7001A5AA1 /* MineViewModel.swift */; };
 		5140F57CE731BDC1DCDED343 /* Pods_EveryStamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5D34780E761AB60DF07CAC /* Pods_EveryStamp.framework */; };
+		A7D663EA2172DCD700851BB5 /* BuyAndGiveCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D663E92172DCD700851BB5 /* BuyAndGiveCVCell.xib */; };
+		A7EEEF91217CA16C0078AE4D /* StoreViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7EEEF90217CA16C0078AE4D /* StoreViewController.storyboard */; };
 		D62A6C2B20ED3BE600F29031 /* AccountSettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D62A6C2A20ED3BE600F29031 /* AccountSettingViewController.storyboard */; };
 		D62A6C2D20ED3BF500F29031 /* AccountSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62A6C2C20ED3BF500F29031 /* AccountSettingViewController.swift */; };
 		D640853B20F2066000E3E49F /* SetCardDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D640853920F2066000E3E49F /* SetCardDetailsViewController.storyboard */; };
@@ -198,7 +199,6 @@
 		1D4C0BB020BA9ACA00583735 /* SearchShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchShopViewController.swift; sourceTree = "<group>"; };
 		1D4C0BB420BA9D6C00583735 /* SearchSpeciesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSpeciesCell.swift; sourceTree = "<group>"; };
 		1D5D34780E761AB60DF07CAC /* Pods_EveryStamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EveryStamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DEDA2DB20B44BFB001A5AA1 /* StoreViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreViewController.storyboard; sourceTree = "<group>"; };
 		1DEDA2DD20B44C0E001A5AA1 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		1DEDA2DF20B44C26001A5AA1 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
 		1DEDA2E120B44C4D001A5AA1 /* SetChapterViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetChapterViewController.storyboard; sourceTree = "<group>"; };
@@ -210,6 +210,8 @@
 		1DEDA2ED20B44CB8001A5AA1 /* MineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MineViewController.storyboard; sourceTree = "<group>"; };
 		1DEDA2EF20B44CC9001A5AA1 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		1DEDA2F120B44CD7001A5AA1 /* MineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewModel.swift; sourceTree = "<group>"; };
+		A7D663E92172DCD700851BB5 /* BuyAndGiveCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyAndGiveCVCell.xib; sourceTree = "<group>"; };
+		A7EEEF90217CA16C0078AE4D /* StoreViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoreViewController.storyboard; sourceTree = "<group>"; };
 		D62A6C2A20ED3BE600F29031 /* AccountSettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountSettingViewController.storyboard; sourceTree = "<group>"; };
 		D62A6C2C20ED3BF500F29031 /* AccountSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingViewController.swift; sourceTree = "<group>"; };
 		D640853920F2066000E3E49F /* SetCardDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetCardDetailsViewController.storyboard; sourceTree = "<group>"; };
@@ -423,6 +425,7 @@
 		1D132CB920B1A71D000CEE6D /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				A7D663E82172DC5300851BB5 /* CollectionViewCell */,
 				D692615120C38C8200194C0B /* ViewController */,
 				D69E988B20C2907A0004B6DC /* View */,
 				D670B60220BDA55400951BDA /* TableViewCell */,
@@ -470,9 +473,9 @@
 			children = (
 				D6789B4920DE8FD1009071BF /* ShopDetail */,
 				1D4C0BAD20BA97FB00583735 /* SearchShop */,
-				1DEDA2DB20B44BFB001A5AA1 /* StoreViewController.storyboard */,
 				1DEDA2DD20B44C0E001A5AA1 /* StoreViewController.swift */,
 				1DEDA2DF20B44C26001A5AA1 /* StoreViewModel.swift */,
+				A7EEEF90217CA16C0078AE4D /* StoreViewController.storyboard */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -516,6 +519,14 @@
 				D62A6C2C20ED3BF500F29031 /* AccountSettingViewController.swift */,
 			);
 			path = Mine;
+			sourceTree = "<group>";
+		};
+		A7D663E82172DC5300851BB5 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A7D663E92172DCD700851BB5 /* BuyAndGiveCVCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		AF3FBCE6C329BCE6AD10EE3D /* Pods */ = {
@@ -871,9 +882,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6B1AA1E20E77142004356A5 /* SettingViewController.storyboard in Resources */,
+				A7EEEF91217CA16C0078AE4D /* StoreViewController.storyboard in Resources */,
 				1D132CB220B18CBB000CEE6D /* LaunchScreen.storyboard in Resources */,
 				D69E988D20C2923B0004B6DC /* NoDataView.xib in Resources */,
-				1DEDA2DC20B44BFB001A5AA1 /* StoreViewController.storyboard in Resources */,
 				D6789B4F20DE9485009071BF /* ShopDetailsViewController.storyboard in Resources */,
 				D69E989120C2FEA20004B6DC /* ShopRecommendTC.xib in Resources */,
 				D684954B20E1322E00D8E23B /* MyMessageViewController.storyboard in Resources */,
@@ -906,6 +917,7 @@
 				D692614E20C388AA00194C0B /* UserMessageViewController.storyboard in Resources */,
 				D67E97EC20DF4371007EA35A /* RegisterViewController.storyboard in Resources */,
 				D6EFC62420ED224B00EF4137 /* StoreHighlightsCell.xib in Resources */,
+				A7D663EA2172DCD700851BB5 /* BuyAndGiveCVCell.xib in Resources */,
 				D692615320C38CBE00194C0B /* AboutUsViewController.storyboard in Resources */,
 				D62A6C2B20ED3BE600F29031 /* AccountSettingViewController.storyboard in Resources */,
 				D670B60420BDA61800951BDA /* SetChapterTC.xib in Resources */,
